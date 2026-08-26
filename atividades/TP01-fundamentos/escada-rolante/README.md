@@ -85,12 +85,14 @@ velocidades medidas.
    por `T_espera` → desacelerar, parar e aplicar o freio. O parâmetro é
    configurável; o valor de referência do modelo é `T_espera = 30 s`.
 4. **R4 — proteção/emergência:** se um dispositivo de segurança atuar, houver
-   objeto preso ou o comando de emergência for acionado → retirar o comando do
-   acionamento, executar parada de segurança, aplicar o freio, alarmar e reter
-   o bloqueio até inspeção e rearme manual.
+   objeto preso (risco de aprisionamento ou dano) ou o comando de emergência
+   for acionado → retirar o comando do acionamento, executar parada de
+   segurança, aplicar o freio, alarmar e reter o bloqueio até inspeção e rearme
+   manual.
 5. **R5 — falha de movimento:** se o motor for comandado e não houver velocidade,
    ocorrer sobrevelocidade ou houver diferença anormal entre degraus e corrimão
-   → retirar o comando, aplicar o freio, alarmar e exigir rearme manual.
+   (risco de queda ou perda de estabilidade) → retirar o comando, aplicar o
+   freio, alarmar e exigir rearme manual.
 
 **Prioridade e permissivas:** R4 e R5 prevalecem sobre R1–R3. A ausência de
 demanda nunca inicia parada enquanto a zona transportada estiver ocupada. Fora
@@ -112,7 +114,8 @@ diferença anormal leva à R5.
 O sinal `Dispositivos livres/atuados — Intertravamento de segurança`, em azul
 traço-ponto, bloqueia ou interrompe movimento, mas não mede o resultado do
 comando. Por isso não é realimentação. O comando de emergência é uma entrada
-prioritária separada, em vermelho espesso.
+prioritária separada, em vermelho espesso e tracejado curto, distinguível da
+realimentação mesmo sem cor.
 
 ## Perturbação
 
@@ -165,9 +168,9 @@ desenho.
 
 | Cenário | Entrada/precondição | Resposta esperada | Resultado rastreado no diagrama | Status |
 |---|---|---|---|---|
-| Aproximação válida | Habilitada; aproximação; zona e dispositivos livres; sem falha/emergência | Iniciar e atingir velocidade nominal | `Aproximação / ocupação de passageiros` → `Detectar aproximação e ocupação` → `Demanda; zona ocupada/livre` → lógica `R1 · INICIAR` → `Referência de velocidade + freio` → `Comandar acionamento e freio` → `Torque / freio liberado` → `Mover degraus e corrimão` → `Rotação mecânica` → `Medir velocidades` → `Velocidades medidas (degraus / corrimão)` retorna à lógica | Conforme |
-| Transporte ocupado | Passageiros na zona; velocidades coerentes | Manter velocidade nominal | `Detectar aproximação e ocupação` → `Demanda; zona ocupada/livre` → lógica `R2 · TRANSPORTAR` → `Referência de velocidade + freio` → `Comandar acionamento e freio` → `Torque / freio liberado` → `Mover degraus e corrimão` → `Rotação mecânica` → `Medir velocidades` → realimentação verde `Velocidades medidas (degraus / corrimão)` à lógica | Conforme |
-| Espera sem demanda | Zona livre e nenhuma presença por `T_espera = 30 s` de referência | Desacelerar, parar e aplicar freio | Sinal `Demanda; zona ocupada/livre` → lógica `R3 · ESPERA ECONÔMICA` → `Referência de velocidade + freio` → `Comandar acionamento e freio` → `Torque / freio liberado` → `Mover degraus e corrimão` → `Rotação mecânica` → `Medir velocidades` → velocidade zero retorna pela seta `Velocidades medidas (degraus / corrimão)` | Conforme |
+| Aproximação válida | Habilitada; aproximação; zona e dispositivos livres; sem falha/emergência | Iniciar e atingir velocidade nominal | `Aproximação / ocupação de passageiros` → `Detectar aproximação e ocupação` → `Demanda; zona ocupada/livre` → lógica `R1 · INICIAR` → `Referência de velocidade + freio` → `Comandar acionamento e freio` → `Torque / freio (liberar/aplicar)` → `Mover degraus e corrimão` → `Rotação mecânica` → `Medir velocidades` → `Velocidades medidas (degraus / corrimão)` retorna à lógica | Conforme |
+| Transporte ocupado | Passageiros na zona; velocidades coerentes | Manter velocidade nominal | `Detectar aproximação e ocupação` → `Demanda; zona ocupada/livre` → lógica `R2 · TRANSPORTAR` → `Referência de velocidade + freio` → `Comandar acionamento e freio` → `Torque / freio (liberar/aplicar)` → `Mover degraus e corrimão` → `Rotação mecânica` → `Medir velocidades` → realimentação verde `Velocidades medidas (degraus / corrimão)` à lógica | Conforme |
+| Espera sem demanda | Zona livre e nenhuma presença por `T_espera = 30 s` de referência | Desacelerar, parar e aplicar freio | Sinal `Demanda; zona ocupada/livre` → lógica `R3 · ESPERA ECONÔMICA` → `Referência de velocidade + freio` → `Comandar acionamento e freio` → `Torque / freio (liberar/aplicar)` → `Mover degraus e corrimão` → `Rotação mecânica` → `Medir velocidades` → velocidade zero retorna pela seta `Velocidades medidas (degraus / corrimão)` | Conforme |
 | Objeto no pente | Perturbação externa; dispositivo de segurança atuado | Parada de segurança, freio, alarme e bloqueio retido | Origem `Perturbação: objeto / carga / fluxo de pessoas (ambiente)` → `Atua pente / entrada` → `Monitorar dispositivos de segurança` → seta azul `Dispositivos livres/atuados — Intertravamento de segurança` → `Avaliar demanda e transporte`; o vínculo `R4/R5 · proteção/falha retida` associa a lógica à nota `R4 · PROTEÇÃO / EMERGÊNCIA`, e a lógica envia `Referência de velocidade + freio` e `Estado e falhas`; o segundo ramo `Carga / objeto no mecanismo` registra a ação física simultânea | Conforme |
 | Emergência | Comando prioritário acionado | Parar, frear, alarmar e exigir inspeção/rearme | `Comando de emergência` → `Avaliar demanda e transporte`; o vínculo `R4/R5 · proteção/falha retida` associa a resposta à nota `R4 · PROTEÇÃO / EMERGÊNCIA`, enquanto a lógica envia `Referência de velocidade + freio` e `Estado e falhas`; `Estado seguro + rearme` aponta para o quadro de estado seguro, e `Habilitação / manutenção / rearme manual` representa o único retorno autorizado | Conforme |
 | Falha de velocidade | Comando ativo e velocidade ausente, excessiva ou incoerente | Retirar comando, frear, alarmar e bloquear | `Mover degraus e corrimão` → `Rotação mecânica` → `Medir velocidades` → realimentação `Velocidades medidas (degraus / corrimão)` → `Avaliar demanda e transporte`; vínculo `R4/R5 · proteção/falha retida` → nota `R5 · FALHA DE MOVIMENTO`; a lógica envia `Referência de velocidade + freio` e `Estado e falhas` | Conforme |
