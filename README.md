@@ -33,3 +33,6 @@ diagrams.net, imagem exportada, análise de falhas e validação por cenários.
 
 - [Acessar a entrega da TP01](atividades/TP01-fundamentos/)
 - [Exercício obrigatório — porta automática](atividades/TP01-fundamentos/porta-automatica/)
+- [Adicional 1 — controle de nível do reservatório](atividades/TP01-fundamentos/reservatorio/)
+- [Adicional 2 — iluminação automática do estacionamento](atividades/TP01-fundamentos/iluminacao-estacionamento/)
+- [Adicional 3 — proposta própria: escada rolante](atividades/TP01-fundamentos/escada-rolante/)
