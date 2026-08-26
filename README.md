@@ -25,3 +25,11 @@ Automatização; Sensores; e Transdutores.
 
 Os PDFs "Grupo" e "Tema" são recortes de estudo derivados do Resumo Completo
 (v4), com o mesmo conteúdo aprovado, organizados por tema.
+
+### TP01 — Fundamentos dos Sistemas Automatizados
+
+Modelagem funcional da prática da Semana 1, com arquivo editável do
+diagrams.net, imagem exportada, análise de falhas e validação por cenários.
+
+- [Acessar a entrega da TP01](atividades/TP01-fundamentos/)
+- [Exercício obrigatório — porta automática](atividades/TP01-fundamentos/porta-automatica/)
