@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "author": "Marcelo Antonio Pereira Marcolino",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -110,
+      "left": 160,
+      "attrs": {
+        "color": "green",
+        "xray": "1"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 60,
+      "left": -155,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 20,
+      "left": -90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": 215,
+      "left": 250,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 215,
+      "left": -40,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "btn1:2.l",
+      "uno:GND.1",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btn1:1.r",
+      "uno:2",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "led1:C",
+      "uno:GND.2",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "r1:1",
+      "uno:8",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "r1:2",
+      "led1:A",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "pot1:VCC",
+      "uno:5V",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "pot1:GND",
+      "uno:GND.3",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "pot1:SIG",
+      "uno:A0",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "dht1:VCC",
+      "uno:5V",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "dht1:GND",
+      "uno:GND.3",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "dht1:SDA",
+      "uno:4",
+      "green",
+      [
+        "v0"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}

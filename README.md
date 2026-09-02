@@ -36,3 +36,15 @@ diagrams.net, imagem exportada, análise de falhas e validação por cenários.
 - [Adicional 1 — controle de nível do reservatório](atividades/TP01-fundamentos/reservatorio/)
 - [Adicional 2 — iluminação automática do estacionamento](atividades/TP01-fundamentos/iluminacao-estacionamento/)
 - [Adicional 3 — proposta própria: escada rolante](atividades/TP01-fundamentos/escada-rolante/)
+
+### TP02 — Processos, Sensores e Transdutores
+
+Estação de monitoramento simulada no Wokwi, com Arduino Uno: uma entrada
+digital, uma analógica e uma medição de temperatura, classificadas em NORMAL,
+ATENÇÃO, ALARME ou FALHA DE SENSOR e publicadas no Monitor Serial.
+
+- [Acessar a entrega da TP02](atividades/TP02-sensores/) — **em andamento**
+
+Circuito e programa completos e verificados; a bateria de testes integrados
+ainda não foi executada. O registro caso a caso está em
+[`testes/casos-de-teste.md`](atividades/TP02-sensores/testes/casos-de-teste.md).
