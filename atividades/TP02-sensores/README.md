@@ -15,6 +15,10 @@ Projeto on-line da etapa obrigatória:
 [TP02 - Estacao de monitoramento](https://wokwi.com/projects/473835836746646529).
 O firmware final dos adicionais é o [`sketch.ino`](sketch.ino) desta entrega.
 
+**Autor:** Marcelo Antonio Pereira Marcolino — USJT, turma ESO1AN-MCE3.
+**Execuções registradas:** 26/08/2026 (etapas manuais no editor do Wokwi) e
+02/09/2026 (baterias automatizadas e publicação).
+
 ## Objetivo
 
 Adquirir uma entrada digital, uma entrada analógica e uma medição de
@@ -37,9 +41,33 @@ Arquivos desta pasta:
   usadas na validação (DHT sensor library 1.4.7 e Adafruit Unified Sensor
   1.1.15)
 - [`testes/casos-de-teste.md`](testes/casos-de-teste.md) — registro completo dos testes
-- [`evidencias/`](evidencias/) — circuito e mosaicos canônicos: digitais,
-  integrados/fronteiras (regressão), prioridade e histerese, com um quadro
-  rotulado por caso
+- [`evidencias/`](evidencias/) — evidências da validação, cada uma com um papel:
+  - `circuito.png` — montagem completa no editor, com rótulos e ligações
+    visíveis;
+  - `circuito-em-execucao.png` — o circuito de uma execução real, com o
+    cronômetro da simulação, o LED aceso pelo botão pressionado e o serial ao
+    fundo (remoção local do cursor do mouse);
+  - `monitor-serial.png` — captura do Monitor Serial de uma execução real, com
+    remoção local do cursor, mostrando a escada de estados da histerese
+    (35 → 40 → 39 → 37 °C: liga na fronteira de 40,0 °C, mantém em 39,0 °C e
+    desliga em 37,0 °C);
+  - `testes-digitais.png`, `testes-integrados.png`, `prioridade.png` e
+    `histerese.png` — mosaicos canônicos, um quadro rotulado por caso, gerados
+    do registro serial de cada execução automatizada (wokwi-cli)
+
+## Como executar (reprodução)
+
+1. Abra o [projeto no Wokwi](https://wokwi.com/projects/473835836746646529) —
+   ou crie um projeto novo de Arduino Uno e importe `sketch.ino`,
+   `diagram.json` e `libraries.txt` desta pasta.
+2. Inicie a simulação e acompanhe o Monitor Serial a **9600 baud**: uma linha
+   por segundo, no formato fixo descrito abaixo.
+3. Interaja com as entradas: clique no botão (o LED em D8 acende e a linha
+   passa a `BTN=PRESSIONADO`); gire o potenciômetro (o campo `POT` cruza as
+   faixas em 400 e 750); clique no DHT22 e ajuste a temperatura (faixas em
+   30 °C e 40 °C, com a histerese do alarme térmico entre 37 °C e 40 °C).
+4. Para reproduzir a FALHA DE SENSOR, siga o protocolo de seis passos da seção
+   "Provocar a leitura inválida do DHT22".
 
 ## Variável, sensor, entrada e resposta
 
@@ -155,7 +183,12 @@ registro de cada execução.
 
 ## Seleção industrial (adicional 3)
 
-Equivalente industrial para cada uma das três entradas, com faixa, interface,
+**Processo e mensurandos.** O processo de referência é o monitoramento de uma
+câmara térmica de processo: o acionamento manual é o comando local de
+reconhecimento do operador no painel da câmara (evento discreto); a variável
+analógica contínua é a pressão da linha de circulação de ar (0–10 bar); e a
+temperatura é a do interior da câmara (operação até 100 °C). Para cada
+mensurando, o equivalente industrial abaixo compatibiliza faixa, interface,
 ambiente e o par falha detectável / não detectável.
 
 ### Acionamento manual — pushbutton → botão industrial 22 mm com contatos duplos
@@ -174,7 +207,7 @@ ambiente e o par falha detectável / não detectável.
 ### Variável analógica — potenciômetro → transmissor 4–20 mA (laço de corrente)
 
 - **Equivalente**: transmissor de processo a **2 fios, 4–20 mA** alimentado
-  pelo laço (por exemplo, de pressão ou de posição), no lugar da tensão 0–5 V
+  pelo laço (pressão da linha de circulação, 0–10 bar), no lugar da tensão 0–5 V
   do divisor resistivo.
 - **Faixa/interface**: **4–20 mA** sobre par trançado blindado em entrada
   analógica de CLP (250 Ω → 1–5 V); o "zero vivo" em 4 mA distingue medição
