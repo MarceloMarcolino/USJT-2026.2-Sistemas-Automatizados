@@ -184,25 +184,34 @@ registro de cada execução.
 ## Seleção industrial (adicional 3)
 
 **Processo e mensurandos.** O processo de referência é o monitoramento de uma
-câmara térmica de processo: o acionamento manual é o comando local de
-reconhecimento do operador no painel da câmara (evento discreto); a variável
+câmara térmica de processo: a entrada discreta é a posição da porta da câmara
+(porta fechada/aberta, detectada por sensor de processo); a variável
 analógica contínua é a pressão da linha de circulação de ar (0–10 bar); e a
 temperatura é a do interior da câmara (operação até 100 °C). Para cada
 mensurando, o equivalente industrial abaixo compatibiliza faixa, interface,
 ambiente e o par falha detectável / não detectável.
 
-### Acionamento manual — pushbutton → botão industrial 22 mm com contatos duplos
+### Entrada discreta — pushbutton → chave fim de curso na porta da câmara
 
-- **Equivalente**: botão de comando industrial de 22 mm (IEC 60947-5-1), com
-  bloco de contatos **1 NA + 1 NF** de abertura positiva.
-- **Faixa/interface**: contatos secos comutando **24 V CC** para entrada
-  digital de CLP (IEC 61131-2), em lógica de corrente de repouso.
-- **Ambiente**: frontal **IP65/IP69K** para painel em área de processo, faixa
-  térmica típica −25 a +70 °C, resistente a jato d'água e agentes de limpeza.
-- **Falha detectável**: incoerência entre os dois contatos (NA e NF no mesmo
-  estado) denuncia contato soldado, mola quebrada ou fio rompido.
-- **Falha não detectável**: desgaste mecânico progressivo que ainda comuta
-  corretamente — só aparece em manutenção preventiva.
+- **Equivalente**: chave fim de curso industrial (IEC 60947-5-1) com contatos
+  **1 NA + 1 NF, com abertura positiva no contato NF**, atuada pela porta da
+  câmara; a alternativa sem contato é um sensor indutivo, quando há alvo
+  metálico na porta.
+- **Faixa/interface**: dois estados, comutando **24 V CC** em lógica de
+  corrente de repouso, com **NA e NF ligados a duas entradas digitais do CLP**
+  (IEC 61131-2) e a complementaridade dos canais verificada pela lógica após a
+  janela de comutação.
+- **Ambiente**: corpo **IP65/IP67** montado no batente, **fora da zona quente
+  da câmara**, dentro da faixa térmica típica do componente (−25 a +70 °C),
+  resistente a limpeza com jato d'água.
+- **Falha detectável**: porta aberta e fio rompido produzem o mesmo estado não
+  permissivo — seguro por projeto, mas indistinto por um canal só; o que
+  denuncia falha é a **incoerência entre os dois canais** (NA e NF no mesmo
+  estado após a janela de comutação), como contato soldado ou cabo rompido de
+  um dos canais.
+- **Falha não detectável**: chave mecanicamente deslocada do batente que ainda
+  comuta — a porta pode não estar efetivamente vedada; não é distinguível
+  apenas por essa entrada, exigindo inspeção, teste funcional ou redundância.
 
 ### Variável analógica — potenciômetro → transmissor 4–20 mA (laço de corrente)
 
