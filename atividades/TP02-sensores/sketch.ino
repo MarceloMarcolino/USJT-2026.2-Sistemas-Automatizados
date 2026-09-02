@@ -8,6 +8,31 @@ const int POT = A0;
 
 DHT dht(DHTPIN, DHTTYPE);
 
+// Latch do alarme térmico (histerese): liga quando t >= 40,0 °C e só desliga
+// quando t <= 37,0 °C. Sobrevive às repetições do loop(). O potenciômetro não
+// arma nem mantém o latch; durante leitura inválida o latch não é atualizado.
+bool alarmeTermico = false;
+
+// Etapa 8: a classificação recebe as medidas e devolve o estado.
+// Prioridade: falha > alarme (pot >= 750 OU latch térmico) >
+// atenção (t >= 30 OU pot >= 400) > normal.
+const char* classificar(int bruto, float t, bool temperaturaValida) {
+  if (!temperaturaValida) {
+    return "FALHA DE SENSOR";  // latch conserva o valor que tinha
+  }
+  if (t >= 40.0) {
+    alarmeTermico = true;
+  } else if (t <= 37.0) {
+    alarmeTermico = false;
+  }
+  if (alarmeTermico || bruto >= 750) {
+    return "ALARME";
+  }
+  if (t >= 30.0 || bruto >= 400) {
+    return "ATENCAO";
+  }
+  return "NORMAL";
+}
 
 void setup() {
   pinMode(BTN, INPUT_PULLUP);
@@ -22,6 +47,7 @@ void loop() {
 
   int bruto = analogRead(POT);
   float t = dht.readTemperature();
+  bool temperaturaValida = !isnan(t);
 
   Serial.print("BTN=");
   Serial.print(detectado ? "PRESSIONADO" : "LIBERADO");
@@ -29,20 +55,15 @@ void loop() {
   Serial.print(bruto);
   Serial.print(" | TEMP=");
 
-  if (isnan(t)) {
-    Serial.print("INVALIDA | ESTADO=FALHA DE SENSOR");
-  } else {
+  if (temperaturaValida) {
     Serial.print(t, 1);
-    Serial.print(" C | ESTADO=");
-    if (t >= 40.0 || bruto >= 750) {
-      Serial.print("ALARME");
-    } else if (t >= 30.0 || bruto >= 400) {
-      Serial.print("ATENCAO");
-    } else {
-      Serial.print("NORMAL");
-    }
+    Serial.print(" C");
+  } else {
+    Serial.print("INVALIDA");
   }
 
-  Serial.println();
+  Serial.print(" | ESTADO=");
+  Serial.println(classificar(bruto, t, temperaturaValida));
+
   delay(1000);
 }

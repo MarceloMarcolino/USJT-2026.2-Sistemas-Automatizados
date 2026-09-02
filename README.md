@@ -43,8 +43,13 @@ Estação de monitoramento simulada no Wokwi, com Arduino Uno: uma entrada
 digital, uma analógica e uma medição de temperatura, classificadas em NORMAL,
 ATENÇÃO, ALARME ou FALHA DE SENSOR e publicadas no Monitor Serial.
 
-- [Acessar a entrega da TP02](atividades/TP02-sensores/) — **em andamento**
+- [Acessar a entrega da TP02](atividades/TP02-sensores/) — **completa**
 
-Circuito e programa completos e verificados; a bateria de testes integrados
-ainda não foi executada. O registro caso a caso está em
-[`testes/casos-de-teste.md`](atividades/TP02-sensores/testes/casos-de-teste.md).
+Parte obrigatória e exercícios adicionais (função de classificação com
+prioridade, histerese do alarme térmico e seleção industrial) validados:
+**57/57 execuções aprovadas**, cobrindo 40 casos distintos; 17 casos foram
+repetidos na regressão da bateria obrigatória sobre o firmware final. O
+registro está em
+[`testes/casos-de-teste.md`](atividades/TP02-sensores/testes/casos-de-teste.md)
+e os mosaicos de evidência em
+[`evidencias/`](atividades/TP02-sensores/evidencias/).

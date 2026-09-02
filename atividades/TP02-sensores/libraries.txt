@@ -1,4 +1,10 @@
 # Wokwi Library List
 # See https://docs.wokwi.com/guides/libraries
+#
+# Dependências instaladas na validação (nome e versão):
+#   DHT sensor library 1.4.7 (Adafruit) — dependência direta
+#   Adafruit Unified Sensor 1.1.15 — dependência declarada pela biblioteca DHT
+# O sketch inclui DHT.h diretamente e não usa a interface DHT_U.h.
 
-DHT sensor library
+DHT sensor library@1.4.7
+Adafruit Unified Sensor@1.1.15
