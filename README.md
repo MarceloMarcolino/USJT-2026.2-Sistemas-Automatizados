@@ -53,3 +53,20 @@ registro está em
 [`testes/casos-de-teste.md`](atividades/TP02-sensores/testes/casos-de-teste.md)
 e os mosaicos de evidência em
 [`evidencias/`](atividades/TP02-sensores/evidencias/).
+
+### TP03 — Sinais Analógicos e Digitais
+
+Aquisição documentada com Arduino Uno: botão em D2, potenciômetro em A0,
+escalonamento de 0–1023 para 0–100 %, grandeza de engenharia de 0–100 °C,
+classificação NORMAL/ATENCAO/PERIGO/FALHA e LED de perigo em D8.
+
+- [Acessar a entrega da TP03](atividades/TP03-sinais/) — **completa**
+- [Projeto público no Wokwi](https://wokwi.com/projects/474526759232547841)
+- [Planilha com fórmulas e gráfico](atividades/TP03-sinais/planilha-tp03.xlsx)
+
+Parte obrigatória e três adicionais (média móvel de cinco amostras, cálculo
+inverso e diagnóstico 4–20 mA) validados em **44/44 casos**. O registro
+detalhado está em
+[`testes/casos-de-teste.md`](atividades/TP03-sinais/testes/casos-de-teste.md)
+e as evidências em
+[`evidencias/`](atividades/TP03-sinais/evidencias/).
