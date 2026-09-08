@@ -1,7 +1,7 @@
 # TP03 — Sinais analógicos e digitais
 
 **Autor:** Marcelo Antonio Pereira Marcolino — USJT — ESO1AN-MCE3<br>
-**Estado:** pacote técnico concluído; validação local 44/44; link do Google Planilhas pendente<br>
+**Estado:** completo — validação local 44/44; Wokwi e planilha publicados<br>
 **Data da validação:** 7 de setembro de 2026
 
 ## Links e artefatos
@@ -9,7 +9,7 @@
 - [Projeto público no Wokwi](https://wokwi.com/projects/474557584187065345)
 - [Planilha em formato Excel](planilha-tp03.xlsx), com fórmulas, tabelas e
   gráfico preservados, pronta para importação no Google Planilhas
-- Google Planilhas: link compartilhável pendente de inclusão
+- [Planilha no Google Planilhas](https://docs.google.com/spreadsheets/d/16w3p_f5MQBg-DLSTNbvDAoJ_X1VzGSah5y_wFk_xl0U/edit) — acesso por link, somente leitura
 - [Registro dos 44 casos de teste](testes/casos-de-teste.md)
 - [Captura do circuito no Wokwi](evidencias/circuito-wokwi.png)
 - [Gráfico e painel da planilha](evidencias/planilha-grafico.png)
