@@ -182,13 +182,75 @@ O gráfico de tendência usa a amostra no eixo horizontal e `tempC` (°C) no eix
 vertical. A série atravessa as faixas NORMAL, ATENCAO e PERIGO, permitindo
 visualizar as mudanças de estado nos limites de 70 °C e 85 °C.
 
-A média móvel usa uma janela de cinco amostras. No ensaio M1–M11, um pico
-isolado em M6 afeta exatamente cinco saídas (M6–M10) e deixa a janela em M11,
-demonstrando tanto a suavização quanto o atraso do filtro.
+As três últimas abas — `Media_Movel`, `Calculo_Inverso` e `Diagnostico_4_20` —
+correspondem aos exercícios adicionais, detalhados na seção seguinte.
 
-O cálculo inverso confirma os pontos 0, 25, 50, 75 e 100 °C nas escalas
-4–20 mA e 0–10 V. O diagnóstico elétrico classifica 3,2 mA e 20,8 mA como
-FALHA e mantém 4–20 mA como faixa válida de processo.
+## Exercícios adicionais
+
+### Adicional 1 — filtragem por média móvel
+
+Implementado em `adicionais/media-movel/`, num sketch separado para não alterar
+o CSV obrigatório. A classe `MediaMovel5` guarda cinco valores num vetor
+circular, mantém a soma incremental e divide pela quantidade realmente
+preenchida, o que evita que os zeros iniciais puxem as primeiras médias para
+baixo. O CSV publica `bruto` e `filtrado` lado a lado, permitindo a comparação
+direta. O ensaio M1–M11 injeta um pico isolado em M6 (620 entre leituras
+próximas de 500) e é verificado em 11/11 pelo harness e pela aba `Media_Movel`.
+
+**O atraso introduzido.** Cada saída é a média das cinco leituras mais
+recentes — um valor construído com o passado. Diante de uma mudança real do
+processo, a janela ainda carrega amostras antigas e só reflete inteiramente o
+novo patamar após cinco ciclos: a 500 ms por amostra, 2,5 s. O deslocamento
+médio da resposta corresponde a (N−1)/2 = 2 amostras, cerca de 1 s. O pico de
+M6 evidencia o mesmo mecanismo por outro ângulo: ele é atenuado porque entra
+dividido por cinco, e persiste até M10 porque permanece na janela por cinco
+ciclos. Suavização e atraso são, portanto, o mesmo efeito visto de dois lados —
+ampliar a janela rejeita mais ruído e responde mais devagar; encurtá-la devolve
+rapidez junto com o ruído. Num alarme de processo a escolha é explícita: uma
+janela longa demais adia a detecção de uma excursão verdadeira.
+
+### Adicional 2 — cálculo inverso
+
+Na aba `Calculo_Inverso`, a temperatura desejada é a entrada e os sinais
+industriais são calculados a partir dela: `mA = 4 + 16 × tempC/100` e
+`V = 10 × tempC/100`. As colunas `tempC via mA` e `tempC via V` aplicam o
+cálculo direto de volta sobre os valores obtidos e devem recuperar a
+temperatura original; a coluna `Situação` marca CONFORME apenas quando as duas
+reconversões batem com a entrada dentro de 10⁻⁴. Os cinco pontos pedidos —
+0, 25, 50, 75 e 100 °C — resultam em 4, 8, 12, 16 e 20 mA e em 0; 2,5; 5; 7,5 e
+10 V, todos conferidos (I1–I5, 5/5). Como as células guardam a fórmula
+completa, a volta é exata: eventuais diferenças seriam apenas de arredondamento
+de exibição.
+
+### Adicional 3 — diagnóstico elétrico
+
+Na aba `Diagnostico_4_20`, a coluna `corrente_teste` recebe 3,2; 4; 12; 15,2;
+17,6; 20 e 20,8 mA. O limite elétrico de falha é a própria faixa do laço:
+abaixo de 4 mA ou acima de 20 mA o sinal é declarado `FALHA ELETRICA`. G1 e G7
+são os casos deliberadamente fora da faixa, um de cada lado.
+
+**Por que não limitar antes de diagnosticar.** O percentual é calculado sem
+saturação, e por isso 3,2 mA produz −5 % e 20,8 mA produz 105 %. Se a planilha
+truncasse o resultado para 0–100 % antes do diagnóstico, 3,2 mA viraria 0 %,
+indistinguível de um processo legitimamente no fundo de escala, e 20,8 mA
+viraria 100 %, um alarme de perigo com a causa errada. Nos dois casos o número
+continuaria parecendo uma medição, quando o que existe é um laço rompido ou um
+transmissor em saturação. O valor fora de faixa é justamente a informação de
+diagnóstico; limitá-lo a destrói.
+
+**Por que a falha tem prioridade.** A ordem é falha elétrica → perigo →
+atenção → normal. Uma corrente fora de 4–20 mA não sustenta afirmação alguma
+sobre a variável de processo, então classificar o processo antes seria traduzir
+um defeito de instrumentação em um estado de planta. O caso mais perigoso é o
+inferior: sem o diagnóstico, um laço rompido — corrente próxima de zero — seria
+reportado como NORMAL, o estado que menos convida à ação. É a mesma prioridade
+adotada no firmware, onde `pct < 0 || pct > 100` decide antes dos limites de
+85 % e 70 %, e a mesma razão pela qual 4 mA é o *zero vivo*: existir corrente no
+zero da escala é o que permite distinguir o zero válido do cabo interrompido.
+
+**O que este ensaio não valida** está registrado em
+[Limitações](#limitações): a corrente e a tensão são equivalências calculadas,
+não sinais fisicamente gerados pelo circuito.
 
 ## Conclusão
 
