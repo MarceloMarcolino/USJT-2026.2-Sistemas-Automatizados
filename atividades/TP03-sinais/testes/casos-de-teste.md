@@ -10,6 +10,20 @@ com uma camada mínima da API Arduino. Isso não equivale à execução do
 binário AVR nem à simulação elétrica do Wokwi. Os três sketches também
 foram compilados separadamente para `arduino:avr:uno`.
 
+<!-- inicio:observacoes-wokwi -->
+**Execução no simulador.** Em 8 de setembro de 2026 o firmware obrigatório
+foi executado no Wokwi. Foram preservados 29 registros selecionados, cobrindo
+os nove códigos do grupo Q com os mesmos valores de CSV desta tabela. O LED
+foi observado apagado em 716, 717 e 869; aceso em 870 e 1023, inclusive com
+o botão pressionado em 870. O registro está em
+[`../evidencias/monitor-serial-wokwi.txt`](../evidencias/monitor-serial-wokwi.txt).
+Essa execução é independente do harness — mesma especificação como
+esperado, mas o obtido vem do binário AVR simulado.
+O caso A2 (`botao=1; bruto=0`) e as observações do LED em Q1, Q2, Q3 e Q6
+continuam sem registro nesta evidência on-line; a aprovação local permanece
+identificada por sua fonte nas tabelas abaixo.
+<!-- fim:observacoes-wokwi -->
+
 ## Método
 
 | Grupos | Fonte do valor obtido |
@@ -22,7 +36,7 @@ foram compilados separadamente para `arduino:avr:uno`.
 
 ## Proveniência
 
-- Execução UTC: `2026-09-08T02:16:24.801942+00:00`
+- Execução UTC: `2026-09-08T23:15:27.893930+00:00`
 - `sketch.ino` SHA-256: `ac4b7aeb87e7aac2057f2fe70027b0e91ca2d8538d844e0815658d71c391b074`
 - `classificacao.h` SHA-256: `4aae4070b2c0fc4cc02ba1b75cd798a5ed44ccc415dcf1ec3dd9a6fc66296801`
 - `media_movel5.h` SHA-256: `16482c624a26139f7bbd97404a441fe3a345e30a1c046d4ce6913eb00ffcb3ee`

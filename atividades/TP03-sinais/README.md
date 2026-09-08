@@ -1,8 +1,8 @@
 # TP03 — Sinais analógicos e digitais
 
 **Autor:** Marcelo Antonio Pereira Marcolino — USJT — ESO1AN-MCE3<br>
-**Estado:** completo — validação local 44/44; Wokwi e planilha publicados<br>
-**Data da validação:** 7 de setembro de 2026
+**Estado:** 44/44 na validação local; nove pontos Q confirmados no CSV do simulador<br>
+**Data da validação:** 7 de setembro de 2026; execução no Wokwi em 8 de setembro de 2026
 
 ## Links e artefatos
 
@@ -11,6 +11,8 @@
   gráfico preservados, pronta para importação no Google Planilhas
 - [Planilha no Google Planilhas](https://docs.google.com/spreadsheets/d/16w3p_f5MQBg-DLSTNbvDAoJ_X1VzGSah5y_wFk_xl0U/edit) — acesso por link, somente leitura
 - [Registro dos 44 casos de teste](testes/casos-de-teste.md)
+- [Monitor Serial da execução no Wokwi](evidencias/monitor-serial-wokwi.txt) e
+  [captura da simulação em andamento](evidencias/execucao-wokwi.png)
 - [Captura do circuito no Wokwi](evidencias/circuito-wokwi.png)
 - [Gráfico e painel da planilha](evidencias/planilha-grafico.png)
 - [Evidência A/B/Q](evidencias/testes-a-b-q.png),
@@ -21,9 +23,12 @@ O projeto do Wokwi está salvo na conta do autor, onde aparece em "Your
 Projects". Sua estrutura foi auditada:
 `sketch.ino` e `classificacao.h` são idênticos aos arquivos desta pasta; o
 `diagram.json` contém os mesmos seis componentes, onze ligações, resistor de
-220 Ω e nenhuma biblioteca externa. Quatro tentativas de compilação on-line
-terminaram com `Build Servers Busy`; portanto, não se declara aqui execução no
-simulador nem observação do Monitor Serial.
+220 Ω e nenhuma biblioteca externa. Em 8 de setembro de 2026 o projeto compilou
+e **foi executado no simulador**. Foram preservados 29 registros selecionados
+da sessão, cobrindo os nove códigos Q e o acionamento do botão. Os recortes
+estão em [`evidencias/monitor-serial-wokwi.txt`](evidencias/monitor-serial-wokwi.txt)
+e a captura da tela em execução, com o LED aceso, em
+[`evidencias/execucao-wokwi.png`](evidencias/execucao-wokwi.png).
 
 ## Objetivo
 
@@ -156,9 +161,43 @@ canônica; as onze ligações contra o mapa aprovado; e o resistor de 220 Ω.
 
 O firmware obrigatório, o teste isolado da classificação e o sketch adicional
 também foram compilados nesta auditoria para `arduino:avr:uno`. Os artefatos
-gerados foram conferidos como ELF AVR e Intel HEX válidos. Isso comprova a
-compilação, mas os 44 casos são uma execução nativa no computador e cálculos do
-Excel — não uma execução do binário AVR nem uma simulação elétrica no Wokwi.
+gerados foram conferidos como ELF AVR e Intel HEX válidos. Os 44 casos acima são
+uma execução nativa no computador e cálculos do Excel; a execução do binário AVR
+no simulador é registrada à parte, na seção seguinte.
+
+### Execução no simulador Wokwi
+
+Em 8 de setembro de 2026 o projeto compilou sem erro e a simulação rodou.
+O potenciômetro foi levado a cada código de teste operando o próprio componente,
+e o botão foi pressionado e solto nele. Os 29 registros preservados são recortes
+organizados por caso, e não o log integral da sessão. Eles confirmam os nove
+códigos da tabela Q no Monitor Serial. As observações do LED registradas no
+componente abrangem 716, 717, 869, 870 e 1023, além do botão pressionado em 870.
+O LED não é um campo do CSV; a tabela distingue as observações disponíveis:
+
+| Caso | bruto | pct e tempC | estado | LED | Amostra |
+|---|---:|---:|---|---|---:|
+| Q1 | 0 | 0,00 | NORMAL | não registrado | 0 |
+| Q2 | 256 | 25,02 | NORMAL | não registrado | 885 |
+| Q3 | 512 | 50,05 | NORMAL | não registrado | 197 |
+| Q4 | 716 | 69,99 | NORMAL | apagado | 339 |
+| Q5 | 717 | 70,09 | **ATENCAO** | apagado | 356 |
+| Q6 | 768 | 75,07 | ATENCAO | não registrado | 758 |
+| Q7 | 869 | 84,95 | ATENCAO | apagado | 391 |
+| Q8 | 870 | 85,04 | **PERIGO** | **aceso** | 416 |
+| Q9 | 1023 | 100,00 | PERIGO | aceso | 640 |
+
+As duas transições apareceram nos códigos previstos, em amostras consecutivas:
+716 → 717 muda de NORMAL para ATENCAO, e 869 → 870 muda de ATENCAO para PERIGO
+acendendo o LED. Com o botão pressionado em 870, a saída passou a
+`581,1,870,85.04,85.04,PERIGO`: apenas a coluna `botao` mudou, confirmando que
+ele não participa da classificação nem comanda a saída. Nos campos do CSV,
+os nove pontos conferem com os resultados locais — 9/9 concordantes.
+
+O caso A2 (`botao=1; bruto=0`) foi aprovado na validação nativa, mas não aparece
+nestes recortes do simulador. O acionamento preservado ocorreu com `bruto=870`.
+A evidência on-line de A2 e as observações do LED marcadas como não registradas
+na tabela permanecem fora da cobertura documentada desta sessão.
 
 As evidências visuais estão em `evidencias/`; os resultados completos, com
 entrada, esperado, obtido e situação, estão em
@@ -263,11 +302,11 @@ tendência.
 
 ## Limitações
 
-O Wokwi foi auditado estruturalmente, mas sua execução on-line não foi
-confirmada devido à indisponibilidade da fila de compilação. O harness nativo e
-a planilha validam lógica, escalonamento, quantização, transições e
-documentação. Eles não comprovam tolerância real do resistor, ruído
-eletromagnético, isolamento, aterramento, corrente física de um laço 4–20 mA,
-precisão metrológica, linearidade de um sensor real, atraso de hardware ou
-segurança funcional. A corrente e a tensão industriais são cálculos
-equivalentes, não sinais fisicamente gerados pelo circuito do Arduino.
+A simulação no Wokwi confirma o comportamento do binário AVR no circuito
+modelado; o harness nativo e a planilha validam lógica, escalonamento,
+quantização, transições e documentação. Nenhum dos três comprova tolerância
+real do resistor, ruído eletromagnético, isolamento, aterramento, corrente
+física de um laço 4–20 mA, precisão metrológica, linearidade de um sensor real,
+atraso de hardware ou segurança funcional. O Wokwi é um modelo do circuito, não
+o circuito: a corrente e a tensão industriais continuam sendo cálculos
+equivalentes, não sinais fisicamente gerados por um Arduino.

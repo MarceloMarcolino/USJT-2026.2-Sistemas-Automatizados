@@ -1,0 +1,71 @@
+Execução no simulador Wokwi — TP03
+Projeto: https://wokwi.com/projects/474557584187065345
+Data: 8 de setembro de 2026
+Placa: Arduino Uno   Serial: 9600 baud   Ciclo: 500 ms
+
+Recortes da sessão: foram preservados 29 registros CSV, com índices entre 0 e
+886, organizados por caso. Este arquivo não contém o log integral da execução
+nem permite determinar sua quantidade total de amostras.
+O potenciômetro foi levado a cada código com o mouse e com as setas do teclado
+sobre o próprio controle; o botão foi pressionado e solto no componente.
+Abaixo, a janela de linhas em torno de cada caso da tabela Q, copiada do
+Monitor Serial.
+
+amostra,botao,bruto,pct,tempC,estado
+
+--- Q1: bruto 0 (início da execução) ---
+0,0,0,0.00,0.00,NORMAL
+1,0,0,0.00,0.00,NORMAL
+
+--- Q2: bruto 256 ---
+884,0,200,19.55,19.55,NORMAL
+885,0,256,25.02,25.02,NORMAL
+886,0,256,25.02,25.02,NORMAL
+
+--- Q3: bruto 512 ---
+196,0,0,0.00,0.00,NORMAL
+197,0,512,50.05,50.05,NORMAL
+198,0,512,50.05,50.05,NORMAL
+
+--- Q4: bruto 716, último código NORMAL ---
+338,0,696,68.04,68.04,NORMAL
+339,0,716,69.99,69.99,NORMAL
+340,0,716,69.99,69.99,NORMAL
+
+--- Q5: bruto 717, transição NORMAL -> ATENCAO ---
+355,0,716,69.99,69.99,NORMAL
+356,0,717,70.09,70.09,ATENCAO
+357,0,717,70.09,70.09,ATENCAO
+
+--- Q6: bruto 768 ---
+757,0,854,83.48,83.48,ATENCAO
+758,0,768,75.07,75.07,ATENCAO
+759,0,768,75.07,75.07,ATENCAO
+
+--- Q7: bruto 869, último código ATENCAO (LED apagado) ---
+390,0,817,79.86,79.86,ATENCAO
+391,0,869,84.95,84.95,ATENCAO
+392,0,869,84.95,84.95,ATENCAO
+
+--- Q8: bruto 870, transição ATENCAO -> PERIGO (LED acende) ---
+415,0,869,84.95,84.95,ATENCAO
+416,0,870,85.04,85.04,PERIGO
+417,0,870,85.04,85.04,PERIGO
+
+--- Q9: bruto 1023, fundo de escala ---
+639,0,870,85.04,85.04,PERIGO
+640,0,1023,100.00,100.00,PERIGO
+641,0,1023,100.00,100.00,PERIGO
+
+--- Botão pressionado na faixa PERIGO ---
+580,0,870,85.04,85.04,PERIGO
+581,1,870,85.04,85.04,PERIGO
+582,1,870,85.04,85.04,PERIGO
+
+O botão altera somente a coluna `botao`. O estado permanece PERIGO e o LED
+permanece aceso, confirmando que ele não participa da classificação.
+
+Estado do LED lido do componente no instante de cada amostra:
+  bruto 716 -> apagado    bruto 717 -> apagado
+  bruto 869 -> apagado    bruto 870 -> ACESO
+  bruto 1023 -> ACESO     botão pressionado em 870 -> ACESO
