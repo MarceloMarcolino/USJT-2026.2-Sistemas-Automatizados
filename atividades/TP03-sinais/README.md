@@ -6,7 +6,7 @@
 
 ## Links e artefatos
 
-- [Projeto público no Wokwi](https://wokwi.com/projects/474526759232547841)
+- [Projeto público no Wokwi](https://wokwi.com/projects/474557584187065345)
 - [Planilha em formato Excel](planilha-tp03.xlsx), com fórmulas, tabelas e
   gráfico preservados, pronta para importação no Google Planilhas
 - Google Planilhas: link compartilhável pendente de inclusão
@@ -17,7 +17,8 @@
   [média móvel](evidencias/media-movel.png) e
   [cálculo inverso/diagnóstico](evidencias/inverso-diagnostico.png)
 
-O projeto do Wokwi está salvo na conta do autor. Sua estrutura foi auditada:
+O projeto do Wokwi está salvo na conta do autor, onde aparece em "Your
+Projects". Sua estrutura foi auditada:
 `sketch.ino` e `classificacao.h` são idênticos aos arquivos desta pasta; o
 `diagram.json` contém os mesmos seis componentes, onze ligações, resistor de
 220 Ω e nenhuma biblioteca externa. Quatro tentativas de compilação on-line
@@ -91,7 +92,7 @@ impressos com duas casas decimais.
 
 ## Como reproduzir
 
-1. Abra o [projeto público no Wokwi](https://wokwi.com/projects/474526759232547841).
+1. Abra o [projeto público no Wokwi](https://wokwi.com/projects/474557584187065345).
 2. Inicie a simulação e abra o Monitor Serial em 9600 baud.
 3. Gire o potenciômetro e observe `bruto`, `pct`, `tempC`, `estado` e o LED.
 4. Teste valores próximos das transições: 716/717 para NORMAL→ATENCAO e
