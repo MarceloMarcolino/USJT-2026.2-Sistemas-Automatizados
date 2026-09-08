@@ -1,15 +1,15 @@
 # TP03 — Sinais analógicos e digitais
 
 **Autor:** Marcelo Antonio Pereira Marcolino — USJT — ESO1AN-MCE3<br>
-**Estado:** completo e validado<br>
+**Estado:** pacote técnico concluído; validação local 44/44; link do Google Planilhas pendente<br>
 **Data da validação:** 7 de setembro de 2026
 
 ## Links e artefatos
 
 - [Projeto público no Wokwi](https://wokwi.com/projects/474526759232547841)
-- [Planilha compartilhável em formato Excel](planilha-tp03.xlsx), com
-  fórmulas, tabelas e gráfico preservados; o arquivo pode ser importado
-  diretamente no Google Planilhas
+- [Planilha em formato Excel](planilha-tp03.xlsx), com fórmulas, tabelas e
+  gráfico preservados, pronta para importação no Google Planilhas
+- Google Planilhas: link compartilhável pendente de inclusão
 - [Registro dos 44 casos de teste](testes/casos-de-teste.md)
 - [Captura do circuito no Wokwi](evidencias/circuito-wokwi.png)
 - [Gráfico e painel da planilha](evidencias/planilha-grafico.png)
@@ -17,8 +17,12 @@
   [média móvel](evidencias/media-movel.png) e
   [cálculo inverso/diagnóstico](evidencias/inverso-diagnostico.png)
 
-O projeto do Wokwi, o código e o `diagram.json` desta pasta representam a mesma
-montagem. O endereço público foi verificado por acesso HTTP sem autenticação.
+O projeto do Wokwi está salvo na conta do autor. Sua estrutura foi auditada:
+`sketch.ino` e `classificacao.h` são idênticos aos arquivos desta pasta; o
+`diagram.json` contém os mesmos seis componentes, onze ligações, resistor de
+220 Ω e nenhuma biblioteca externa. Quatro tentativas de compilação on-line
+terminaram com `Build Servers Busy`; portanto, não se declara aqui execução no
+simulador nem observação do Monitor Serial.
 
 ## Objetivo
 
@@ -98,31 +102,46 @@ impressos com duas casas decimais.
 7. Consulte [testes/casos-de-teste.md](testes/casos-de-teste.md) para repetir
    entradas, valores esperados e critérios de aprovação.
 
-Para compilar localmente, abra `sketch.ino`, `classificacao.h` e `diagram.json`
-no mesmo projeto Arduino/Wokwi. Nenhuma biblioteca externa é necessária; veja
-`libraries.txt`.
+No Wokwi, mantenha `sketch.ino`, `classificacao.h` e `diagram.json` no mesmo
+projeto. Na compilação Arduino local, bastam o sketch e o cabeçalho. Nenhuma
+biblioteca externa é necessária; veja `libraries.txt`.
 
 ## Validação
 
-Foram aprovados **44 de 44 casos distintos**:
+Foram aprovadas **44 de 44 verificações locais controladas**. O valor
+**esperado** vem das tabelas literais da especificação. O valor **obtido** vem
+do artefato entregue indicado em cada grupo — código C++ executado no
+computador ou fórmulas do XLSX recalculadas no Microsoft Excel — e não de uma
+segunda função Python que repetisse a mesma regra.
 
-| Grupo | Cobertura | Resultado |
-|---|---|---:|
-| A1–A4 | aquisição do botão e do ADC | 4/4 |
-| B1–B8 | limites percentuais e FALHA injetada | 8/8 |
-| Q1–Q9 | quantização, escalonamento, estado e LED | 9/9 |
-| M1–M11 | média móvel de cinco amostras | 11/11 |
-| I1–I5 | cálculo inverso | 5/5 |
-| G1–G7 | diagnóstico elétrico 4–20 mA | 7/7 |
-| **Total** |  | **44/44** |
+| Grupo | Cobertura | Origem do valor obtido | Resultado |
+|---|---|---|---:|
+| A1–A4 | cadeia do sketch para botão/ADC, CSV, contador e LED | `sketch.ino` via harness nativo | 4/4 |
+| B1–B8 | limites percentuais e FALHA injetada | `classificacao.h` via harness + Excel | 8/8 |
+| Q1–Q9 | quantização, escalonamento, estado e LED | `sketch.ino` via harness + Excel | 9/9 |
+| M1–M11 | média móvel de cinco amostras | sketch adicional + `media_movel5.h` via harness | 11/11 |
+| I1–I5 | cálculo inverso | fórmulas recalculadas no Excel | 5/5 |
+| G1–G7 | diagnóstico elétrico 4–20 mA | fórmulas recalculadas no Excel | 7/7 |
+| **Total** |  |  | **44/44** |
+
+O harness inclui diretamente os fontes entregues e oferece apenas a camada
+mínima da API Arduino necessária no computador. A e Q executam `setup()` e
+`loop()` do `sketch.ino`; M executa `setup()` e `loop()` do sketch adicional.
+Também são conferidos contador de amostras, cabeçalho CSV, período de 500 ms e
+LED. Um ensaio complementar pressiona o botão na faixa PERIGO e confirma que
+ele altera somente o campo `botao`, não o estado nem o LED. B e Q são ainda
+confirmados pela planilha, por caminho independente: 8/8 e 9/9 concordantes.
+
+Antes da medição, a verificação estrutural confere o cabeçalho CSV exato, os
+pinos e a regra do LED no sketch; a ausência do DHT22 na lógica obrigatória; a
+identidade byte a byte das quatro cópias de `classificacao.h` com a fonte
+canônica; as onze ligações contra o mapa aprovado; e o resistor de 220 Ω.
 
 O firmware obrigatório, o teste isolado da classificação e o sketch adicional
-da média móvel foram compilados para `arduino:avr:uno`. A execução automatizada
-registrou data/hora UTC e hashes SHA-256 no resultado canônico. O sketch
-entregue tem SHA-256
-`ac4b7aeb87e7aac2057f2fe70027b0e91ca2d8538d844e0815658d71c391b074`.
-O arquivo da planilha tem SHA-256
-`01233dd98d58887dcc9caea27db429212892859bfe3dd221c243b0777a74bfe6`.
+também foram compilados nesta auditoria para `arduino:avr:uno`. Os artefatos
+gerados foram conferidos como ELF AVR e Intel HEX válidos. Isso comprova a
+compilação, mas os 44 casos são uma execução nativa no computador e cálculos do
+Excel — não uma execução do binário AVR nem uma simulação elétrica no Wokwi.
 
 As evidências visuais estão em `evidencias/`; os resultados completos, com
 entrada, esperado, obtido e situação, estão em
@@ -133,6 +152,14 @@ entrada, esperado, obtido e situação, estão em
 A pasta de trabalho contém abas de instruções, parâmetros, tabela de E/S,
 dados brutos, análise, testes B/Q, média móvel, cálculo inverso e diagnóstico
 4–20 mA. As grandezas derivadas e os estados são calculados por fórmula.
+
+**Sobre as quinze amostras da aba `Dados_Brutos`.** São **códigos de ADC
+escolhidos** para cobrir a faixa inteira e, principalmente, as duas transições
+de estado — 716/717 e 869/870 — além de uma subida e uma descida que produzem
+a tendência do gráfico. **Não são capturas do Monitor Serial.** A coluna
+`Origem` registra `código escolhido`; o uso de casos controlados é deliberado,
+pois valores casuais do potenciômetro dificilmente cairiam nos códigos exatos
+onde a classificação muda.
 
 O gráfico de tendência usa a amostra no eixo horizontal e `tempC` (°C) no eixo
 vertical. A série atravessa as faixas NORMAL, ATENCAO e PERIGO, permitindo
@@ -157,7 +184,9 @@ tendência.
 
 ## Limitações
 
-O Wokwi e a planilha validam lógica, escalonamento, quantização, transições e
+O Wokwi foi auditado estruturalmente, mas sua execução on-line não foi
+confirmada devido à indisponibilidade da fila de compilação. O harness nativo e
+a planilha validam lógica, escalonamento, quantização, transições e
 documentação. Eles não comprovam tolerância real do resistor, ruído
 eletromagnético, isolamento, aterramento, corrente física de um laço 4–20 mA,
 precisão metrológica, linearidade de um sensor real, atraso de hardware ou
