@@ -34,6 +34,22 @@ LED vermelho sinaliza exclusivamente **PERIGO**. A planilha refaz os cálculos
 por fórmula, apresenta a tendência e documenta os adicionais de filtragem,
 cálculo inverso e diagnóstico de um sinal 4–20 mA.
 
+## Classificação dos sinais
+
+Etapa 1 da prática: para cada elemento, a direção, a natureza e o papel.
+
+| Elemento | Direção | Natureza | Papel |
+|---|---|---|---|
+| Pushbutton em D2 | Entrada | Discreta | comando/estado |
+| Potenciômetro em A0 | Entrada | Analógica convertida pelo ADC | variável simulada |
+| DHT22 em D4 | Entrada | Digital codificada | temperatura/umidade; herdado da Semana 2 e fora da lógica do TP03 |
+| LED em D8 | Saída | Discreta | sinalização |
+| Percentual calculado | Interno | Numérico | variável derivada |
+
+O percentual **não é uma entrada física**: ele é produzido pelo software a
+partir da leitura bruta do ADC. Essa distinção é o que separa, na tabela de E/S
+abaixo, os endereços de hardware das variáveis mantidas em memória.
+
 ## Circuito e tabela de E/S
 
 | Tag | Pino | Tipo | Faixa/estado | Função |
