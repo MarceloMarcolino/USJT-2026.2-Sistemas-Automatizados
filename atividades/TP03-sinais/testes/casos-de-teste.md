@@ -12,16 +12,23 @@ foram compilados separadamente para `arduino:avr:uno`.
 
 <!-- inicio:observacoes-wokwi -->
 **Execução no simulador.** Em 8 de setembro de 2026 o firmware obrigatório
-foi executado no Wokwi. Foram preservados 29 registros selecionados, cobrindo
-os nove códigos do grupo Q com os mesmos valores de CSV desta tabela. O LED
-foi observado apagado em 716, 717 e 869; aceso em 870 e 1023, inclusive com
-o botão pressionado em 870. O registro está em
+foi executado no Wokwi, em sessão única e contínua de 3251 amostras (0–3250).
+O log integral está em
+[`../evidencias/monitor-serial-wokwi-integral.csv`](../evidencias/monitor-serial-wokwi-integral.csv),
+SHA-256 `799f67d4ebad643e7da2d13a8c8be34fd4cb695df2488a1d5103bf95b14261e5`,
+calculado no navegador sobre o buffer do Monitor Serial (texto com terminações
+LF, fixadas por `.gitattributes`) e conferido contra o arquivo gravado; os recortes por caso estão em
 [`../evidencias/monitor-serial-wokwi.txt`](../evidencias/monitor-serial-wokwi.txt).
-Essa execução é independente do harness — mesma especificação como
-esperado, mas o obtido vem do binário AVR simulado.
-O caso A2 (`botao=1; bruto=0`) e as observações do LED em Q1, Q2, Q3 e Q6
-continuam sem registro nesta evidência on-line; a aprovação local permanece
-identificada por sua fonte nas tabelas abaixo.
+Os nove casos do grupo Q, o caso A2 (`botao=1; bruto=0`, amostra 3005) e, por
+coincidência de linhas, A1, A3 e A4 (amostras 0, 197 e 640) foram reproduzidos
+ali com os mesmos valores de CSV desta tabela. O LED foi lido no componente nos
+dez pontos — por `value` na primeira varredura (Q4, Q5, Q7, Q8) e por
+`brightness` na segunda (Q1–Q3, Q6, Q9, A2), esta validada por controle
+positivo (≈ 1,0 em PERIGO) e negativo (0 em NORMAL/ATENCAO): apagado em Q1–Q7
+e em A2, aceso em Q8, Q9 e com o botão pressionado em 870. Essas leituras são
+registro do observador, sem arquivo próprio; o que fica em artefato são o CSV
+integral e as fotografias do LED apagado (768) e aceso (1023). Essa execução é independente do harness — mesma
+especificação como esperado, mas o obtido vem do binário AVR simulado.
 <!-- fim:observacoes-wokwi -->
 
 ## Método

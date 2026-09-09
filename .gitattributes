@@ -1,0 +1,2 @@
+# Evidencias com hash documentado: manter terminacoes LF em qualquer plataforma.
+*.csv text eol=lf

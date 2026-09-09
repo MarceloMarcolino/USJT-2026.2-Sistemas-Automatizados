@@ -1,8 +1,8 @@
 # TP03 — Sinais analógicos e digitais
 
 **Autor:** Marcelo Antonio Pereira Marcolino — USJT — ESO1AN-MCE3<br>
-**Estado:** 44/44 na validação local; nove pontos Q confirmados no CSV do simulador<br>
-**Data da validação:** 7 de setembro de 2026; execução no Wokwi em 8 de setembro de 2026
+**Estado:** completo — 44/44 na validação local; A1–A4, Q1–Q9 e o LED confirmados no simulador<br>
+**Data da validação:** 7 de setembro de 2026 (rerodada em 8 de setembro); execução no Wokwi em 8 de setembro de 2026
 
 ## Links e artefatos
 
@@ -11,8 +11,11 @@
   gráfico preservados, pronta para importação no Google Planilhas
 - [Planilha no Google Planilhas](https://docs.google.com/spreadsheets/d/16w3p_f5MQBg-DLSTNbvDAoJ_X1VzGSah5y_wFk_xl0U/edit) — acesso por link, somente leitura
 - [Registro dos 44 casos de teste](testes/casos-de-teste.md)
-- [Monitor Serial da execução no Wokwi](evidencias/monitor-serial-wokwi.txt) e
-  [captura da simulação em andamento](evidencias/execucao-wokwi.png)
+- [Log integral do Monitor Serial no Wokwi](evidencias/monitor-serial-wokwi-integral.csv),
+  [recortes por caso](evidencias/monitor-serial-wokwi.txt),
+  [captura da simulação em andamento](evidencias/execucao-wokwi.png) e o LED
+  [apagado em ATENCAO](evidencias/led-apagado-atencao.png) /
+  [aceso em PERIGO](evidencias/led-aceso-perigo.png)
 - [Captura do circuito no Wokwi](evidencias/circuito-wokwi.png)
 - [Gráfico e painel da planilha](evidencias/planilha-grafico.png)
 - [Evidência A/B/Q](evidencias/testes-a-b-q.png),
@@ -24,9 +27,12 @@ Projects". Sua estrutura foi auditada:
 `sketch.ino` e `classificacao.h` são idênticos aos arquivos desta pasta; o
 `diagram.json` contém os mesmos seis componentes, onze ligações, resistor de
 220 Ω e nenhuma biblioteca externa. Em 8 de setembro de 2026 o projeto compilou
-e **foi executado no simulador**. Foram preservados 29 registros selecionados
-da sessão, cobrindo os nove códigos Q e o acionamento do botão. Os recortes
-estão em [`evidencias/monitor-serial-wokwi.txt`](evidencias/monitor-serial-wokwi.txt)
+e **foi executado no simulador**, em sessão única e contínua de 3251 amostras
+(0–3250). O log integral do Monitor Serial está em
+[`evidencias/monitor-serial-wokwi-integral.csv`](evidencias/monitor-serial-wokwi-integral.csv)
+— SHA-256 `799f67d4ebad643e…` sobre o texto com terminações LF, calculado no
+navegador a partir do buffer e conferido contra o arquivo gravado —, os recortes por caso em
+[`evidencias/monitor-serial-wokwi.txt`](evidencias/monitor-serial-wokwi.txt)
 e a captura da tela em execução, com o LED aceso, em
 [`evidencias/execucao-wokwi.png`](evidencias/execucao-wokwi.png).
 
@@ -167,37 +173,49 @@ no simulador é registrada à parte, na seção seguinte.
 
 ### Execução no simulador Wokwi
 
-Em 8 de setembro de 2026 o projeto compilou sem erro e a simulação rodou.
-O potenciômetro foi levado a cada código de teste operando o próprio componente,
-e o botão foi pressionado e solto nele. Os 29 registros preservados são recortes
-organizados por caso, e não o log integral da sessão. Eles confirmam os nove
-códigos da tabela Q no Monitor Serial. As observações do LED registradas no
-componente abrangem 716, 717, 869, 870 e 1023, além do botão pressionado em 870.
-O LED não é um campo do CSV; a tabela distingue as observações disponíveis:
+Em 8 de setembro de 2026 o projeto compilou sem erro e a simulação rodou em
+sessão única e contínua — amostras 0 a 3250, sem reinício. O log integral foi
+preservado em `evidencias/monitor-serial-wokwi-integral.csv` (95.594 bytes),
+com SHA-256 `799f67d4ebad643e7da2d13a8c8be34fd4cb695df2488a1d5103bf95b14261e5`
+calculado dentro do navegador sobre o buffer do Monitor Serial e conferido
+contra o arquivo gravado (texto UTF-8 com terminações LF; o repositório fixa
+`eol=lf` para `.csv` em `.gitattributes`, de modo que o hash se reproduz em
+qualquer plataforma). O potenciômetro foi levado a cada código operando o
+próprio componente (mouse e setas do teclado sobre o controle), e o botão foi
+pressionado e solto nele. O LED não é um campo do CSV: foi lido no componente
+no instante de cada amostra — `value` na primeira varredura e `brightness`
+(0 ou ≈1) na segunda, esta validada por controle positivo em PERIGO e
+negativo em NORMAL/ATENCAO — e fotografado nos dois estados. Essas leituras
+não constam de arquivo: são registro do observador no instante de cada amostra,
+e os recortes do LED não carregam o número da amostra. O que os artefatos
+comprovam é que, nas amostras citadas, o CSV traz exatamente o bruto e o estado
+declarados, e que as imagens mostram o LED apagado (768, amostra 3142) e aceso
+(1023, amostra 3191); a captura de tela inteira cobre 870 com o cronômetro e o
+Monitor Serial visíveis.
 
-| Caso | bruto | pct e tempC | estado | LED | Amostra |
-|---|---:|---:|---|---|---:|
-| Q1 | 0 | 0,00 | NORMAL | não registrado | 0 |
-| Q2 | 256 | 25,02 | NORMAL | não registrado | 885 |
-| Q3 | 512 | 50,05 | NORMAL | não registrado | 197 |
-| Q4 | 716 | 69,99 | NORMAL | apagado | 339 |
-| Q5 | 717 | 70,09 | **ATENCAO** | apagado | 356 |
-| Q6 | 768 | 75,07 | ATENCAO | não registrado | 758 |
-| Q7 | 869 | 84,95 | ATENCAO | apagado | 391 |
-| Q8 | 870 | 85,04 | **PERIGO** | **aceso** | 416 |
-| Q9 | 1023 | 100,00 | PERIGO | aceso | 640 |
+| Caso | bruto | pct e tempC | estado | LED no componente | Amostra CSV | Amostra do LED |
+|---|---:|---:|---|---|---:|---:|
+| Q1 | 0 | 0,00 | NORMAL | apagado (0) | 0 | 3002 |
+| Q2 | 256 | 25,02 | NORMAL | apagado (0) | 885 | 3097 |
+| Q3 | 512 | 50,05 | NORMAL | apagado (0) | 197 | 3101 |
+| Q4 | 716 | 69,99 | NORMAL | apagado | 339 | 339 |
+| Q5 | 717 | 70,09 | **ATENCAO** | apagado | 356 | 356 |
+| Q6 | 768 | 75,07 | ATENCAO | apagado (0) | 758 | 3105 |
+| Q7 | 869 | 84,95 | ATENCAO | apagado | 391 | 391 |
+| Q8 | 870 | 85,04 | **PERIGO** | **aceso** | 416 | 416 |
+| Q9 | 1023 | 100,00 | PERIGO | aceso (≈1,0) | 640 | 3191 |
+| A2 | 0, botão pressionado | 0,00 | NORMAL | apagado (0) | 3005 | 3005 |
 
 As duas transições apareceram nos códigos previstos, em amostras consecutivas:
 716 → 717 muda de NORMAL para ATENCAO, e 869 → 870 muda de ATENCAO para PERIGO
-acendendo o LED. Com o botão pressionado em 870, a saída passou a
-`581,1,870,85.04,85.04,PERIGO`: apenas a coluna `botao` mudou, confirmando que
-ele não participa da classificação nem comanda a saída. Nos campos do CSV,
-os nove pontos conferem com os resultados locais — 9/9 concordantes.
-
-O caso A2 (`botao=1; bruto=0`) foi aprovado na validação nativa, mas não aparece
-nestes recortes do simulador. O acionamento preservado ocorreu com `bruto=870`.
-A evidência on-line de A2 e as observações do LED marcadas como não registradas
-na tabela permanecem fora da cobertura documentada desta sessão.
+acendendo o LED. O botão foi exercitado nas duas pontas: em A2
+(`3005,1,0,0.00,0.00,NORMAL`) e em PERIGO (`581,1,870,85.04,85.04,PERIGO`).
+Nos dois casos apenas a coluna `botao` mudou — estado e LED permaneceram —,
+confirmando que ele não participa da classificação nem comanda a saída. Nos
+campos do CSV, os nove pontos Q e o A2 conferem com os resultados locais:
+10/10 concordantes. A1, A3 e A4 (botão liberado em 0, 512 e 1023) coincidem
+com as linhas de Q1, Q3 e Q9 — amostras 0, 197 e 640 —, de modo que o critério
+da especificação, A1–A4 e Q1–Q9 reproduzidos no simulador, fica atendido.
 
 As evidências visuais estão em `evidencias/`; os resultados completos, com
 entrada, esperado, obtido e situação, estão em

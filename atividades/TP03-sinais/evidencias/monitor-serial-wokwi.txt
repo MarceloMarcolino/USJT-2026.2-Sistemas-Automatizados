@@ -3,41 +3,57 @@ Projeto: https://wokwi.com/projects/474557584187065345
 Data: 8 de setembro de 2026
 Placa: Arduino Uno   Serial: 9600 baud   Ciclo: 500 ms
 
-Recortes da sessão: foram preservados 29 registros CSV, com índices entre 0 e
-886, organizados por caso. Este arquivo não contém o log integral da execução
-nem permite determinar sua quantidade total de amostras.
+Sessão única e contínua, sem reinício: amostras 0 a 3250 (3251 linhas de CSV).
+O log integral está em `monitor-serial-wokwi-integral.csv`, 95.594 bytes,
+SHA-256 799f67d4ebad643e7da2d13a8c8be34fd4cb695df2488a1d5103bf95b14261e5.
+Esse hash foi calculado dentro do navegador sobre o buffer do Monitor Serial e
+conferido contra o arquivo gravado: idênticos byte a byte. O texto é UTF-8 com
+terminações LF; para reproduzir o hash, preserve-as (o repositório fixa
+`eol=lf` para `.csv`).
+
 O potenciômetro foi levado a cada código com o mouse e com as setas do teclado
-sobre o próprio controle; o botão foi pressionado e solto no componente.
-Abaixo, a janela de linhas em torno de cada caso da tabela Q, copiada do
-Monitor Serial.
+sobre o próprio controle; o botão foi pressionado e solto no componente. O LED
+foi lido no componente no instante de cada amostra (`value` na primeira
+varredura; `brightness`, 0 ou ≈1, na segunda — validado por controle positivo
+em PERIGO e negativo em NORMAL/ATENCAO). Essas leituras são registro do
+observador e não constam de arquivo; os recortes do LED não carregam o número
+da amostra. Abaixo, a janela de linhas em torno de cada caso, copiada do log
+integral.
 
 amostra,botao,bruto,pct,tempC,estado
 
---- Q1: bruto 0 (início da execução) ---
+--- Q1: bruto 0 (início da execução; LED apagado, brightness 0 na amostra 3002) ---
 0,0,0,0.00,0.00,NORMAL
 1,0,0,0.00,0.00,NORMAL
 
---- Q2: bruto 256 ---
+--- A2: botão pressionado com bruto 0 (LED apagado, brightness 0) ---
+3002,0,0,0.00,0.00,NORMAL
+3003,1,0,0.00,0.00,NORMAL
+3004,1,0,0.00,0.00,NORMAL
+3005,1,0,0.00,0.00,NORMAL
+3006,0,0,0.00,0.00,NORMAL
+
+--- Q2: bruto 256 (LED apagado, brightness 0 na amostra 3097) ---
 884,0,200,19.55,19.55,NORMAL
 885,0,256,25.02,25.02,NORMAL
 886,0,256,25.02,25.02,NORMAL
 
---- Q3: bruto 512 ---
+--- Q3: bruto 512 (LED apagado, brightness 0 na amostra 3101) ---
 196,0,0,0.00,0.00,NORMAL
 197,0,512,50.05,50.05,NORMAL
 198,0,512,50.05,50.05,NORMAL
 
---- Q4: bruto 716, último código NORMAL ---
+--- Q4: bruto 716, último código NORMAL (LED apagado) ---
 338,0,696,68.04,68.04,NORMAL
 339,0,716,69.99,69.99,NORMAL
 340,0,716,69.99,69.99,NORMAL
 
---- Q5: bruto 717, transição NORMAL -> ATENCAO ---
+--- Q5: bruto 717, transição NORMAL -> ATENCAO (LED apagado) ---
 355,0,716,69.99,69.99,NORMAL
 356,0,717,70.09,70.09,ATENCAO
 357,0,717,70.09,70.09,ATENCAO
 
---- Q6: bruto 768 ---
+--- Q6: bruto 768 (LED apagado, brightness 0 na amostra 3105) ---
 757,0,854,83.48,83.48,ATENCAO
 758,0,768,75.07,75.07,ATENCAO
 759,0,768,75.07,75.07,ATENCAO
@@ -52,20 +68,19 @@ amostra,botao,bruto,pct,tempC,estado
 416,0,870,85.04,85.04,PERIGO
 417,0,870,85.04,85.04,PERIGO
 
---- Q9: bruto 1023, fundo de escala ---
+--- Q9: bruto 1023, fundo de escala (LED aceso; brightness ≈1,0 na amostra 3191) ---
 639,0,870,85.04,85.04,PERIGO
 640,0,1023,100.00,100.00,PERIGO
 641,0,1023,100.00,100.00,PERIGO
 
---- Botão pressionado na faixa PERIGO ---
+--- Botão pressionado na faixa PERIGO (LED permanece aceso) ---
 580,0,870,85.04,85.04,PERIGO
 581,1,870,85.04,85.04,PERIGO
 582,1,870,85.04,85.04,PERIGO
 
-O botão altera somente a coluna `botao`. O estado permanece PERIGO e o LED
-permanece aceso, confirmando que ele não participa da classificação.
+Em A2 e em 870, o botão altera somente a coluna `botao`: estado e LED não
+mudam, confirmando que ele não participa da classificação nem comanda a saída.
 
-Estado do LED lido do componente no instante de cada amostra:
-  bruto 716 -> apagado    bruto 717 -> apagado
-  bruto 869 -> apagado    bruto 870 -> ACESO
-  bruto 1023 -> ACESO     botão pressionado em 870 -> ACESO
+Imagens: `led-apagado-atencao.png` (amostra 3142, bruto 768) e
+`led-aceso-perigo.png` (amostra 3191, bruto 1023), recortes do componente;
+`execucao-wokwi.png`, tela inteira com a simulação a 100% e o LED aceso em 870.
