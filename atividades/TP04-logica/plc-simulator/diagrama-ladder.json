@@ -1,0 +1,940 @@
+{
+  "branches": {
+    "br_alarme": {
+      "rungs": [
+        "r2_t",
+        "r2_p"
+      ],
+      "input": false,
+      "out": false
+    },
+    "br_xor": {
+      "rungs": [
+        "r6_a",
+        "r6_b"
+      ],
+      "input": false,
+      "out": false
+    }
+  },
+  "elements": {
+    "r1_s": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_S"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r1_g": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_G"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r1_e": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_E"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r1_m": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_M"
+          }
+        ]
+      },
+      "type": "OTE"
+    },
+    "r2_t_xic": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_T"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r2_p_xic": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_P"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r2_mnt": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_MNT"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r2_al": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_AL"
+          }
+        ]
+      },
+      "type": "OTE"
+    },
+    "r3_ca": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_CA"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r3_mb": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_MB"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r3_e": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_E"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r3_ma": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_MA"
+          }
+        ]
+      },
+      "type": "OTE"
+    },
+    "r4_cb": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_CB"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r4_ma": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_MA"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r4_e": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_E"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r4_mb": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_MB"
+          }
+        ]
+      },
+      "type": "OTE"
+    },
+    "r5_e": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_E"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r5_ale": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_AL_E"
+          }
+        ]
+      },
+      "type": "OTE"
+    },
+    "r6_a": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_SENS_A"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r6_nb": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_SENS_B"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r6_na": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_SENS_A"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r6_b": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_SENS_B"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r6_dx": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_D_XOR"
+          }
+        ]
+      },
+      "type": "OTE"
+    },
+    "r7_d": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_D_DEM"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r7_g": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_G"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r7_f": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_F"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r7_e": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_E"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r7_v": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_V"
+          }
+        ]
+      },
+      "type": "OTE"
+    },
+    "r8_ca": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_CA"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r8_e": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_E"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r8_ma": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_MA_ARB"
+          }
+        ]
+      },
+      "type": "OTE"
+    },
+    "r9_cb": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_CB"
+          }
+        ]
+      },
+      "type": "XIC"
+    },
+    "r9_ca": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_CA"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r9_e": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_E"
+          }
+        ]
+      },
+      "type": "XIO"
+    },
+    "r9_mb": {
+      "configured": true,
+      "out": false,
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "var_MB_ARB"
+          }
+        ]
+      },
+      "type": "OTE"
+    }
+  },
+  "runglist": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5",
+    "r6",
+    "r7",
+    "r8",
+    "r9"
+  ],
+  "rungs": {
+    "r1": {
+      "comment": "R1 — Partida: M = S · G · ¬E",
+      "elements": [
+        "r1_s",
+        "r1_g",
+        "r1_e",
+        "r1_m"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r2_t": {
+      "comment": "",
+      "elements": [
+        "r2_t_xic"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r2_p": {
+      "comment": "",
+      "elements": [
+        "r2_p_xic"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r2": {
+      "comment": "R2 — Alarme: AL = (T + P) · ¬MNT",
+      "elements": [
+        "br_alarme",
+        "r2_mnt",
+        "r2_al"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r3": {
+      "comment": "R3 — Intertravamento A: MA = CA · ¬MB · ¬E",
+      "elements": [
+        "r3_ca",
+        "r3_mb",
+        "r3_e",
+        "r3_ma"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r4": {
+      "comment": "R4 — Intertravamento B: MB = CB · ¬MA · ¬E",
+      "elements": [
+        "r4_cb",
+        "r4_ma",
+        "r4_e",
+        "r4_mb"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r5": {
+      "comment": "R5 — Alarme de emergência: AL_E = E",
+      "elements": [
+        "r5_e",
+        "r5_ale"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r6_a": {
+      "comment": "",
+      "elements": [
+        "r6_a",
+        "r6_nb"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r6_b": {
+      "comment": "",
+      "elements": [
+        "r6_na",
+        "r6_b"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r6": {
+      "comment": "R6 — Divergência: D_XOR = (A·¬B) + (¬A·B)",
+      "elements": [
+        "br_xor",
+        "r6_dx"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r7": {
+      "comment": "R7 — Ventilação segura: V = D_DEM · G · ¬F · ¬E",
+      "elements": [
+        "r7_d",
+        "r7_g",
+        "r7_f",
+        "r7_e",
+        "r7_v"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r8": {
+      "comment": "R8 — Arbitragem A prioritário: MA_ARB = CA · ¬E",
+      "elements": [
+        "r8_ca",
+        "r8_e",
+        "r8_ma"
+      ],
+      "input": false,
+      "out": false
+    },
+    "r9": {
+      "comment": "R9 — Arbitragem A prioritário: MB_ARB = CB · ¬CA · ¬E",
+      "elements": [
+        "r9_cb",
+        "r9_ca",
+        "r9_e",
+        "r9_mb"
+      ],
+      "input": false,
+      "out": false
+    }
+  },
+  "variables": {
+    "var_S": {
+      "name": "S",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r1_s"
+      ],
+      "subVars": {}
+    },
+    "var_G": {
+      "name": "G",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r1_g",
+        "r7_g"
+      ],
+      "subVars": {}
+    },
+    "var_E": {
+      "name": "E",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r1_e",
+        "r3_e",
+        "r4_e",
+        "r5_e",
+        "r7_e",
+        "r8_e",
+        "r9_e"
+      ],
+      "subVars": {}
+    },
+    "var_M": {
+      "name": "M",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r1_m"
+      ],
+      "subVars": {}
+    },
+    "var_T": {
+      "name": "T",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r2_t_xic"
+      ],
+      "subVars": {}
+    },
+    "var_P": {
+      "name": "P",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r2_p_xic"
+      ],
+      "subVars": {}
+    },
+    "var_MNT": {
+      "name": "MNT",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r2_mnt"
+      ],
+      "subVars": {}
+    },
+    "var_AL": {
+      "name": "AL",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r2_al"
+      ],
+      "subVars": {}
+    },
+    "var_CA": {
+      "name": "CA",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r3_ca",
+        "r8_ca",
+        "r9_ca"
+      ],
+      "subVars": {}
+    },
+    "var_CB": {
+      "name": "CB",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r4_cb",
+        "r9_cb"
+      ],
+      "subVars": {}
+    },
+    "var_MA": {
+      "name": "MA",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r3_ma",
+        "r4_ma"
+      ],
+      "subVars": {}
+    },
+    "var_MB": {
+      "name": "MB",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r3_mb",
+        "r4_mb"
+      ],
+      "subVars": {}
+    },
+    "var_AL_E": {
+      "name": "AL_E",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r5_ale"
+      ],
+      "subVars": {}
+    },
+    "var_SENS_A": {
+      "name": "SENS_A",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r6_a",
+        "r6_na"
+      ],
+      "subVars": {}
+    },
+    "var_SENS_B": {
+      "name": "SENS_B",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r6_nb",
+        "r6_b"
+      ],
+      "subVars": {}
+    },
+    "var_D_XOR": {
+      "name": "D_XOR",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r6_dx"
+      ],
+      "subVars": {}
+    },
+    "var_D_DEM": {
+      "name": "D_DEM",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r7_d"
+      ],
+      "subVars": {}
+    },
+    "var_F": {
+      "name": "F",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r7_f"
+      ],
+      "subVars": {}
+    },
+    "var_V": {
+      "name": "V",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r7_v"
+      ],
+      "subVars": {}
+    },
+    "var_MA_ARB": {
+      "name": "MA_ARB",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r8_ma"
+      ],
+      "subVars": {}
+    },
+    "var_MB_ARB": {
+      "name": "MB_ARB",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "r9_mb"
+      ],
+      "subVars": {}
+    }
+  }
+}

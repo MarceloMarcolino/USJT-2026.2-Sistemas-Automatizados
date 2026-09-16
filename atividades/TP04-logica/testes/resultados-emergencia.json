@@ -1,0 +1,1445 @@
+{
+  "dateUtc": "2026-09-16T16:24:17.916Z",
+  "method": "Arquivos importados nas plataformas; saídas lidas dos motores nativos. Sequências sem reinicialização entre amostras.",
+  "sha256": {
+    "circuitverse": "eed64a8e3454db149cf6af1e884e7b2d2bbf134930d0a9ba09bc5e594933c036",
+    "ladder": "556e1ed6016fb5a9b37973964870f2cf0f7e1189ca2713be806d657597a7db76",
+    "runner": "83e93635bfad0b120a219facccf8553806b1edcc26b29f8fd70dbaa5de2f216f"
+  },
+  "total": 72,
+  "approved": 72,
+  "tests": [
+    {
+      "id": "VE-0000",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 0,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-0000",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 0,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-0001",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 0,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-0001",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 0,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-0010",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 0,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-0010",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 0,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-0011",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 0,
+        "F": 1,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-0011",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 0,
+        "F": 1,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-0100",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-0100",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-0101",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 1,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-0101",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 1,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-0110",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 1,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-0110",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 1,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-0111",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 1,
+        "F": 1,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-0111",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 0,
+        "G": 1,
+        "F": 1,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-1000",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 0,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-1000",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 0,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-1001",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 0,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-1001",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 0,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-1010",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 0,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-1010",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 0,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-1011",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 0,
+        "F": 1,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-1011",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 0,
+        "F": 1,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-1100",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 1
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-1100",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-1101",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-1101",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-1110",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-1110",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "VE-1111",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 1,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "VE-1111",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 1,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "RE-000",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "RE-000",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "RE-001",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "RE-001",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "RE-010",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 1
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "RE-010",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "RE-011",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "RE-011",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "RE-100",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 1,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "RE-100",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 1,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "RE-101",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "RE-101",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "RE-110",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 1,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "RE-110",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 1,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "RE-111",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "RE-111",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": null,
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "V-EM1",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": "V-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 1
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "V-EM1",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": "V-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "V-EM2",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": "V-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "V-EM2",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 1
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": "V-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "V-EM3",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": "V-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 1
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "V-EM3",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": "V-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "V-F1",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": "V-falha",
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 1
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "V-F1",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": "V-falha",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "V-F2",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": "V-falha",
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "V-F2",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 1,
+        "E": 0
+      },
+      "expected": {
+        "V": 0
+      },
+      "sequence": "V-falha",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "V-F3",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": "V-falha",
+      "platform": "CircuitVerse",
+      "got": {
+        "V": 1
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "V-F3",
+      "group": "ventilacao",
+      "inputs": {
+        "D": 1,
+        "G": 1,
+        "F": 0,
+        "E": 0
+      },
+      "expected": {
+        "V": 1
+      },
+      "sequence": "V-falha",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "V": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "R-A-EM1",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0
+      },
+      "sequence": "R-A-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 1,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "R-A-EM1",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0
+      },
+      "sequence": "R-A-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 1,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "R-A-EM2",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": "R-A-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "R-A-EM2",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": "R-A-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "R-A-EM3",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0
+      },
+      "sequence": "R-A-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 1,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "R-A-EM3",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0
+      },
+      "sequence": "R-A-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 1,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "R-B-EM1",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1
+      },
+      "sequence": "R-B-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 1
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "R-B-EM1",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1
+      },
+      "sequence": "R-B-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "R-B-EM2",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": "R-B-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "R-B-EM2",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0
+      },
+      "sequence": "R-B-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "R-B-EM3",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1
+      },
+      "sequence": "R-B-emergencia",
+      "platform": "CircuitVerse",
+      "got": {
+        "MA": 0,
+        "MB": 1
+      },
+      "stable": true,
+      "ok": true
+    },
+    {
+      "id": "R-B-EM3",
+      "group": "arbitragem",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1
+      },
+      "sequence": "R-B-emergencia",
+      "platform": "PLC Simulator Online",
+      "got": {
+        "MA": 0,
+        "MB": 1
+      },
+      "ok": true
+    }
+  ]
+}

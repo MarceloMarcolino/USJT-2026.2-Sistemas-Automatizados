@@ -70,3 +70,22 @@ detalhado está em
 [`testes/casos-de-teste.md`](atividades/TP03-sinais/testes/casos-de-teste.md)
 e as evidências em
 [`evidencias/`](atividades/TP03-sinais/evidencias/).
+
+### TP04 — Sistemas Discretos e Lógica Combinacional
+
+Partida condicionada `M = S·G·¬E` implementada e validada no CircuitVerse e
+no PLC Simulator Online, com alarme condicionado, intertravamento,
+emergência prioritária e três adicionais (divergência por XOR, ventilação
+permissiva e arbitragem determinística com prioridade A).
+
+- [Acessar a entrega da TP04](atividades/TP04-logica/) — **completa**
+- [Projeto público no CircuitVerse](https://circuitverse.org/users/458921/projects/2032603)
+- [Ladder público no PLC Simulator Online](https://app.plcsimulator.online/HBFJRsCQV3LNX1uKhUm8)
+
+Parte obrigatória e três adicionais validados em **238/238 observações**
+nas duas plataformas (166 na bateria de integração, com um scan por
+amostra, e 72 na bateria de emergência dos adicionais), com verificação
+independente dos arquivos exportados. O registro detalhado está em
+[`testes/casos-de-teste.md`](atividades/TP04-logica/testes/casos-de-teste.md)
+e as evidências em
+[`evidencias/`](atividades/TP04-logica/evidencias/).

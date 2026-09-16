@@ -1,0 +1,4499 @@
+{
+  "dateUtc": "2026-09-16T16:34:58.669Z",
+  "method": "Um scan por amostra; CircuitVerse com MB_ANT explícito e Ladder CYCLE_SCAN pausado. Sequências carregam o estado obtido no passo anterior.",
+  "sha256": {
+    "circuitverse": "eed64a8e3454db149cf6af1e884e7b2d2bbf134930d0a9ba09bc5e594933c036",
+    "ladder": "556e1ed6016fb5a9b37973964870f2cf0f7e1189ca2713be806d657597a7db76",
+    "sources": {
+      "testa_integracao.mjs": "b6f4741e9939ad64ebd538512c64ceabdb56173570ce405d07ccebd652835e6e",
+      "cv_importa.mjs": "a465a3b52d05622cd3576e3247cedfe61c04272a8f47b940ce3c7f5d341ee430",
+      "cdp.mjs": "3b0ddf29f840359482f4dce157b26f5525728b16f776352385eb14d4ea28a161"
+    }
+  },
+  "total": 166,
+  "approved": 166,
+  "tests": [
+    {
+      "id": "P01",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 0,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P01",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 0,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P02",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 0,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P02",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 0,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P03",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P03",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P04",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 1,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P04",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 1,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P05",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 0,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P05",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 0,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P06",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 0,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P06",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 0,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P07",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 1
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "P07",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 1
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "P08",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "P08",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A01",
+      "group": "alarme",
+      "inputs": {
+        "T": 0,
+        "P": 0,
+        "MNT": 0
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A01",
+      "group": "alarme",
+      "inputs": {
+        "T": 0,
+        "P": 0,
+        "MNT": 0
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A02",
+      "group": "alarme",
+      "inputs": {
+        "T": 0,
+        "P": 1,
+        "MNT": 0
+      },
+      "expected": {
+        "AL": 1
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "A02",
+      "group": "alarme",
+      "inputs": {
+        "T": 0,
+        "P": 1,
+        "MNT": 0
+      },
+      "expected": {
+        "AL": 1
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "A03",
+      "group": "alarme",
+      "inputs": {
+        "T": 1,
+        "P": 0,
+        "MNT": 0
+      },
+      "expected": {
+        "AL": 1
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "A03",
+      "group": "alarme",
+      "inputs": {
+        "T": 1,
+        "P": 0,
+        "MNT": 0
+      },
+      "expected": {
+        "AL": 1
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "A04",
+      "group": "alarme",
+      "inputs": {
+        "T": 1,
+        "P": 1,
+        "MNT": 0
+      },
+      "expected": {
+        "AL": 1
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "A04",
+      "group": "alarme",
+      "inputs": {
+        "T": 1,
+        "P": 1,
+        "MNT": 0
+      },
+      "expected": {
+        "AL": 1
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "A05",
+      "group": "alarme",
+      "inputs": {
+        "T": 0,
+        "P": 0,
+        "MNT": 1
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A05",
+      "group": "alarme",
+      "inputs": {
+        "T": 0,
+        "P": 0,
+        "MNT": 1
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A06",
+      "group": "alarme",
+      "inputs": {
+        "T": 0,
+        "P": 1,
+        "MNT": 1
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A06",
+      "group": "alarme",
+      "inputs": {
+        "T": 0,
+        "P": 1,
+        "MNT": 1
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A07",
+      "group": "alarme",
+      "inputs": {
+        "T": 1,
+        "P": 0,
+        "MNT": 1
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A07",
+      "group": "alarme",
+      "inputs": {
+        "T": 1,
+        "P": 0,
+        "MNT": 1
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A08",
+      "group": "alarme",
+      "inputs": {
+        "T": 1,
+        "P": 1,
+        "MNT": 1
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "A08",
+      "group": "alarme",
+      "inputs": {
+        "T": 1,
+        "P": 1,
+        "MNT": 1
+      },
+      "expected": {
+        "AL": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "AL": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "X01",
+      "group": "xor",
+      "inputs": {
+        "SENS_A": 0,
+        "SENS_B": 0
+      },
+      "expected": {
+        "D_XOR": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "D_XOR": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "X01",
+      "group": "xor",
+      "inputs": {
+        "SENS_A": 0,
+        "SENS_B": 0
+      },
+      "expected": {
+        "D_XOR": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "D_XOR": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "X02",
+      "group": "xor",
+      "inputs": {
+        "SENS_A": 0,
+        "SENS_B": 1
+      },
+      "expected": {
+        "D_XOR": 1
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "D_XOR": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "X02",
+      "group": "xor",
+      "inputs": {
+        "SENS_A": 0,
+        "SENS_B": 1
+      },
+      "expected": {
+        "D_XOR": 1
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "D_XOR": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "X03",
+      "group": "xor",
+      "inputs": {
+        "SENS_A": 1,
+        "SENS_B": 0
+      },
+      "expected": {
+        "D_XOR": 1
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "D_XOR": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "X03",
+      "group": "xor",
+      "inputs": {
+        "SENS_A": 1,
+        "SENS_B": 0
+      },
+      "expected": {
+        "D_XOR": 1
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "D_XOR": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "X04",
+      "group": "xor",
+      "inputs": {
+        "SENS_A": 1,
+        "SENS_B": 1
+      },
+      "expected": {
+        "D_XOR": 0
+      },
+      "reset": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "D_XOR": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "X04",
+      "group": "xor",
+      "inputs": {
+        "SENS_A": 1,
+        "SENS_B": 1
+      },
+      "expected": {
+        "D_XOR": 0
+      },
+      "reset": true,
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "D_XOR": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-AND-00",
+      "group": "portas",
+      "inputs": {
+        "A": 0,
+        "B": 0
+      },
+      "expected": {
+        "Y_AND": 0
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_AND": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-AND-01",
+      "group": "portas",
+      "inputs": {
+        "A": 0,
+        "B": 1
+      },
+      "expected": {
+        "Y_AND": 0
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_AND": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-AND-10",
+      "group": "portas",
+      "inputs": {
+        "A": 1,
+        "B": 0
+      },
+      "expected": {
+        "Y_AND": 0
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_AND": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-AND-11",
+      "group": "portas",
+      "inputs": {
+        "A": 1,
+        "B": 1
+      },
+      "expected": {
+        "Y_AND": 1
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_AND": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-OR-00",
+      "group": "portas",
+      "inputs": {
+        "A": 0,
+        "B": 0
+      },
+      "expected": {
+        "Y_OR": 0
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_OR": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-OR-01",
+      "group": "portas",
+      "inputs": {
+        "A": 0,
+        "B": 1
+      },
+      "expected": {
+        "Y_OR": 1
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_OR": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-OR-10",
+      "group": "portas",
+      "inputs": {
+        "A": 1,
+        "B": 0
+      },
+      "expected": {
+        "Y_OR": 1
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_OR": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-OR-11",
+      "group": "portas",
+      "inputs": {
+        "A": 1,
+        "B": 1
+      },
+      "expected": {
+        "Y_OR": 1
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_OR": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-NOT-0",
+      "group": "portas",
+      "inputs": {
+        "A": 0,
+        "B": 0
+      },
+      "expected": {
+        "Y_NOT": 1
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_NOT": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "PB-NOT-1",
+      "group": "portas",
+      "inputs": {
+        "A": 1,
+        "B": 0
+      },
+      "expected": {
+        "Y_NOT": 0
+      },
+      "reset": true,
+      "cvOnly": true,
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "Y_NOT": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-000-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-000-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-000-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-000-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-000-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-000-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-000-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-000-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-001-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-001-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-001-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-001-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-001-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-001-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-001-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-001-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-010-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-010-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-010-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-010-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-010-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-010-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-010-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-010-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-011-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-011-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-011-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-011-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-011-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-011-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-011-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-011-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-100-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-100-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-100-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-100-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-100-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-100-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-100-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-100-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-101-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-101-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-101-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-101-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-101-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-101-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-101-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-101-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-110-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-110-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-110-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-110-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-110-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-110-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-110-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-110-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-111-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-111-00",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-111-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-111-01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-111-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-111-10",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-111-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "IS-111-11",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 1
+      },
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "I01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "note": "",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "note": "",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I02",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "note": "",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I02",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "note": "",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I03",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "note": "",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I03",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "note": "",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I04",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "note": "Segue as equações sem retenção; diverge da permanência indicada na Tabela 11.",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I04",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 1,
+        "MB": 0
+      },
+      "note": "Segue as equações sem retenção; diverge da permanência indicada na Tabela 11.",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I05",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "note": "Segue as equações sem retenção; diverge da permanência indicada na Tabela 11.",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I05",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "note": "Segue as equações sem retenção; diverge da permanência indicada na Tabela 11.",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I06",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "note": "",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I06",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 0
+      },
+      "note": "",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I05-primeiro-scan",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "sequence": "I05",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I05-primeiro-scan",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "initial": {
+        "MA": 0,
+        "MB": 1
+      },
+      "sequence": "I05",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I05-segundo-scan",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": false,
+      "sequence": "I05",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "I05-segundo-scan",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": false,
+      "sequence": "I05",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "E01-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "sequence": "E01",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "E01-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "sequence": "E01",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "E01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": false,
+      "sequence": "E01",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E01",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": false,
+      "sequence": "E01",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E02-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "sequence": "E02",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "E02-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "sequence": "E02",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "E02",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": false,
+      "sequence": "E02",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E02",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": false,
+      "sequence": "E02",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E03-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "sequence": "E03",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "E03-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "reset": true,
+      "sequence": "E03",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 1,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "E03",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": false,
+      "sequence": "E03",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E03",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": false,
+      "sequence": "E03",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 1
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E04-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "sequence": "E04-E05",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E04-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": true,
+      "sequence": "E04-E05",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E04",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": false,
+      "sequence": "E04-E05",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E04",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 1
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "reset": false,
+      "sequence": "E04-E05",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "E05-sem-comandos",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": false,
+      "sequence": "E04-E05",
+      "note": "Comandos liberados. Não prova trava de rearme com comandos mantidos.",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "E05-sem-comandos",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 0,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": false,
+      "sequence": "E04-E05",
+      "note": "Comandos liberados. Não prova trava de rearme com comandos mantidos.",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T01-antes",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "sequence": "T01-T03",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T01-antes",
+      "group": "partida",
+      "inputs": {
+        "S": 0,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": true,
+      "sequence": "T01-T03",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T01",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 1
+      },
+      "reset": false,
+      "sequence": "T01-T03",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "T01",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 1
+      },
+      "reset": false,
+      "sequence": "T01-T03",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "T02",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 0,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": false,
+      "sequence": "T01-T03",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T02",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 0,
+        "E": 0
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": false,
+      "sequence": "T01-T03",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T03-antes",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 1
+      },
+      "reset": false,
+      "sequence": "T01-T03",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "T03-antes",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 0
+      },
+      "expected": {
+        "M": 1
+      },
+      "reset": false,
+      "sequence": "T01-T03",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 1
+      },
+      "ok": true
+    },
+    {
+      "id": "T03",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": false,
+      "sequence": "T01-T03",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T03",
+      "group": "partida",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 1
+      },
+      "expected": {
+        "M": 0
+      },
+      "reset": false,
+      "sequence": "T01-T03",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T04-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "sequence": "T04",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T04-antes",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 0,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": true,
+      "sequence": "T04",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T04",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": false,
+      "sequence": "T04",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T04",
+      "group": "intertravamento",
+      "inputs": {
+        "CA": 1,
+        "CB": 1,
+        "E": 0
+      },
+      "expected": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "reset": false,
+      "sequence": "T04",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T05-antes",
+      "group": "integrado",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 0,
+        "CA": 1,
+        "CB": 1,
+        "D_DEM": 1,
+        "F": 0
+      },
+      "expected": {
+        "M": 1,
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0,
+        "V": 1,
+        "MA_ARB": 1,
+        "MB_ARB": 0
+      },
+      "reset": true,
+      "sequence": "T05",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 1,
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0,
+        "V": 1,
+        "MA_ARB": 1,
+        "MB_ARB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T05-antes",
+      "group": "integrado",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 0,
+        "CA": 1,
+        "CB": 1,
+        "D_DEM": 1,
+        "F": 0
+      },
+      "expected": {
+        "M": 1,
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0,
+        "V": 1,
+        "MA_ARB": 1,
+        "MB_ARB": 0
+      },
+      "reset": true,
+      "sequence": "T05",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 0,
+        "MB": 0
+      },
+      "got": {
+        "M": 1,
+        "MA": 1,
+        "MB": 0,
+        "AL_E": 0,
+        "V": 1,
+        "MA_ARB": 1,
+        "MB_ARB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T05",
+      "group": "integrado",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 1,
+        "CA": 1,
+        "CB": 1,
+        "D_DEM": 1,
+        "F": 0
+      },
+      "expected": {
+        "M": 0,
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1,
+        "V": 0,
+        "MA_ARB": 0,
+        "MB_ARB": 0
+      },
+      "reset": false,
+      "sequence": "T05",
+      "platform": "CircuitVerse",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "M": 0,
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1,
+        "V": 0,
+        "MA_ARB": 0,
+        "MB_ARB": 0
+      },
+      "ok": true
+    },
+    {
+      "id": "T05",
+      "group": "integrado",
+      "inputs": {
+        "S": 1,
+        "G": 1,
+        "E": 1,
+        "CA": 1,
+        "CB": 1,
+        "D_DEM": 1,
+        "F": 0
+      },
+      "expected": {
+        "M": 0,
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1,
+        "V": 0,
+        "MA_ARB": 0,
+        "MB_ARB": 0
+      },
+      "reset": false,
+      "sequence": "T05",
+      "platform": "PLC Simulator Online",
+      "previous": {
+        "MA": 1,
+        "MB": 0
+      },
+      "got": {
+        "M": 0,
+        "MA": 0,
+        "MB": 0,
+        "AL_E": 1,
+        "V": 0,
+        "MA_ARB": 0,
+        "MB_ARB": 0
+      },
+      "ok": true
+    }
+  ]
+}
