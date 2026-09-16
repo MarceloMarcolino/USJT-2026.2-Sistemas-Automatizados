@@ -61,7 +61,7 @@ escalonamento de 0–1023 para 0–100 %, grandeza de engenharia de 0–100 °C,
 classificação NORMAL/ATENCAO/PERIGO/FALHA e LED de perigo em D8.
 
 - [Acessar a entrega da TP03](atividades/TP03-sinais/) — **completa**
-- [Projeto público no Wokwi](https://wokwi.com/projects/474526759232547841)
+- [Projeto público no Wokwi](https://wokwi.com/projects/474557584187065345)
 - [Planilha com fórmulas e gráfico](atividades/TP03-sinais/planilha-tp03.xlsx)
 
 Parte obrigatória e três adicionais (média móvel de cinco amostras, cálculo
