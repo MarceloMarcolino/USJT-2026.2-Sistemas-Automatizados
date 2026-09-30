@@ -89,3 +89,24 @@ independente dos arquivos exportados. O registro detalhado está em
 [`testes/casos-de-teste.md`](atividades/TP04-logica/testes/casos-de-teste.md)
 e as evidências em
 [`evidencias/`](atividades/TP04-logica/evidencias/).
+
+### TP05 — Sistemas Sequenciais e GRAFCET/SFC
+
+GRAFCETs conforme IEC 60848 construídos no diagrams.net: misturador
+(identificação de elementos), semáforo veicular temporizado (exercício
+obrigatório), porta automática com emergência dominante e esteira separadora
+com seleção exclusiva e retorno do desviador confirmado antes de liberar, mais
+o percurso manual com casos normais, de fronteira e de falha.
+
+- [Acessar a entrega da TP05](atividades/TP05-grafcet/) — **completa**
+- [Visualizador público do `.drawio`](https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=grafcet.drawio#Uhttps://raw.githubusercontent.com/MarceloMarcolino/USJT-2026.2-Sistemas-Automatizados/main/atividades/TP05-grafcet/grafcet.drawio)
+- [GRAFCET do exercício obrigatório](atividades/TP05-grafcet/grafcet.png) e
+  [todas as páginas em PDF](atividades/TP05-grafcet/grafcet.pdf)
+
+Parte obrigatória e dois adicionais validados em **77/77 casos** — normal,
+limite e falha, incluindo emergência, sincronização, invariantes e
+exclusividade de seleção enumerada — executando o próprio arquivo `.drawio`
+entregue por um interpretador das regras de evolução da IEC 60848. O registro
+está em [`casos_teste.csv`](atividades/TP05-grafcet/casos_teste.csv) e em
+[`testes/casos-de-teste.md`](atividades/TP05-grafcet/testes/casos-de-teste.md);
+limites e melhorias em [`NOTAS.md`](atividades/TP05-grafcet/NOTAS.md).

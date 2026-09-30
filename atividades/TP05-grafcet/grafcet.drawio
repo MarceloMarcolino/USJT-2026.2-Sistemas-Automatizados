@@ -1,0 +1,1698 @@
+<mxfile host="app.diagrams.net" agent="gera_grafcet.py" modified="2026-09-30T03:40:32Z" version="31.5.3" type="device" pages="5">
+  <diagram name="A23 Misturador" id="pg-A23">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label='&lt;font color="#111827" style="font-size:18px"&gt;&lt;b&gt;TP05 · Atividade 23 — Misturador: identificar elementos&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font style="font-size:11px"&gt;GRAFCET (IEC 60848) — aguardando → enchendo → misturando → drenando; falha por tempo de enchimento excedido. Página 1/5.&lt;/font&gt;' grafcet="rotulo" papel="titulo" id="titulo">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="16" width="760" height="44" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="0" grafcet="etapaInicial" nome="AGUARDANDO" id="s-0">
+          <mxCell style="shape=ext;double=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="280" y="130" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AGUARDANDO" grafcet="rotulo" papel="nome-etapa" id="n-0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="140" y="130" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="1" grafcet="etapa" nome="ENCHENDO" id="s-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="280" y="240" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ENCHENDO" grafcet="rotulo" papel="nome-etapa" id="n-1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="140" y="240" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" grafcet="etapa" nome="MISTURANDO" id="s-2">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="280" y="350" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="MISTURANDO" grafcet="rotulo" papel="nome-etapa" id="n-2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="140" y="350" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" grafcet="etapa" nome="DRENANDO" id="s-3">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="280" y="460" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="DRENANDO" grafcet="rotulo" papel="nome-etapa" id="n-3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="140" y="460" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="4" grafcet="etapa" nome="FALHA" id="s-4">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="560" y="350" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FALHA" grafcet="rotulo" papel="nome-etapa" id="n-4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="510" y="350" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LAMP_PRONTO = 1" grafcet="acao" id="a-0-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="350" y="130" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s0-a01">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="a-0-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="V_ENT = 1" grafcet="acao" id="a-1-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="350" y="240" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s1-a11">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="a-1-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="M_AGIT = 1" grafcet="acao" id="a-2-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="350" y="350" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s2-a21">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="a-2-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="V_DRENO = 1" grafcet="acao" id="a-3-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="350" y="460" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s3-a31">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-3" target="a-3-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ALARME = 1" grafcet="acao" id="a-4-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="630" y="350" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s4-a41">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-4" target="a-4-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="START ∧ NIVEL_BAIXO" grafcet="transicao" id="t-0">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="285" y="203" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T0" grafcet="rotulo" papel="nome-transicao" id="tn-0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="259" y="195" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="NIVEL_ALTO" grafcet="transicao" id="t-1">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="285" y="313" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T1" grafcet="rotulo" papel="nome-transicao" id="tn-1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="259" y="305" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="30 s/X2" grafcet="transicao" id="t-2">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="285" y="423" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T2" grafcet="rotulo" papel="nome-transicao" id="tn-2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="259" y="415" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="NIVEL_BAIXO" grafcet="transicao" id="t-3">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="285" y="533" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T3" grafcet="rotulo" papel="nome-transicao" id="tn-3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="259" y="525" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="¬NIVEL_ALTO ∧ 120 s/X1" grafcet="transicao" id="t-4">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="565" y="313" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T4" grafcet="rotulo" papel="nome-transicao" id="tn-4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="539" y="305" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RESET" grafcet="transicao" id="t-5">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="565" y="423" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T5" grafcet="rotulo" papel="nome-transicao" id="tn-5">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="539" y="415" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s0-t0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="t-0">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t0-s1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-0" target="s-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="300" y="292" />
+                <mxPoint x="580" y="292" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t1-s2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-1" target="s-2">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t4-s4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-4" target="s-4">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s2-t2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="t-2">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t2-s3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-2" target="s-3">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s3-t3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-3" target="t-3">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s4-t5">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-4" target="t-5">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t3-s0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1.5;strokeColor=#000000;jumpStyle=arc;jumpSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-3" target="s-0">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="300" y="570" />
+                <mxPoint x="820" y="570" />
+                <mxPoint x="820" y="100" />
+                <mxPoint x="300" y="100" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t5-s0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1.5;strokeColor=#000000;jumpStyle=arc;jumpSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-5" target="s-0">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="580" y="470" />
+                <mxPoint x="820" y="470" />
+                <mxPoint x="820" y="100" />
+                <mxPoint x="300" y="100" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="&lt;font color=&quot;#111827&quot;&gt;&lt;b&gt;Entradas e saídas&lt;/b&gt;&lt;/font&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;border-collapse:collapse;font-size:10px;color:#111827;margin-top:4px&quot;&gt;&lt;tr&gt;&lt;th align='left'&gt;Tag&lt;/th&gt;&lt;th align='left'&gt;Tipo&lt;/th&gt;&lt;th align='left'&gt;Significado&lt;/th&gt;&lt;th&gt;Seg.&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;START&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;comando de partida&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;NIVEL_BAIXO&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;tanque no nível baixo (vazio)&lt;/td&gt;&lt;td align='center'&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;NIVEL_ALTO&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;tanque no nível alto (cheio)&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;RESET&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;rearme após falha&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;LAMP_PRONTO&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;sinaliza disponível&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;V_ENT&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;válvula de entrada&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;M_AGIT&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;motor do agitador&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;V_DRENO&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;válvula de dreno&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;ALARME&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;alarme de falha&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" grafcet="rotulo" papel="tabela-es" id="tabela-es">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" vertex="1" parent="1">
+            <mxGeometry x="850" y="80" width="290" height="250" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;&lt;b&gt;Temporizações e notação&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;b&gt;30 s/X2&lt;/b&gt; — tempo de mistura. &lt;b&gt;120 s/X1&lt;/b&gt; — limite de enchimento (hipótese de projeto: T4 = ¬NIVEL_ALTO ∧ 120 s/X1 leva à FALHA). Seleção em E1: T1 e T4 são exclusivas por NIVEL_ALTO / ¬NIVEL_ALTO.&lt;br&gt;Notação IEC 60848: ∧ (E), ∨ (OU), ¬ (NÃO). &lt;b&gt;N s/Xk&lt;/b&gt; = etapa k ativa há pelo menos N s (relógio parte da ativação da etapa). Arcos descem sem seta; arcos de retorno levam seta. &lt;b&gt;TAG = 1&lt;/b&gt; liga a saída enquanto a etapa está ativa.' grafcet="rotulo" papel="legenda-tempos" id="legenda-tempos">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" vertex="1" parent="1">
+            <mxGeometry x="850" y="350" width="290" height="200" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="A24 Semaforo" id="pg-A24">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label='&lt;font color="#111827" style="font-size:18px"&gt;&lt;b&gt;TP05 · Atividade 24 — Semáforo veicular (exercício obrigatório)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font style="font-size:11px"&gt;GRAFCET (IEC 60848) — ciclo fechado VERMELHO → VERDE → AMARELO → VERMELHO, sem entradas de processo; ciclo nominal 21 s. Página 2/5.&lt;/font&gt;' grafcet="rotulo" papel="titulo" id="titulo">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="16" width="760" height="44" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="0" grafcet="etapaInicial" nome="VERMELHO" id="s-0">
+          <mxCell style="shape=ext;double=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="280" y="150" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="VERMELHO" grafcet="rotulo" papel="nome-etapa" id="n-0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="140" y="150" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="1" grafcet="etapa" nome="VERDE" id="s-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="280" y="260" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="VERDE" grafcet="rotulo" papel="nome-etapa" id="n-1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="140" y="260" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" grafcet="etapa" nome="AMARELO" id="s-2">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="280" y="370" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AMARELO" grafcet="rotulo" papel="nome-etapa" id="n-2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="140" y="370" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="VERMELHO = 1" grafcet="acao" id="a-0-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="350" y="150" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s0-a01">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="a-0-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="VERDE = 1" grafcet="acao" id="a-1-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="350" y="260" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s1-a11">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="a-1-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AMARELO = 1" grafcet="acao" id="a-2-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="350" y="370" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s2-a21">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="a-2-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="8 s/X0" grafcet="transicao" id="t-0">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="285" y="223" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T0" grafcet="rotulo" papel="nome-transicao" id="tn-0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="259" y="215" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="10 s/X1" grafcet="transicao" id="t-1">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="285" y="333" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T1" grafcet="rotulo" papel="nome-transicao" id="tn-1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="259" y="325" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3 s/X2" grafcet="transicao" id="t-2">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="285" y="443" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T2" grafcet="rotulo" papel="nome-transicao" id="tn-2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="259" y="435" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s0-t0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="t-0">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t0-s1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-0" target="s-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t1-s2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-1" target="s-2">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s2-t2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="t-2">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t2-s0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1.5;strokeColor=#000000;jumpStyle=arc;jumpSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-2" target="s-0">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="300" y="480" />
+                <mxPoint x="580" y="480" />
+                <mxPoint x="580" y="110" />
+                <mxPoint x="300" y="110" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="&lt;font color=&quot;#111827&quot;&gt;&lt;b&gt;Entradas e saídas&lt;/b&gt;&lt;/font&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;border-collapse:collapse;font-size:10px;color:#111827;margin-top:4px&quot;&gt;&lt;tr&gt;&lt;th align='left'&gt;Tag&lt;/th&gt;&lt;th align='left'&gt;Tipo&lt;/th&gt;&lt;th align='left'&gt;Significado&lt;/th&gt;&lt;th&gt;Seg.&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;VERMELHO&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;lâmpada vermelha&lt;/td&gt;&lt;td align='center'&gt;1 (E0)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;VERDE&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;lâmpada verde&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;AMARELO&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;lâmpada amarela&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" grafcet="rotulo" papel="tabela-es" id="tabela-es">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" vertex="1" parent="1">
+            <mxGeometry x="700" y="110" width="300" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;&lt;b&gt;Temporizações e notação&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;b&gt;8 s/X0&lt;/b&gt; — VERMELHO ativa há 8 s; &lt;b&gt;10 s/X1&lt;/b&gt; — VERDE ativa há 10 s; &lt;b&gt;3 s/X2&lt;/b&gt; — AMARELO ativa há 3 s. Disparos em 8,0 / 18,0 / 21,0 s; ciclo nominal 21 s. Uma única cor por etapa; etapa inicial (duplo contorno) = VERMELHO, estado seguro na inicialização.&lt;br&gt;Notação IEC 60848: ∧ (E), ∨ (OU), ¬ (NÃO). &lt;b&gt;N s/Xk&lt;/b&gt; = etapa k ativa há pelo menos N s (relógio parte da ativação da etapa). Arcos descem sem seta; arcos de retorno levam seta. &lt;b&gt;TAG = 1&lt;/b&gt; liga a saída enquanto a etapa está ativa.' grafcet="rotulo" papel="legenda-tempos" id="legenda-tempos">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" vertex="1" parent="1">
+            <mxGeometry x="700" y="240" width="300" height="200" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="A25 Porta automatica" id="pg-A25">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label='&lt;font color="#111827" style="font-size:18px"&gt;&lt;b&gt;TP05 · Atividade 25 — Porta automática com emergência (adicional)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font style="font-size:11px"&gt;GRAFCET (IEC 60848) — EMERG domina em qualquer etapa de operação e leva à etapa SEGURO; retomada sempre por fechamento controlado. Página 3/5.&lt;/font&gt;' grafcet="rotulo" papel="titulo" id="titulo">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="16" width="760" height="44" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="0" grafcet="etapaInicial" nome="FECHADA" id="s-0">
+          <mxCell style="shape=ext;double=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="180" y="120" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FECHADA" grafcet="rotulo" papel="nome-etapa" id="n-0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="120" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="1" grafcet="etapa" nome="ABRINDO" id="s-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="180" y="230" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ABRINDO" grafcet="rotulo" papel="nome-etapa" id="n-1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="230" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" grafcet="etapa" nome="ABERTA" id="s-2">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="180" y="340" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ABERTA" grafcet="rotulo" papel="nome-etapa" id="n-2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="340" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" grafcet="etapa" nome="FECHANDO" id="s-3">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="180" y="450" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FECHANDO" grafcet="rotulo" papel="nome-etapa" id="n-3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="450" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="4" grafcet="etapa" nome="SEGURO" id="s-4">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="850" y="560" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="SEGURO" grafcet="rotulo" papel="nome-etapa" id="n-4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="710" y="560" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AGUARDAR presença" grafcet="acao" id="a-0-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="250" y="120" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s0-a01">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="a-0-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="M_ABRIR = 1" grafcet="acao" id="a-1-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="250" y="230" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s1-a11">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="a-1-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="MANTER aberta" grafcet="acao" id="a-2-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="250" y="340" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s2-a21">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="a-2-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="M_FECHAR = 1" grafcet="acao" id="a-3-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="250" y="450" width="160" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s3-a31">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-3" target="a-3-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LAMP_EMERG = 1 · PARAR motores" grafcet="acao" id="a-4-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="920" y="560" width="240" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s4-a41">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-4" target="a-4-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PRESENCA ∧ ¬EMERG" grafcet="transicao" id="t-0">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="185" y="193" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T0" grafcet="rotulo" papel="nome-transicao" id="tn-0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="159" y="185" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FC_ABERTA ∧ ¬EMERG" grafcet="transicao" id="t-1">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="185" y="303" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T1" grafcet="rotulo" papel="nome-transicao" id="tn-1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="159" y="295" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="5 s/X2 ∧ ¬PRESENCA ∧ ¬EMERG" grafcet="transicao" id="t-2">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="185" y="413" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T2" grafcet="rotulo" papel="nome-transicao" id="tn-2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="159" y="405" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FC_FECHADA ∧ ¬PRESENCA ∧ ¬EMERG" grafcet="transicao" id="t-3">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="185" y="523" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T3" grafcet="rotulo" papel="nome-transicao" id="tn-3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="159" y="515" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="PRESENCA ∧ ¬EMERG" grafcet="transicao" id="t-4">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="495" y="523" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T4" grafcet="rotulo" papel="nome-transicao" id="tn-4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="469" y="515" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="EMERG" grafcet="transicao" id="t-5">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="755" y="193" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T5" grafcet="rotulo" papel="nome-transicao" id="tn-5">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="729" y="185" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="EMERG" grafcet="transicao" id="t-6">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="755" y="303" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T6" grafcet="rotulo" papel="nome-transicao" id="tn-6">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="729" y="295" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="EMERG" grafcet="transicao" id="t-7">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="755" y="413" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T7" grafcet="rotulo" papel="nome-transicao" id="tn-7">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="729" y="405" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="EMERG" grafcet="transicao" id="t-8">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="755" y="523" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T8" grafcet="rotulo" papel="nome-transicao" id="tn-8">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="729" y="515" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RESET ∧ ¬EMERG" grafcet="transicao" id="t-9">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="855" y="633" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T9" grafcet="rotulo" papel="nome-transicao" id="tn-9">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="829" y="625" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s0-t0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="t-0">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t0-s1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-0" target="s-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t1-s2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-1" target="s-2">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s2-t2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="t-2">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t2-s3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-2" target="s-3">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s3-t3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-3" target="t-3">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s3-t4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-3" target="t-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="200" y="502" />
+                <mxPoint x="510" y="502" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s0-t5">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="t-5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="200" y="172" />
+                <mxPoint x="770" y="172" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t5-s4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-5" target="s-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="770" y="215" />
+                <mxPoint x="870" y="215" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t6">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-6">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="200" y="282" />
+                <mxPoint x="770" y="282" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t6-s4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-6" target="s-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="770" y="325" />
+                <mxPoint x="870" y="325" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s2-t7">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="t-7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="200" y="392" />
+                <mxPoint x="770" y="392" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t7-s4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-7" target="s-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="770" y="435" />
+                <mxPoint x="870" y="435" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s3-t8">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-3" target="t-8">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="200" y="502" />
+                <mxPoint x="770" y="502" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t8-s4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-8" target="s-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="770" y="545" />
+                <mxPoint x="870" y="545" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s4-t9">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-4" target="t-9">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t4-s1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1.5;strokeColor=#000000;jumpStyle=arc;jumpSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-4" target="s-1">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="510" y="550" />
+                <mxPoint x="680" y="550" />
+                <mxPoint x="680" y="215" />
+                <mxPoint x="200" y="215" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t3-s0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1.5;strokeColor=#000000;jumpStyle=arc;jumpSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-3" target="s-0">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="200" y="580" />
+                <mxPoint x="700" y="580" />
+                <mxPoint x="700" y="90" />
+                <mxPoint x="200" y="90" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t9-s3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1.5;strokeColor=#000000;jumpStyle=arc;jumpSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-9" target="s-3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="870" y="670" />
+                <mxPoint x="720" y="670" />
+                <mxPoint x="720" y="435" />
+                <mxPoint x="200" y="435" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="&lt;font color=&quot;#111827&quot;&gt;&lt;b&gt;Entradas e saídas&lt;/b&gt;&lt;/font&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;border-collapse:collapse;font-size:10px;color:#111827;margin-top:4px&quot;&gt;&lt;tr&gt;&lt;th align='left'&gt;Tag&lt;/th&gt;&lt;th align='left'&gt;Tipo&lt;/th&gt;&lt;th align='left'&gt;Significado&lt;/th&gt;&lt;th&gt;Seg.&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;PRESENCA&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;pessoa na zona da porta&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;FC_ABERTA&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;fim de curso: porta aberta&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;FC_FECHADA&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;fim de curso: porta fechada&lt;/td&gt;&lt;td align='center'&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;EMERG&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;botão de emergência acionado&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;RESET&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;rearme seguro&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;M_ABRIR&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;motor no sentido de abrir&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;M_FECHAR&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;motor no sentido de fechar&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;LAMP_EMERG&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;sinalização de emergência&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" grafcet="rotulo" papel="tabela-es" id="tabela-es">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" vertex="1" parent="1">
+            <mxGeometry x="900" y="70" width="260" height="250" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;&lt;b&gt;Temporizações e notação&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;b&gt;5 s/X2&lt;/b&gt; — permanência mínima em ABERTA; T2 exige também zona livre (¬PRESENCA). Toda receptividade normal carrega ¬EMERG (prioridade explícita); T5–T8 levam à etapa 4 (SEGURO) de qualquer etapa de operação; T9 retoma por FECHANDO (se a porta já estiver fechada, T3 dispara na mesma evolução e E3 é transitória; com presença, T4 reabre).&lt;br&gt;Notação IEC 60848: ∧ (E), ∨ (OU), ¬ (NÃO). &lt;b&gt;N s/Xk&lt;/b&gt; = etapa k ativa há pelo menos N s (relógio parte da ativação da etapa). Arcos descem sem seta; arcos de retorno levam seta. &lt;b&gt;TAG = 1&lt;/b&gt; liga a saída enquanto a etapa está ativa.' grafcet="rotulo" papel="legenda-tempos" id="legenda-tempos">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" vertex="1" parent="1">
+            <mxGeometry x="900" y="330" width="260" height="220" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="A26 Esteira separadora" id="pg-A26">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label='&lt;font color="#111827" style="font-size:18px"&gt;&lt;b&gt;TP05 · Atividade 26 — Esteira separadora de peças A e B (adicional)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font style="font-size:11px"&gt;GRAFCET (IEC 60848) — seleção em E1 (A / B / falha), convergência em E4; retorno do desviador confirmado antes de liberar a estação (T8). Página 4/5.&lt;/font&gt;' grafcet="rotulo" papel="titulo" id="titulo">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="16" width="760" height="44" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="0" grafcet="etapaInicial" nome="TRANSPORTANDO" id="s-0">
+          <mxCell style="shape=ext;double=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="170" y="100" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TRANSPORTANDO" grafcet="rotulo" papel="nome-etapa" id="n-0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="30" y="100" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="1" grafcet="etapa" nome="LENDO" id="s-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="170" y="200" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LENDO" grafcet="rotulo" papel="nome-etapa" id="n-1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="30" y="200" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" grafcet="etapa" nome="DESVIANDO A" id="s-2">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="170" y="300" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="DESVIANDO A" grafcet="rotulo" papel="nome-etapa" id="n-2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="30" y="300" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" grafcet="etapa" nome="DESVIANDO B" id="s-3">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="480" y="300" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="DESVIANDO B" grafcet="rotulo" papel="nome-etapa" id="n-3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="390" y="300" width="80" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="7" grafcet="etapa" nome="FALHA" id="s-7">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="900" y="300" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FALHA" grafcet="rotulo" papel="nome-etapa" id="n-7">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="810" y="300" width="80" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="4" grafcet="etapa" nome="CONFIRMANDO" id="s-4">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="170" y="400" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="CONFIRMANDO" grafcet="rotulo" papel="nome-etapa" id="n-4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="30" y="400" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="5" grafcet="etapa" nome="RECOLHENDO" id="s-5">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="170" y="500" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RECOLHENDO" grafcet="rotulo" papel="nome-etapa" id="n-5">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="30" y="500" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="6" grafcet="etapa" nome="LIBERANDO" id="s-6">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="170" y="600" width="40" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="LIBERANDO" grafcet="rotulo" papel="nome-etapa" id="n-6">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="30" y="600" width="130" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="M_EST = 1" grafcet="acao" id="a-0-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="240" y="100" width="140" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s0-a01">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="a-0-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="M_EST = 0 · LER tipo" grafcet="acao" id="a-1-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="240" y="200" width="140" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s1-a11">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="a-1-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Y_A = 1" grafcet="acao" id="a-2-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="240" y="300" width="140" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s2-a21">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="a-2-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Y_B = 1" grafcet="acao" id="a-3-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="550" y="300" width="140" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s3-a31">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-3" target="a-3-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ALARME = 1" grafcet="acao" id="a-7-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="970" y="300" width="120" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s7-a71">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-7" target="a-7-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AGUARDAR desvio" grafcet="acao" id="a-4-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="240" y="400" width="140" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s4-a41">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-4" target="a-4-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Y_A = 0 · Y_B = 0" grafcet="acao" id="a-5-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="240" y="500" width="140" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s5-a51">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-5" target="a-5-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="M_EST = 1" grafcet="acao" id="a-6-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;strokeWidth=1;align=left;spacingLeft=6;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="240" y="600" width="140" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="ligacaoAcao" id="l-s6-a61">
+          <mxCell style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-6" target="a-6-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="S_PECA" grafcet="transicao" id="t-0">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="175" y="168" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T0" grafcet="rotulo" papel="nome-transicao" id="tn-0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="149" y="160" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="0,5 s/X1 ∧ TIPO_A ∧ ¬TIPO_B" grafcet="transicao" id="t-1">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="175" y="268" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T1" grafcet="rotulo" papel="nome-transicao" id="tn-1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="149" y="260" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="0,5 s/X1 ∧ ¬TIPO_A ∧ TIPO_B" grafcet="transicao" id="t-2">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="485" y="268" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T2" grafcet="rotulo" papel="nome-transicao" id="tn-2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="459" y="260" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="TIPO_A ∧ TIPO_B" grafcet="transicao" id="t-3">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="725" y="268" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T3" grafcet="rotulo" papel="nome-transicao" id="tn-3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="699" y="260" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2 s/X1 ∧ ¬TIPO_A ∧ ¬TIPO_B" grafcet="transicao" id="t-4">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="905" y="268" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T4" grafcet="rotulo" papel="nome-transicao" id="tn-4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="879" y="260" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FC_AV_A" grafcet="transicao" id="t-5">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="175" y="368" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T5" grafcet="rotulo" papel="nome-transicao" id="tn-5">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="149" y="360" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FC_AV_B" grafcet="transicao" id="t-6">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="485" y="368" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T6" grafcet="rotulo" papel="nome-transicao" id="tn-6">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="459" y="360" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="0,3 s/X4" grafcet="transicao" id="t-7">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="175" y="468" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T7" grafcet="rotulo" papel="nome-transicao" id="tn-7">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="149" y="460" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="FC_RET_A ∧ FC_RET_B" grafcet="transicao" id="t-8">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="175" y="568" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T8" grafcet="rotulo" papel="nome-transicao" id="tn-8">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="149" y="560" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="¬S_PECA" grafcet="transicao" id="t-9">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="175" y="668" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T9" grafcet="rotulo" papel="nome-transicao" id="tn-9">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="149" y="660" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="RESET ∧ ¬S_PECA" grafcet="transicao" id="t-10">
+          <mxCell style="rounded=0;html=1;fillColor=#000000;strokeColor=none;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=8;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="905" y="368" width="30" height="4" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="T10" grafcet="rotulo" papel="nome-transicao" id="tn-10">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=right;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+            <mxGeometry x="879" y="360" width="22" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s0-t0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-0" target="t-0">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t0-s1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-0" target="s-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-2">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="190" y="250" />
+                <mxPoint x="500" y="250" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="190" y="250" />
+                <mxPoint x="740" y="250" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s1-t4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-1" target="t-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="190" y="250" />
+                <mxPoint x="920" y="250" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t1-s2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-1" target="s-2">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t2-s3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-2" target="s-3">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t3-s7">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-3" target="s-7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="740" y="285" />
+                <mxPoint x="920" y="285" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t4-s7">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-4" target="s-7">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s2-t5">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-2" target="t-5">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s3-t6">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-3" target="t-6">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t5-s4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-5" target="s-4">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t6-s4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-6" target="s-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="500" y="388" />
+                <mxPoint x="190" y="388" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s4-t7">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-4" target="t-7">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t7-s5">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-7" target="s-5">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s5-t8">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-5" target="t-8">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t8-s6">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-8" target="s-6">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s6-t9">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-6" target="t-9">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t9-s0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1.5;strokeColor=#000000;jumpStyle=arc;jumpSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-9" target="s-0">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="190" y="750" />
+                <mxPoint x="1140" y="750" />
+                <mxPoint x="1140" y="75" />
+                <mxPoint x="190" y="75" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-s7-t10">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;startArrow=none;strokeWidth=1.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-7" target="t-10">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" grafcet="arco" id="e-t10-s0">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=1;startArrow=none;strokeWidth=1.5;strokeColor=#000000;jumpStyle=arc;jumpSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-10" target="s-0">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="920" y="395" />
+                <mxPoint x="1140" y="395" />
+                <mxPoint x="1140" y="75" />
+                <mxPoint x="190" y="75" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="&lt;font color=&quot;#111827&quot;&gt;&lt;b&gt;Entradas e saídas&lt;/b&gt;&lt;/font&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;border-collapse:collapse;font-size:10px;color:#111827;margin-top:4px&quot;&gt;&lt;tr&gt;&lt;th align='left'&gt;Tag&lt;/th&gt;&lt;th align='left'&gt;Tipo&lt;/th&gt;&lt;th align='left'&gt;Significado&lt;/th&gt;&lt;th&gt;Seg.&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;S_PECA&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;peça na estação de leitura&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;TIPO_A&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;sensor classifica como A&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;TIPO_B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;sensor classifica como B&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;FC_AV_A / FC_RET_A&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;desviador A avançado / recolhido&lt;/td&gt;&lt;td align='center'&gt;0 / 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;FC_AV_B / FC_RET_B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;desviador B avançado / recolhido&lt;/td&gt;&lt;td align='center'&gt;0 / 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;RESET&lt;/b&gt;&lt;/td&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;rearme após falha&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;M_EST&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;motor da esteira&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Y_A&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;solenoide do desviador A&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Y_B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;solenoide do desviador B&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;ALARME&lt;/b&gt;&lt;/td&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;alarme de falha&lt;/td&gt;&lt;td align='center'&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" grafcet="rotulo" papel="tabela-es" id="tabela-es">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" vertex="1" parent="1">
+            <mxGeometry x="830" y="420" width="280" height="230" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;&lt;b&gt;Temporizações e notação&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;b&gt;0,5 s/X1&lt;/b&gt; — estabilização da leitura; &lt;b&gt;2 s/X1&lt;/b&gt; — tempo máximo sem classificação (hipótese); &lt;b&gt;0,3 s/X4&lt;/b&gt; — confirmação do desvio. &lt;b&gt;T8&lt;/b&gt; (FC_RET_A ∧ FC_RET_B) — retorno confirmado antes de liberar: a esteira só religa em E6, com os dois desviadores recolhidos.' grafcet="rotulo" papel="legenda-tempos" id="legenda-tempos">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" vertex="1" parent="1">
+            <mxGeometry x="830" y="660" width="280" height="80" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="A27 Percurso manual" id="pg-A27">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label='&lt;font color="#111827" style="font-size:18px"&gt;&lt;b&gt;TP05 · Atividade 27 — Percurso manual (semáforo da página 2)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font style="font-size:11px"&gt;Marcação inicial E0; a cada passo, a receptividade temporizada verdadeira dispara a transição e a marcação avança. Abaixo, percursos de fronteira (semáforo) e de falha (misturador, página 1) no mesmo formato. Página 5/5.&lt;/font&gt;' grafcet="rotulo" papel="titulo" id="titulo">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="16" width="760" height="44" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Passo&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="0" coluna="0" id="tab-r0-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="80" y="100" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Marcação ativa&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="0" coluna="1" id="tab-r0-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="150" y="100" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Entradas/eventos&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="0" coluna="2" id="tab-r0-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="300" y="100" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Transição&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="0" coluna="3" id="tab-r0-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="530" y="100" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Nova marcação&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="0" coluna="4" id="tab-r0-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="640" y="100" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;0&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="1" coluna="0" id="tab-r1-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="130" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="1" coluna="1" id="tab-r1-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="130" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo &amp;lt; 8 s&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="1" coluna="2" id="tab-r1-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="130" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;nenhuma&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="1" coluna="3" id="tab-r1-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="130" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="1" coluna="4" id="tab-r1-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="130" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;1&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="2" coluna="0" id="tab-r2-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="160" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="2" coluna="1" id="tab-r2-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="160" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 8 s&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="2" coluna="2" id="tab-r2-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="160" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;T0&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="2" coluna="3" id="tab-r2-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="160" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="2" coluna="4" id="tab-r2-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="160" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;2&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="3" coluna="0" id="tab-r3-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="190" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="3" coluna="1" id="tab-r3-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="190" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 10 s&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="3" coluna="2" id="tab-r3-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="190" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;T1&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="3" coluna="3" id="tab-r3-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="190" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E2&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="3" coluna="4" id="tab-r3-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="190" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;3&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="4" coluna="0" id="tab-r4-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="220" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E2&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="4" coluna="1" id="tab-r4-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="220" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 3 s&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="4" coluna="2" id="tab-r4-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="220" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;T2&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="4" coluna="3" id="tab-r4-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="220" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela" linha="4" coluna="4" id="tab-r4-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="220" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;&lt;b&gt;Como ler&lt;/b&gt;&lt;/font&gt;&lt;br&gt;Passo 0: E0 (VERMELHO) ativa; abaixo de 8 s nenhuma transição dispara e a marcação permanece E0. Passo 1: aos 8 s a receptividade 8 s/X0 fica verdadeira, T0 dispara, E0 desativa e E1 (VERDE) ativa com relógio reiniciado. Passos 2 e 3: aos 10 s de E1, T1 leva a E2 (AMARELO); aos 3 s de E2, T2 devolve a E0 e fecha o ciclo de 21 s. A cada instante há exatamente uma etapa (e uma lâmpada) ativa. As tabelas abaixo registram, no mesmo formato, os percursos de fronteira (0,1 s antes e depois de cada limite) e o percurso de falha do misturador (página 1): enchimento sem NIVEL_ALTO por 120 s leva a E4 (ALARME), rearmada por RESET.' grafcet="rotulo" papel="nota" id="nota-leitura">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+            <mxGeometry x="80" y="262" width="710" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;&lt;b&gt;Fronteiras temporais (semáforo)&lt;/b&gt;&lt;/font&gt;' grafcet="rotulo" papel="titulo-tabela" id="titulo-fronteiras">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+            <mxGeometry x="80" y="368" width="710" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Passo&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="0" coluna="0" id="front-r0-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="80" y="392" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Marcação ativa&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="0" coluna="1" id="front-r0-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="150" y="392" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Entradas/eventos&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="0" coluna="2" id="front-r0-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="300" y="392" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Transição&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="0" coluna="3" id="front-r0-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="530" y="392" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Nova marcação&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="0" coluna="4" id="front-r0-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="640" y="392" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;0&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="1" coluna="0" id="front-r1-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="422" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="1" coluna="1" id="front-r1-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="422" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 7,9 s&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="1" coluna="2" id="front-r1-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="422" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;nenhuma&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="1" coluna="3" id="front-r1-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="422" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="1" coluna="4" id="front-r1-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="422" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;1&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="2" coluna="0" id="front-r2-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="452" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="2" coluna="1" id="front-r2-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="452" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 8,1 s&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="2" coluna="2" id="front-r2-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="452" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;T0&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="2" coluna="3" id="front-r2-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="452" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="2" coluna="4" id="front-r2-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="452" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;2&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="3" coluna="0" id="front-r3-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="482" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="3" coluna="1" id="front-r3-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="482" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 9,9 s&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="3" coluna="2" id="front-r3-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="482" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;nenhuma&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="3" coluna="3" id="front-r3-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="482" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="3" coluna="4" id="front-r3-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="482" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;3&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="4" coluna="0" id="front-r4-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="512" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="4" coluna="1" id="front-r4-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="512" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 10,1 s&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="4" coluna="2" id="front-r4-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="512" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;T1&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="4" coluna="3" id="front-r4-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="512" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E2&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="4" coluna="4" id="front-r4-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="512" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;4&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="5" coluna="0" id="front-r5-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="542" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E2&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="5" coluna="1" id="front-r5-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="542" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 2,9 s&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="5" coluna="2" id="front-r5-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="542" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;nenhuma&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="5" coluna="3" id="front-r5-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="542" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E2&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="5" coluna="4" id="front-r5-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="542" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;5&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="6" coluna="0" id="front-r6-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="572" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E2&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="6" coluna="1" id="front-r6-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="572" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;tempo = 3,1 s&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="6" coluna="2" id="front-r6-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="572" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;T2&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="6" coluna="3" id="front-r6-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="572" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela-fronteiras" linha="6" coluna="4" id="front-r6-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="572" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;&lt;b&gt;Falha (misturador, página 1)&lt;/b&gt;&lt;/font&gt;' grafcet="rotulo" papel="titulo-tabela" id="titulo-falha">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+            <mxGeometry x="80" y="618" width="710" height="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Passo&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="0" coluna="0" id="falha-r0-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="80" y="642" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Marcação ativa&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="0" coluna="1" id="falha-r0-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="150" y="642" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Entradas/eventos&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="0" coluna="2" id="falha-r0-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="300" y="642" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Transição&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="0" coluna="3" id="falha-r0-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="530" y="642" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;Nova marcação&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="0" coluna="4" id="falha-r0-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#E5E7EB;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="640" y="642" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;0&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="1" coluna="0" id="falha-r1-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="672" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="1" coluna="1" id="falha-r1-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="672" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;¬NIVEL_ALTO, tempo = 119,9 s&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="1" coluna="2" id="falha-r1-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="672" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;nenhuma&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="1" coluna="3" id="falha-r1-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="672" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="1" coluna="4" id="falha-r1-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="672" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;1&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="2" coluna="0" id="falha-r2-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="702" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E1&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="2" coluna="1" id="falha-r2-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="702" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;¬NIVEL_ALTO, tempo = 120 s&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="2" coluna="2" id="falha-r2-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="702" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;T4&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="2" coluna="3" id="falha-r2-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="702" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E4&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="2" coluna="4" id="falha-r2-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="702" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;2&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="3" coluna="0" id="falha-r3-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="732" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E4&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="3" coluna="1" id="falha-r3-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="732" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;RESET = 0&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="3" coluna="2" id="falha-r3-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="732" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;nenhuma&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="3" coluna="3" id="falha-r3-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="732" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E4&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="3" coluna="4" id="falha-r3-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="732" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;3&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="4" coluna="0" id="falha-r4-c0">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="80" y="762" width="70" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E4&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="4" coluna="1" id="falha-r4-c1">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="150" y="762" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;RESET = 1&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="4" coluna="2" id="falha-r4-c2">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="300" y="762" width="230" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;T5&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="4" coluna="3" id="falha-r4-c3">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="530" y="762" width="110" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <object label='&lt;font color="#111827"&gt;E0&lt;/font&gt;' grafcet="rotulo" papel="tabela-falha" linha="4" coluna="4" id="falha-r4-c4">
+          <mxCell style="text;html=1;fontFamily=Helvetica;fontColor=#6B7280;align=center;verticalAlign=middle;fontSize=12;whiteSpace=wrap;strokeColor=#9CA3AF;fillColor=#FFFFFF;" vertex="1" parent="1">
+            <mxGeometry x="640" y="762" width="150" height="30" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

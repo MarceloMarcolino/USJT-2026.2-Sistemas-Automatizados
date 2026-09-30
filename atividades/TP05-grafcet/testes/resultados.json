@@ -1,0 +1,2265 @@
+{
+  "fase": "execucao-do-drawio-entregue",
+  "data_utc": "2026-09-30T03:44:05+00:00",
+  "arquivos": {
+    "grafcet.drawio": "39ba03dfcb001ef13a6a8f987515d882d4419cf5536edcaf89c8f1dfc70f469c",
+    "simulacao/grafcet_interpreta.py": "336521a15f7a3ddbd98b26624f59b34656d83eaaba3e8cab92f7b34d3437da60",
+    "simulacao/verifica_tp05.py": "c330985bf3f3fc769d0b2a64fa4a4da878b3065ffa3efe0b02f09cdcf856030b"
+  },
+  "paginas": [
+    {
+      "indice": 1,
+      "nome": "A23 Misturador",
+      "atividade": "Atividade 23 — misturador",
+      "tem_grafcet": true
+    },
+    {
+      "indice": 2,
+      "nome": "A24 Semaforo",
+      "atividade": "Atividade 24 — semáforo veicular",
+      "tem_grafcet": true
+    },
+    {
+      "indice": 3,
+      "nome": "A25 Porta automatica",
+      "atividade": "Atividade 25 — porta automática com emergência",
+      "tem_grafcet": true
+    },
+    {
+      "indice": 4,
+      "nome": "A26 Esteira separadora",
+      "atividade": "Atividade 26 — esteira separadora",
+      "tem_grafcet": true
+    },
+    {
+      "indice": 5,
+      "nome": "A27 Percurso manual",
+      "atividade": "Atividade 27 — percurso manual (tabela)",
+      "tem_grafcet": false
+    }
+  ],
+  "totais": {
+    "casos": 77,
+    "passa": 77,
+    "falha": 0,
+    "achados_estaticos": 0,
+    "violacoes_invariantes": 0,
+    "por_grupo": {
+      "S": {
+        "pagina": 2,
+        "casos": 14,
+        "passa": 14,
+        "falha": 0
+      },
+      "M": {
+        "pagina": 1,
+        "casos": 14,
+        "passa": 14,
+        "falha": 0
+      },
+      "P": {
+        "pagina": 3,
+        "casos": 19,
+        "passa": 19,
+        "falha": 0
+      },
+      "C": {
+        "pagina": 4,
+        "casos": 20,
+        "passa": 20,
+        "falha": 0
+      },
+      "ES (página)": {
+        "pagina": "1–4",
+        "casos": 4,
+        "passa": 4,
+        "falha": 0
+      },
+      "IN (invariantes)": {
+        "pagina": "1–4",
+        "casos": 6,
+        "passa": 6,
+        "falha": 0
+      }
+    },
+    "por_categoria": {
+      "normal": {
+        "casos": 27,
+        "passa": 27
+      },
+      "limite": {
+        "casos": 14,
+        "passa": 14
+      },
+      "invariante": {
+        "casos": 9,
+        "passa": 9
+      },
+      "falha": {
+        "casos": 8,
+        "passa": 8
+      },
+      "estatico": {
+        "casos": 7,
+        "passa": 7
+      },
+      "emergencia": {
+        "casos": 9,
+        "passa": 9
+      },
+      "sincronizacao": {
+        "casos": 3,
+        "passa": 3
+      }
+    }
+  },
+  "estaticos": [
+    {
+      "pagina": 1,
+      "nome": "A23 Misturador",
+      "achados": [],
+      "avisos": [],
+      "exclusividade": {
+        "1": {
+          "transicoes": [
+            "T1",
+            "T4"
+          ],
+          "atomos": [
+            "NIVEL_ALTO",
+            "120 s/X1"
+          ],
+          "combinacoes": 4,
+          "violacoes": []
+        }
+      },
+      "alcancabilidade": {
+        "iniciais": [
+          0
+        ],
+        "alcancaveis": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "nao_alcancaveis": [],
+        "sem_retorno": [],
+        "becos": []
+      },
+      "estrutura": {
+        "pagina": 1,
+        "nome": "A23 Misturador",
+        "etapas": [
+          {
+            "numero": 0,
+            "nome": "AGUARDANDO",
+            "inicial": true,
+            "acoes": [
+              "LAMP_PRONTO = 1"
+            ]
+          },
+          {
+            "numero": 1,
+            "nome": "ENCHENDO",
+            "inicial": false,
+            "acoes": [
+              "V_ENT = 1"
+            ]
+          },
+          {
+            "numero": 2,
+            "nome": "MISTURANDO",
+            "inicial": false,
+            "acoes": [
+              "M_AGIT = 1"
+            ]
+          },
+          {
+            "numero": 3,
+            "nome": "DRENANDO",
+            "inicial": false,
+            "acoes": [
+              "V_DRENO = 1"
+            ]
+          },
+          {
+            "numero": 4,
+            "nome": "FALHA",
+            "inicial": false,
+            "acoes": [
+              "ALARME = 1"
+            ]
+          }
+        ],
+        "transicoes": [
+          {
+            "nome": "T0",
+            "id": "t-0",
+            "receptividade": "START ∧ NIVEL_BAIXO",
+            "anteriores": [
+              0
+            ],
+            "posteriores": [
+              1
+            ]
+          },
+          {
+            "nome": "T1",
+            "id": "t-1",
+            "receptividade": "NIVEL_ALTO",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              2
+            ]
+          },
+          {
+            "nome": "T2",
+            "id": "t-2",
+            "receptividade": "30 s/X2",
+            "anteriores": [
+              2
+            ],
+            "posteriores": [
+              3
+            ]
+          },
+          {
+            "nome": "T3",
+            "id": "t-3",
+            "receptividade": "NIVEL_BAIXO",
+            "anteriores": [
+              3
+            ],
+            "posteriores": [
+              0
+            ]
+          },
+          {
+            "nome": "T4",
+            "id": "t-4",
+            "receptividade": "¬NIVEL_ALTO ∧ 120 s/X1",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              4
+            ]
+          },
+          {
+            "nome": "T5",
+            "id": "t-5",
+            "receptividade": "RESET",
+            "anteriores": [
+              4
+            ],
+            "posteriores": [
+              0
+            ]
+          }
+        ],
+        "entradas": [
+          "START",
+          "NIVEL_BAIXO",
+          "NIVEL_ALTO",
+          "RESET"
+        ],
+        "saidas": [
+          "LAMP_PRONTO",
+          "V_ENT",
+          "M_AGIT",
+          "V_DRENO",
+          "ALARME"
+        ]
+      }
+    },
+    {
+      "pagina": 2,
+      "nome": "A24 Semaforo",
+      "achados": [],
+      "avisos": [],
+      "exclusividade": {},
+      "alcancabilidade": {
+        "iniciais": [
+          0
+        ],
+        "alcancaveis": [
+          0,
+          1,
+          2
+        ],
+        "nao_alcancaveis": [],
+        "sem_retorno": [],
+        "becos": []
+      },
+      "estrutura": {
+        "pagina": 2,
+        "nome": "A24 Semaforo",
+        "etapas": [
+          {
+            "numero": 0,
+            "nome": "VERMELHO",
+            "inicial": true,
+            "acoes": [
+              "VERMELHO = 1"
+            ]
+          },
+          {
+            "numero": 1,
+            "nome": "VERDE",
+            "inicial": false,
+            "acoes": [
+              "VERDE = 1"
+            ]
+          },
+          {
+            "numero": 2,
+            "nome": "AMARELO",
+            "inicial": false,
+            "acoes": [
+              "AMARELO = 1"
+            ]
+          }
+        ],
+        "transicoes": [
+          {
+            "nome": "T0",
+            "id": "t-0",
+            "receptividade": "8 s/X0",
+            "anteriores": [
+              0
+            ],
+            "posteriores": [
+              1
+            ]
+          },
+          {
+            "nome": "T1",
+            "id": "t-1",
+            "receptividade": "10 s/X1",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              2
+            ]
+          },
+          {
+            "nome": "T2",
+            "id": "t-2",
+            "receptividade": "3 s/X2",
+            "anteriores": [
+              2
+            ],
+            "posteriores": [
+              0
+            ]
+          }
+        ],
+        "entradas": [],
+        "saidas": [
+          "VERMELHO",
+          "VERDE",
+          "AMARELO"
+        ]
+      }
+    },
+    {
+      "pagina": 3,
+      "nome": "A25 Porta automatica",
+      "achados": [],
+      "avisos": [],
+      "exclusividade": {
+        "0": {
+          "transicoes": [
+            "T0",
+            "T5"
+          ],
+          "atomos": [
+            "PRESENCA",
+            "EMERG"
+          ],
+          "combinacoes": 4,
+          "violacoes": []
+        },
+        "1": {
+          "transicoes": [
+            "T1",
+            "T6"
+          ],
+          "atomos": [
+            "FC_ABERTA",
+            "EMERG"
+          ],
+          "combinacoes": 4,
+          "violacoes": []
+        },
+        "2": {
+          "transicoes": [
+            "T2",
+            "T7"
+          ],
+          "atomos": [
+            "5 s/X2",
+            "PRESENCA",
+            "EMERG"
+          ],
+          "combinacoes": 8,
+          "violacoes": []
+        },
+        "3": {
+          "transicoes": [
+            "T3",
+            "T4",
+            "T8"
+          ],
+          "atomos": [
+            "FC_FECHADA",
+            "PRESENCA",
+            "EMERG"
+          ],
+          "combinacoes": 8,
+          "violacoes": []
+        }
+      },
+      "alcancabilidade": {
+        "iniciais": [
+          0
+        ],
+        "alcancaveis": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "nao_alcancaveis": [],
+        "sem_retorno": [],
+        "becos": []
+      },
+      "estrutura": {
+        "pagina": 3,
+        "nome": "A25 Porta automatica",
+        "etapas": [
+          {
+            "numero": 0,
+            "nome": "FECHADA",
+            "inicial": true,
+            "acoes": [
+              "AGUARDAR presença"
+            ]
+          },
+          {
+            "numero": 1,
+            "nome": "ABRINDO",
+            "inicial": false,
+            "acoes": [
+              "M_ABRIR = 1"
+            ]
+          },
+          {
+            "numero": 2,
+            "nome": "ABERTA",
+            "inicial": false,
+            "acoes": [
+              "MANTER aberta"
+            ]
+          },
+          {
+            "numero": 3,
+            "nome": "FECHANDO",
+            "inicial": false,
+            "acoes": [
+              "M_FECHAR = 1"
+            ]
+          },
+          {
+            "numero": 4,
+            "nome": "SEGURO",
+            "inicial": false,
+            "acoes": [
+              "LAMP_EMERG = 1",
+              "PARAR motores"
+            ]
+          }
+        ],
+        "transicoes": [
+          {
+            "nome": "T0",
+            "id": "t-0",
+            "receptividade": "PRESENCA ∧ ¬EMERG",
+            "anteriores": [
+              0
+            ],
+            "posteriores": [
+              1
+            ]
+          },
+          {
+            "nome": "T1",
+            "id": "t-1",
+            "receptividade": "FC_ABERTA ∧ ¬EMERG",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              2
+            ]
+          },
+          {
+            "nome": "T2",
+            "id": "t-2",
+            "receptividade": "5 s/X2 ∧ ¬PRESENCA ∧ ¬EMERG",
+            "anteriores": [
+              2
+            ],
+            "posteriores": [
+              3
+            ]
+          },
+          {
+            "nome": "T3",
+            "id": "t-3",
+            "receptividade": "FC_FECHADA ∧ ¬PRESENCA ∧ ¬EMERG",
+            "anteriores": [
+              3
+            ],
+            "posteriores": [
+              0
+            ]
+          },
+          {
+            "nome": "T4",
+            "id": "t-4",
+            "receptividade": "PRESENCA ∧ ¬EMERG",
+            "anteriores": [
+              3
+            ],
+            "posteriores": [
+              1
+            ]
+          },
+          {
+            "nome": "T5",
+            "id": "t-5",
+            "receptividade": "EMERG",
+            "anteriores": [
+              0
+            ],
+            "posteriores": [
+              4
+            ]
+          },
+          {
+            "nome": "T6",
+            "id": "t-6",
+            "receptividade": "EMERG",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              4
+            ]
+          },
+          {
+            "nome": "T7",
+            "id": "t-7",
+            "receptividade": "EMERG",
+            "anteriores": [
+              2
+            ],
+            "posteriores": [
+              4
+            ]
+          },
+          {
+            "nome": "T8",
+            "id": "t-8",
+            "receptividade": "EMERG",
+            "anteriores": [
+              3
+            ],
+            "posteriores": [
+              4
+            ]
+          },
+          {
+            "nome": "T9",
+            "id": "t-9",
+            "receptividade": "RESET ∧ ¬EMERG",
+            "anteriores": [
+              4
+            ],
+            "posteriores": [
+              3
+            ]
+          }
+        ],
+        "entradas": [
+          "PRESENCA",
+          "EMERG",
+          "FC_ABERTA",
+          "FC_FECHADA",
+          "RESET"
+        ],
+        "saidas": [
+          "M_ABRIR",
+          "M_FECHAR",
+          "LAMP_EMERG"
+        ]
+      }
+    },
+    {
+      "pagina": 4,
+      "nome": "A26 Esteira separadora",
+      "achados": [],
+      "avisos": [],
+      "exclusividade": {
+        "1": {
+          "transicoes": [
+            "T1",
+            "T2",
+            "T3",
+            "T4"
+          ],
+          "atomos": [
+            "0,5 s/X1",
+            "TIPO_A",
+            "TIPO_B",
+            "2 s/X1"
+          ],
+          "combinacoes": 16,
+          "violacoes": []
+        }
+      },
+      "alcancabilidade": {
+        "iniciais": [
+          0
+        ],
+        "alcancaveis": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "nao_alcancaveis": [],
+        "sem_retorno": [],
+        "becos": []
+      },
+      "estrutura": {
+        "pagina": 4,
+        "nome": "A26 Esteira separadora",
+        "etapas": [
+          {
+            "numero": 0,
+            "nome": "TRANSPORTANDO",
+            "inicial": true,
+            "acoes": [
+              "M_EST = 1"
+            ]
+          },
+          {
+            "numero": 1,
+            "nome": "LENDO",
+            "inicial": false,
+            "acoes": [
+              "M_EST = 0",
+              "LER tipo"
+            ]
+          },
+          {
+            "numero": 2,
+            "nome": "DESVIANDO A",
+            "inicial": false,
+            "acoes": [
+              "Y_A = 1"
+            ]
+          },
+          {
+            "numero": 3,
+            "nome": "DESVIANDO B",
+            "inicial": false,
+            "acoes": [
+              "Y_B = 1"
+            ]
+          },
+          {
+            "numero": 4,
+            "nome": "CONFIRMANDO",
+            "inicial": false,
+            "acoes": [
+              "AGUARDAR desvio"
+            ]
+          },
+          {
+            "numero": 5,
+            "nome": "RECOLHENDO",
+            "inicial": false,
+            "acoes": [
+              "Y_A = 0",
+              "Y_B = 0"
+            ]
+          },
+          {
+            "numero": 6,
+            "nome": "LIBERANDO",
+            "inicial": false,
+            "acoes": [
+              "M_EST = 1"
+            ]
+          },
+          {
+            "numero": 7,
+            "nome": "FALHA",
+            "inicial": false,
+            "acoes": [
+              "ALARME = 1"
+            ]
+          }
+        ],
+        "transicoes": [
+          {
+            "nome": "T0",
+            "id": "t-0",
+            "receptividade": "S_PECA",
+            "anteriores": [
+              0
+            ],
+            "posteriores": [
+              1
+            ]
+          },
+          {
+            "nome": "T1",
+            "id": "t-1",
+            "receptividade": "0,5 s/X1 ∧ TIPO_A ∧ ¬TIPO_B",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              2
+            ]
+          },
+          {
+            "nome": "T2",
+            "id": "t-2",
+            "receptividade": "0,5 s/X1 ∧ ¬TIPO_A ∧ TIPO_B",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              3
+            ]
+          },
+          {
+            "nome": "T3",
+            "id": "t-3",
+            "receptividade": "TIPO_A ∧ TIPO_B",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              7
+            ]
+          },
+          {
+            "nome": "T4",
+            "id": "t-4",
+            "receptividade": "2 s/X1 ∧ ¬TIPO_A ∧ ¬TIPO_B",
+            "anteriores": [
+              1
+            ],
+            "posteriores": [
+              7
+            ]
+          },
+          {
+            "nome": "T5",
+            "id": "t-5",
+            "receptividade": "FC_AV_A",
+            "anteriores": [
+              2
+            ],
+            "posteriores": [
+              4
+            ]
+          },
+          {
+            "nome": "T6",
+            "id": "t-6",
+            "receptividade": "FC_AV_B",
+            "anteriores": [
+              3
+            ],
+            "posteriores": [
+              4
+            ]
+          },
+          {
+            "nome": "T7",
+            "id": "t-7",
+            "receptividade": "0,3 s/X4",
+            "anteriores": [
+              4
+            ],
+            "posteriores": [
+              5
+            ]
+          },
+          {
+            "nome": "T8",
+            "id": "t-8",
+            "receptividade": "FC_RET_A ∧ FC_RET_B",
+            "anteriores": [
+              5
+            ],
+            "posteriores": [
+              6
+            ]
+          },
+          {
+            "nome": "T9",
+            "id": "t-9",
+            "receptividade": "¬S_PECA",
+            "anteriores": [
+              6
+            ],
+            "posteriores": [
+              0
+            ]
+          },
+          {
+            "nome": "T10",
+            "id": "t-10",
+            "receptividade": "RESET ∧ ¬S_PECA",
+            "anteriores": [
+              7
+            ],
+            "posteriores": [
+              0
+            ]
+          }
+        ],
+        "entradas": [
+          "S_PECA",
+          "TIPO_A",
+          "TIPO_B",
+          "FC_AV_A",
+          "FC_AV_B",
+          "FC_RET_A",
+          "FC_RET_B",
+          "RESET"
+        ],
+        "saidas": [
+          "M_EST",
+          "Y_A",
+          "Y_B",
+          "ALARME"
+        ]
+      }
+    }
+  ],
+  "invariantes": [
+    {
+      "pagina": 2,
+      "id": "S12",
+      "descricao": "exatamente uma lâmpada em 1",
+      "eventos": 2577,
+      "violacoes": [],
+      "resultado": "PASSA"
+    },
+    {
+      "pagina": 3,
+      "id": "P18",
+      "descricao": "M_ABRIR ∧ M_FECHAR nunca",
+      "eventos": 482,
+      "violacoes": [],
+      "resultado": "PASSA"
+    },
+    {
+      "pagina": 4,
+      "id": "C18",
+      "descricao": "Y_A ∧ Y_B nunca; M_EST=0 sempre que Y_A ∨ Y_B; M_EST=1 somente com FC_RET_A ∧ FC_RET_B",
+      "eventos": 203,
+      "violacoes": [],
+      "resultado": "PASSA"
+    },
+    {
+      "pagina": 1,
+      "id": "IN1",
+      "descricao": "nenhuma etapa ativa tem TAG = 0 enquanto outra ativa tem TAG = 1",
+      "eventos": 11799,
+      "violacoes": [],
+      "resultado": "PASSA"
+    },
+    {
+      "pagina": 2,
+      "id": "IN2",
+      "descricao": "nenhuma etapa ativa tem TAG = 0 enquanto outra ativa tem TAG = 1",
+      "eventos": 2577,
+      "violacoes": [],
+      "resultado": "PASSA"
+    },
+    {
+      "pagina": 3,
+      "id": "IN3",
+      "descricao": "nenhuma etapa ativa tem TAG = 0 enquanto outra ativa tem TAG = 1",
+      "eventos": 482,
+      "violacoes": [],
+      "resultado": "PASSA"
+    },
+    {
+      "pagina": 4,
+      "id": "IN4",
+      "descricao": "nenhuma etapa ativa tem TAG = 0 enquanto outra ativa tem TAG = 1",
+      "eventos": 203,
+      "violacoes": [],
+      "resultado": "PASSA"
+    },
+    {
+      "pagina": 3,
+      "id": "IN5",
+      "descricao": "em E4 as duas (M_ABRIR, M_FECHAR) em 0",
+      "eventos": 482,
+      "violacoes": [],
+      "resultado": "PASSA"
+    },
+    {
+      "pagina": 4,
+      "id": "IN6",
+      "descricao": "M_EST = 1 ⇒ FC_RET_A ∧ FC_RET_B (a esteira só anda com os dois desviadores recolhidos)",
+      "eventos": 203,
+      "violacoes": [],
+      "resultado": "PASSA"
+    }
+  ],
+  "percurso": {
+    "executado": [
+      [
+        "0",
+        "E0",
+        "tempo < 8 s",
+        "nenhuma",
+        "E0"
+      ],
+      [
+        "1",
+        "E0",
+        "tempo = 8 s",
+        "T0",
+        "E1"
+      ],
+      [
+        "2",
+        "E1",
+        "tempo = 10 s",
+        "T1",
+        "E2"
+      ],
+      [
+        "3",
+        "E2",
+        "tempo = 3 s",
+        "T2",
+        "E0"
+      ]
+    ],
+    "esperado_especificacao": [
+      [
+        "0",
+        "E0",
+        "tempo < 8 s",
+        "nenhuma",
+        "E0"
+      ],
+      [
+        "1",
+        "E0",
+        "tempo = 8 s",
+        "T0",
+        "E1"
+      ],
+      [
+        "2",
+        "E1",
+        "tempo = 10 s",
+        "T1",
+        "E2"
+      ],
+      [
+        "3",
+        "E2",
+        "tempo = 3 s",
+        "T2",
+        "E0"
+      ]
+    ],
+    "pagina5_origem": "25 células agrupadas por geometria",
+    "pagina5_linhas": [
+      [
+        "Passo",
+        "Marcação ativa",
+        "Entradas/eventos",
+        "Transição",
+        "Nova marcação"
+      ],
+      [
+        "0",
+        "E0",
+        "tempo < 8 s",
+        "nenhuma",
+        "E0"
+      ],
+      [
+        "1",
+        "E0",
+        "tempo = 8 s",
+        "T0",
+        "E1"
+      ],
+      [
+        "2",
+        "E1",
+        "tempo = 10 s",
+        "T1",
+        "E2"
+      ],
+      [
+        "3",
+        "E2",
+        "tempo = 3 s",
+        "T2",
+        "E0"
+      ]
+    ],
+    "pagina5_cabecalho": true,
+    "resultado": "PASSA"
+  },
+  "tabelas_pagina5": {
+    "S14": {
+      "papel": "tabela-fronteiras",
+      "titulo": "Fronteiras temporais (semáforo)",
+      "origem": "35 células agrupadas por geometria",
+      "linhas_pagina5": [
+        [
+          "Passo",
+          "Marcação ativa",
+          "Entradas/eventos",
+          "Transição",
+          "Nova marcação"
+        ],
+        [
+          "0",
+          "E0",
+          "tempo = 7,9 s",
+          "nenhuma",
+          "E0"
+        ],
+        [
+          "1",
+          "E0",
+          "tempo = 8,1 s",
+          "T0",
+          "E1"
+        ],
+        [
+          "2",
+          "E1",
+          "tempo = 9,9 s",
+          "nenhuma",
+          "E1"
+        ],
+        [
+          "3",
+          "E1",
+          "tempo = 10,1 s",
+          "T1",
+          "E2"
+        ],
+        [
+          "4",
+          "E2",
+          "tempo = 2,9 s",
+          "nenhuma",
+          "E2"
+        ],
+        [
+          "5",
+          "E2",
+          "tempo = 3,1 s",
+          "T2",
+          "E0"
+        ]
+      ],
+      "cabecalho": true,
+      "titulo_encontrado": true,
+      "execucao": [
+        {
+          "linha": [
+            "0",
+            "E0",
+            "tempo = 7,9 s",
+            "nenhuma",
+            "E0"
+          ],
+          "obtido": "0: E0 + 7,9 s → E0, nenhuma",
+          "resultado": "PASSA"
+        },
+        {
+          "linha": [
+            "1",
+            "E0",
+            "tempo = 8,1 s",
+            "T0",
+            "E1"
+          ],
+          "obtido": "1: E0 + 8,1 s → E1, T0 aos 8,0 s",
+          "resultado": "PASSA"
+        },
+        {
+          "linha": [
+            "2",
+            "E1",
+            "tempo = 9,9 s",
+            "nenhuma",
+            "E1"
+          ],
+          "obtido": "2: E1 + 9,9 s → E1, nenhuma",
+          "resultado": "PASSA"
+        },
+        {
+          "linha": [
+            "3",
+            "E1",
+            "tempo = 10,1 s",
+            "T1",
+            "E2"
+          ],
+          "obtido": "3: E1 + 10,1 s → E2, T1 aos 10,0 s",
+          "resultado": "PASSA"
+        },
+        {
+          "linha": [
+            "4",
+            "E2",
+            "tempo = 2,9 s",
+            "nenhuma",
+            "E2"
+          ],
+          "obtido": "4: E2 + 2,9 s → E2, nenhuma",
+          "resultado": "PASSA"
+        },
+        {
+          "linha": [
+            "5",
+            "E2",
+            "tempo = 3,1 s",
+            "T2",
+            "E0"
+          ],
+          "obtido": "5: E2 + 3,1 s → E0, T2 aos 3,0 s",
+          "resultado": "PASSA"
+        }
+      ]
+    },
+    "M14": {
+      "papel": "tabela-falha",
+      "titulo": "Falha (misturador, página 1)",
+      "origem": "25 células agrupadas por geometria",
+      "linhas_pagina5": [
+        [
+          "Passo",
+          "Marcação ativa",
+          "Entradas/eventos",
+          "Transição",
+          "Nova marcação"
+        ],
+        [
+          "0",
+          "E1",
+          "¬NIVEL_ALTO, tempo = 119,9 s",
+          "nenhuma",
+          "E1"
+        ],
+        [
+          "1",
+          "E1",
+          "¬NIVEL_ALTO, tempo = 120 s",
+          "T4",
+          "E4"
+        ],
+        [
+          "2",
+          "E4",
+          "RESET = 0",
+          "nenhuma",
+          "E4"
+        ],
+        [
+          "3",
+          "E4",
+          "RESET = 1",
+          "T5",
+          "E0"
+        ]
+      ],
+      "cabecalho": true,
+      "titulo_encontrado": true,
+      "execucao": [
+        {
+          "linha": [
+            "0",
+            "E1",
+            "¬NIVEL_ALTO, tempo = 119,9 s",
+            "nenhuma",
+            "E1"
+          ],
+          "obtido": "0: E1 + NIVEL_ALTO=0; 119,9 s → E1, nenhuma",
+          "resultado": "PASSA"
+        },
+        {
+          "linha": [
+            "1",
+            "E1",
+            "¬NIVEL_ALTO, tempo = 120 s",
+            "T4",
+            "E4"
+          ],
+          "obtido": "1: E1 + NIVEL_ALTO=0; 120,0 s → E4, T4 aos 120,0 s",
+          "resultado": "PASSA"
+        },
+        {
+          "linha": [
+            "2",
+            "E4",
+            "RESET = 0",
+            "nenhuma",
+            "E4"
+          ],
+          "obtido": "2: E4 + RESET=0; observado por 1,0 s → E4, nenhuma",
+          "resultado": "PASSA"
+        },
+        {
+          "linha": [
+            "3",
+            "E4",
+            "RESET = 1",
+            "T5",
+            "E0"
+          ],
+          "obtido": "3: E4 + RESET=1; observado por 1,0 s → E0, T5 aos 0,0 s",
+          "resultado": "PASSA"
+        }
+      ]
+    }
+  },
+  "casos": [
+    {
+      "id": "S01",
+      "pagina": 2,
+      "grupo": "normal",
+      "descricao": "E0, 7,9 s",
+      "esperado": "E0; VERMELHO=1",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E0; VERMELHO=1, VERDE=0, AMARELO=0",
+      "resultado": "PASSA",
+      "instante_final": 79,
+      "entradas_e_tempo": "79 décimos (7,9 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S02",
+      "pagina": 2,
+      "grupo": "normal",
+      "descricao": "E0, 8,0 s",
+      "esperado": "E1; VERDE=1",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E1; VERMELHO=0, VERDE=1, AMARELO=0",
+      "resultado": "PASSA",
+      "instante_final": 80,
+      "entradas_e_tempo": "80 décimos (8,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S03",
+      "pagina": 2,
+      "grupo": "normal",
+      "descricao": "E1, 10,0 s",
+      "esperado": "E2; AMARELO=1",
+      "marcacao_inicial": "E1 (t=80 décimos; preparo: 80 décimos (8,0 s))",
+      "obtido": "E2; VERMELHO=0, VERDE=0, AMARELO=1",
+      "resultado": "PASSA",
+      "instante_final": 180,
+      "entradas_e_tempo": "100 décimos (10,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S04",
+      "pagina": 2,
+      "grupo": "normal",
+      "descricao": "E2, 3,0 s",
+      "esperado": "E0; VERMELHO=1",
+      "marcacao_inicial": "E2 (t=180 décimos; preparo: 180 décimos (18,0 s))",
+      "obtido": "E0; VERMELHO=1, VERDE=0, AMARELO=0",
+      "resultado": "PASSA",
+      "instante_final": 210,
+      "entradas_e_tempo": "30 décimos (3,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S05",
+      "pagina": 2,
+      "grupo": "limite",
+      "descricao": "E0, 8,1 s",
+      "esperado": "E1",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E1; VERMELHO=0, VERDE=1, AMARELO=0",
+      "resultado": "PASSA",
+      "instante_final": 81,
+      "entradas_e_tempo": "81 décimos (8,1 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S06",
+      "pagina": 2,
+      "grupo": "limite",
+      "descricao": "E1, 9,9 s",
+      "esperado": "E1",
+      "marcacao_inicial": "E1 (t=80 décimos; preparo: 80 décimos (8,0 s))",
+      "obtido": "E1; VERMELHO=0, VERDE=1, AMARELO=0",
+      "resultado": "PASSA",
+      "instante_final": 179,
+      "entradas_e_tempo": "99 décimos (9,9 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S07",
+      "pagina": 2,
+      "grupo": "limite",
+      "descricao": "E1, 10,1 s",
+      "esperado": "E2",
+      "marcacao_inicial": "E1 (t=80 décimos; preparo: 80 décimos (8,0 s))",
+      "obtido": "E2; VERMELHO=0, VERDE=0, AMARELO=1",
+      "resultado": "PASSA",
+      "instante_final": 181,
+      "entradas_e_tempo": "101 décimos (10,1 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S08",
+      "pagina": 2,
+      "grupo": "limite",
+      "descricao": "E2, 2,9 s",
+      "esperado": "E2",
+      "marcacao_inicial": "E2 (t=180 décimos; preparo: 180 décimos (18,0 s))",
+      "obtido": "E2; VERMELHO=0, VERDE=0, AMARELO=1",
+      "resultado": "PASSA",
+      "instante_final": 209,
+      "entradas_e_tempo": "29 décimos (2,9 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S09",
+      "pagina": 2,
+      "grupo": "limite",
+      "descricao": "E2, 3,1 s",
+      "esperado": "E0",
+      "marcacao_inicial": "E2 (t=180 décimos; preparo: 180 décimos (18,0 s))",
+      "obtido": "E0; VERMELHO=1, VERDE=0, AMARELO=0",
+      "resultado": "PASSA",
+      "instante_final": 211,
+      "entradas_e_tempo": "31 décimos (3,1 s)",
+      "detalhes": []
+    },
+    {
+      "id": "S10",
+      "pagina": 2,
+      "grupo": "normal",
+      "descricao": "E0, 21,0 s (ciclo completo)",
+      "esperado": "E0; sequência E0→E1→E2→E0 com disparos em 8,0 / 18,0 / 21,0 s",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E0; VERMELHO=1, VERDE=0, AMARELO=0 [sequência E0→E1→E2→E0; disparos T0 em 8,0 s, T1 em 18,0 s, T2 em 21,0 s]",
+      "resultado": "PASSA",
+      "instante_final": 210,
+      "entradas_e_tempo": "210 décimos (21,0 s)",
+      "detalhes": [
+        "sequência E0→E1→E2→E0",
+        "disparos T0 em 8,0 s, T1 em 18,0 s, T2 em 21,0 s"
+      ]
+    },
+    {
+      "id": "S11",
+      "pagina": 2,
+      "grupo": "normal",
+      "descricao": "inicialização, 0 s",
+      "esperado": "E0 ativa, VERMELHO=1, demais 0 (saídas perigosas desativadas na inicialização)",
+      "marcacao_inicial": "inicialização (t=0 décimos)",
+      "obtido": "E0; VERMELHO=1, VERDE=0, AMARELO=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "—",
+      "detalhes": []
+    },
+    {
+      "id": "S12",
+      "pagina": 2,
+      "grupo": "invariante",
+      "descricao": "ciclo de 21 s, a cada 0,1 s",
+      "esperado": "exatamente uma lâmpada em 1",
+      "marcacao_inicial": "ciclo de 21 s",
+      "entradas_e_tempo": "—",
+      "detalhes": [],
+      "obtido": "2577 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA"
+    },
+    {
+      "id": "S13",
+      "pagina": 2,
+      "grupo": "normal",
+      "descricao": "percurso manual da Atividade 27, passos 0–3",
+      "esperado": "traço idêntico à tabela da página 5",
+      "marcacao_inicial": "tabela da página 5",
+      "entradas_e_tempo": "—",
+      "detalhes": [],
+      "obtido": "traço executado: 0 / E0 / tempo < 8 s / nenhuma / E0 | 1 / E0 / tempo = 8 s / T0 / E1 | 2 / E1 / tempo = 10 s / T1 / E2 | 3 / E2 / tempo = 3 s / T2 / E0; página 5 (25 células agrupadas por geometria): 5 linhas, 4/4 linhas literais encontradas",
+      "resultado": "PASSA"
+    },
+    {
+      "id": "S14",
+      "pagina": 2,
+      "grupo": "limite",
+      "descricao": "percursos de fronteira na página 5",
+      "esperado": "tabela «Fronteiras temporais (semáforo)» presente na página 5 e confirmada pela execução: 0 | E0 | tempo = 7,9 s | nenhuma | E0; 1 | E0 | tempo = 8,1 s | T0 | E1; 2 | E1 | tempo = 9,9 s | nenhuma | E1; 3 | E1 | tempo = 10,1 s | T1 | E2; 4 | E2 | tempo = 2,9 s | nenhuma | E2; 5 | E2 | tempo = 3,1 s | T2 | E0",
+      "marcacao_inicial": "tabela da página 5 (linhas 0–5)",
+      "entradas_e_tempo": "entradas e tempo de cada linha da tabela",
+      "obtido": "execução: 0: E0 + 7,9 s → E0, nenhuma | 1: E0 + 8,1 s → E1, T0 aos 8,0 s | 2: E1 + 9,9 s → E1, nenhuma | 3: E1 + 10,1 s → E2, T1 aos 10,0 s | 4: E2 + 2,9 s → E2, nenhuma | 5: E2 + 3,1 s → E0, T2 aos 3,0 s; página 5 (35 células agrupadas por geometria): 6/6 linhas literais, cabeçalho: sim, título: sim",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "M01",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "inicialização",
+      "esperado": "E0; LAMP_PRONTO=1, demais 0",
+      "marcacao_inicial": "inicialização (t=0 décimos)",
+      "obtido": "E0; LAMP_PRONTO=1, V_ENT=0, M_AGIT=0, V_DRENO=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "—",
+      "detalhes": []
+    },
+    {
+      "id": "M02",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "START=1 com NIVEL_BAIXO=0",
+      "esperado": "permanece E0",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E0; LAMP_PRONTO=1, V_ENT=0, M_AGIT=0, V_DRENO=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 10,
+      "entradas_e_tempo": "NIVEL_BAIXO=0, START=1; 10 décimos (1,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "M03",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "START=1 ∧ NIVEL_BAIXO=1",
+      "esperado": "E1; V_ENT=1, LAMP_PRONTO=0",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E1; LAMP_PRONTO=0, V_ENT=1, M_AGIT=0, V_DRENO=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "START=1",
+      "detalhes": []
+    },
+    {
+      "id": "M04",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "em E1, NIVEL_ALTO=1 (e NIVEL_BAIXO=0)",
+      "esperado": "E2; M_AGIT=1, V_ENT=0",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: START=1; START=0)",
+      "obtido": "E2; LAMP_PRONTO=0, V_ENT=0, M_AGIT=1, V_DRENO=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "NIVEL_ALTO=1, NIVEL_BAIXO=0",
+      "detalhes": []
+    },
+    {
+      "id": "M05",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "em E2, 29,9 s",
+      "esperado": "E2",
+      "marcacao_inicial": "em E2 (t=0 décimos; preparo: START=1; START=0; NIVEL_ALTO=1, NIVEL_BAIXO=0)",
+      "obtido": "E2; LAMP_PRONTO=0, V_ENT=0, M_AGIT=1, V_DRENO=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 299,
+      "entradas_e_tempo": "299 décimos (29,9 s)",
+      "detalhes": []
+    },
+    {
+      "id": "M06",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "em E2, 30,0 s",
+      "esperado": "E3; V_DRENO=1",
+      "marcacao_inicial": "em E2 (t=0 décimos; preparo: START=1; START=0; NIVEL_ALTO=1, NIVEL_BAIXO=0)",
+      "obtido": "E3; LAMP_PRONTO=0, V_ENT=0, M_AGIT=0, V_DRENO=1, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 300,
+      "entradas_e_tempo": "300 décimos (30,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "M07",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "em E3, NIVEL_BAIXO=1",
+      "esperado": "E0; ciclo fechado",
+      "marcacao_inicial": "em E3 (t=300 décimos; preparo: START=1; START=0; NIVEL_ALTO=1, NIVEL_BAIXO=0; 300 décimos (30,0 s))",
+      "obtido": "E0; LAMP_PRONTO=1, V_ENT=0, M_AGIT=0, V_DRENO=0, ALARME=0 [sequência E0→E1→E2→E3→E0]",
+      "resultado": "PASSA",
+      "instante_final": 300,
+      "entradas_e_tempo": "NIVEL_BAIXO=1",
+      "detalhes": [
+        "sequência E0→E1→E2→E3→E0"
+      ]
+    },
+    {
+      "id": "M08",
+      "pagina": 1,
+      "grupo": "falha",
+      "descricao": "em E1, NIVEL_ALTO=0 por 119,9 s",
+      "esperado": "E1",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: START=1; START=0)",
+      "obtido": "E1; LAMP_PRONTO=0, V_ENT=1, M_AGIT=0, V_DRENO=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 1199,
+      "entradas_e_tempo": "NIVEL_ALTO=0; 1199 décimos (119,9 s)",
+      "detalhes": []
+    },
+    {
+      "id": "M09",
+      "pagina": 1,
+      "grupo": "falha",
+      "descricao": "em E1, NIVEL_ALTO=0 por 120,0 s",
+      "esperado": "E4; ALARME=1, V_ENT=0",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: START=1; START=0)",
+      "obtido": "E4; LAMP_PRONTO=0, V_ENT=0, M_AGIT=0, V_DRENO=0, ALARME=1",
+      "resultado": "PASSA",
+      "instante_final": 1200,
+      "entradas_e_tempo": "NIVEL_ALTO=0; 1200 décimos (120,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "M10",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "em E4, RESET=0",
+      "esperado": "permanece E4",
+      "marcacao_inicial": "em E4 (t=1200 décimos; preparo: START=1; START=0; NIVEL_ALTO=0; 1200 décimos (120,0 s))",
+      "obtido": "E4; LAMP_PRONTO=0, V_ENT=0, M_AGIT=0, V_DRENO=0, ALARME=1",
+      "resultado": "PASSA",
+      "instante_final": 1210,
+      "entradas_e_tempo": "RESET=0; 10 décimos (1,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "M11",
+      "pagina": 1,
+      "grupo": "normal",
+      "descricao": "em E4, RESET=1",
+      "esperado": "E0",
+      "marcacao_inicial": "em E4 (t=1200 décimos; preparo: START=1; START=0; NIVEL_ALTO=0; 1200 décimos (120,0 s))",
+      "obtido": "E0; LAMP_PRONTO=1, V_ENT=0, M_AGIT=0, V_DRENO=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 1200,
+      "entradas_e_tempo": "RESET=1",
+      "detalhes": []
+    },
+    {
+      "id": "M12",
+      "pagina": 1,
+      "grupo": "limite",
+      "descricao": "em E1, NIVEL_ALTO=1 aos 119,9 s",
+      "esperado": "E2 (caminho normal vence antes do tempo esgotar)",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: START=1; START=0)",
+      "obtido": "E2; LAMP_PRONTO=0, V_ENT=0, M_AGIT=1, V_DRENO=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 1199,
+      "entradas_e_tempo": "NIVEL_ALTO=0; 1199 décimos (119,9 s); NIVEL_ALTO=1, NIVEL_BAIXO=0",
+      "detalhes": []
+    },
+    {
+      "id": "M13",
+      "pagina": 1,
+      "grupo": "estatico",
+      "descricao": "seleção em E1",
+      "esperado": "T1 e T4 exclusivas em todas as combinações",
+      "marcacao_inicial": "—",
+      "entradas_e_tempo": "—",
+      "obtido": "E1: T1/T4 sobre (NIVEL_ALTO, 120 s/X1) = 4 combinações, 0 violações",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "M14",
+      "pagina": 1,
+      "grupo": "falha",
+      "descricao": "percurso de falha na página 5",
+      "esperado": "tabela «Falha (misturador, página 1)» presente na página 5 e confirmada pela execução: 0 | E1 | ¬NIVEL_ALTO, tempo = 119,9 s | nenhuma | E1; 1 | E1 | ¬NIVEL_ALTO, tempo = 120 s | T4 | E4; 2 | E4 | RESET = 0 | nenhuma | E4; 3 | E4 | RESET = 1 | T5 | E0",
+      "marcacao_inicial": "tabela da página 5 (linhas 0–3)",
+      "entradas_e_tempo": "entradas e tempo de cada linha da tabela",
+      "obtido": "execução: 0: E1 + NIVEL_ALTO=0; 119,9 s → E1, nenhuma | 1: E1 + NIVEL_ALTO=0; 120,0 s → E4, T4 aos 120,0 s | 2: E4 + RESET=0; observado por 1,0 s → E4, nenhuma | 3: E4 + RESET=1; observado por 1,0 s → E0, T5 aos 0,0 s; página 5 (25 células agrupadas por geometria): 4/4 linhas literais, cabeçalho: sim, título: sim",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "P01",
+      "pagina": 3,
+      "grupo": "normal",
+      "descricao": "inicialização (FC_FECHADA=1)",
+      "esperado": "E0; M_ABRIR=M_FECHAR=LAMP_EMERG=0",
+      "marcacao_inicial": "inicialização (t=0 décimos)",
+      "obtido": "E0; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "—",
+      "detalhes": []
+    },
+    {
+      "id": "P02",
+      "pagina": 3,
+      "grupo": "normal",
+      "descricao": "PRESENCA=1",
+      "esperado": "E1; M_ABRIR=1",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E1; M_ABRIR=1, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "PRESENCA=1",
+      "detalhes": []
+    },
+    {
+      "id": "P03",
+      "pagina": 3,
+      "grupo": "normal",
+      "descricao": "em E1, FC_ABERTA=1 (FC_FECHADA=0)",
+      "esperado": "E2; M_ABRIR=0",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: PRESENCA=1)",
+      "obtido": "E2; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "FC_ABERTA=1, FC_FECHADA=0",
+      "detalhes": []
+    },
+    {
+      "id": "P04",
+      "pagina": 3,
+      "grupo": "limite",
+      "descricao": "em E2, PRESENCA=0, 4,9 s",
+      "esperado": "E2",
+      "marcacao_inicial": "em E2 (t=0 décimos; preparo: PRESENCA=1; FC_ABERTA=1, FC_FECHADA=0)",
+      "obtido": "E2; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 49,
+      "entradas_e_tempo": "PRESENCA=0; 49 décimos (4,9 s)",
+      "detalhes": []
+    },
+    {
+      "id": "P05",
+      "pagina": 3,
+      "grupo": "limite",
+      "descricao": "em E2, PRESENCA=0, 5,0 s",
+      "esperado": "E3; M_FECHAR=1",
+      "marcacao_inicial": "em E2 (t=0 décimos; preparo: PRESENCA=1; FC_ABERTA=1, FC_FECHADA=0)",
+      "obtido": "E3; M_ABRIR=0, M_FECHAR=1, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 50,
+      "entradas_e_tempo": "PRESENCA=0; 50 décimos (5,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "P06",
+      "pagina": 3,
+      "grupo": "normal",
+      "descricao": "em E2, PRESENCA=1 aos 5,0 s e além",
+      "esperado": "permanece E2 (não fecha com zona ocupada)",
+      "marcacao_inicial": "em E2 (t=0 décimos; preparo: PRESENCA=1; FC_ABERTA=1, FC_FECHADA=0)",
+      "obtido": "E2; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 150,
+      "entradas_e_tempo": "PRESENCA=1; 50 décimos (5,0 s); 100 décimos (10,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "P07",
+      "pagina": 3,
+      "grupo": "normal",
+      "descricao": "em E3, FC_FECHADA=1, PRESENCA=0",
+      "esperado": "E0",
+      "marcacao_inicial": "em E3 (t=50 décimos; preparo: PRESENCA=1; FC_ABERTA=1, FC_FECHADA=0; PRESENCA=0; 50 décimos (5,0 s); FC_ABERTA=0)",
+      "obtido": "E0; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 50,
+      "entradas_e_tempo": "FC_FECHADA=1, PRESENCA=0",
+      "detalhes": []
+    },
+    {
+      "id": "P08",
+      "pagina": 3,
+      "grupo": "falha",
+      "descricao": "em E3, PRESENCA=1 antes de FC_FECHADA",
+      "esperado": "E1; M_FECHAR=0, M_ABRIR=1 (reabertura)",
+      "marcacao_inicial": "em E3 (t=50 décimos; preparo: PRESENCA=1; FC_ABERTA=1, FC_FECHADA=0; PRESENCA=0; 50 décimos (5,0 s); FC_ABERTA=0)",
+      "obtido": "E1; M_ABRIR=1, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 50,
+      "entradas_e_tempo": "PRESENCA=1",
+      "detalhes": []
+    },
+    {
+      "id": "P09",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "EMERG=1 em E0",
+      "esperado": "E4; M_ABRIR=M_FECHAR=0, LAMP_EMERG=1",
+      "marcacao_inicial": "em E0 (t=0 décimos)",
+      "obtido": "E4; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=1",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "EMERG=1",
+      "detalhes": []
+    },
+    {
+      "id": "P10",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "EMERG=1 em E1",
+      "esperado": "E4; M_ABRIR=M_FECHAR=0, LAMP_EMERG=1",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: PRESENCA=1)",
+      "obtido": "E4; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=1",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "EMERG=1",
+      "detalhes": []
+    },
+    {
+      "id": "P11",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "EMERG=1 em E2",
+      "esperado": "E4; M_ABRIR=M_FECHAR=0, LAMP_EMERG=1",
+      "marcacao_inicial": "em E2 (t=0 décimos; preparo: PRESENCA=1; FC_ABERTA=1, FC_FECHADA=0)",
+      "obtido": "E4; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=1",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "EMERG=1",
+      "detalhes": []
+    },
+    {
+      "id": "P12",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "EMERG=1 em E3",
+      "esperado": "E4; M_ABRIR=M_FECHAR=0, LAMP_EMERG=1",
+      "marcacao_inicial": "em E3 (t=50 décimos; preparo: PRESENCA=1; FC_ABERTA=1, FC_FECHADA=0; PRESENCA=0; 50 décimos (5,0 s); FC_ABERTA=0)",
+      "obtido": "E4; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=1",
+      "resultado": "PASSA",
+      "instante_final": 50,
+      "entradas_e_tempo": "EMERG=1",
+      "detalhes": []
+    },
+    {
+      "id": "P13",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "em E4, PRESENCA=1, EMERG=1",
+      "esperado": "permanece E4 (dominância)",
+      "marcacao_inicial": "em E4 (t=0 décimos; preparo: EMERG=1)",
+      "obtido": "E4; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=1",
+      "resultado": "PASSA",
+      "instante_final": 10,
+      "entradas_e_tempo": "PRESENCA=1, EMERG=1; 10 décimos (1,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "P14",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "em E4, RESET=1 com EMERG=1",
+      "esperado": "permanece E4 (rearme exige emergência liberada)",
+      "marcacao_inicial": "em E4 (t=0 décimos; preparo: EMERG=1)",
+      "obtido": "E4; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=1",
+      "resultado": "PASSA",
+      "instante_final": 10,
+      "entradas_e_tempo": "RESET=1, EMERG=1; 10 décimos (1,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "P15",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "em E4 com FC_FECHADA=1, EMERG=0, RESET=1",
+      "esperado": "E0 direto; M_FECHAR nunca foi 1 (etapa 3 transitória)",
+      "marcacao_inicial": "em E4 (t=0 décimos; preparo: EMERG=1)",
+      "obtido": "E0; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=0 [M_FECHAR nunca foi 1; etapa 3 transitória (rodadas [['T9'], ['T3']])]",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "FC_FECHADA=1, EMERG=0, RESET=1",
+      "detalhes": [
+        "M_FECHAR nunca foi 1",
+        "etapa 3 transitória (rodadas [['T9'], ['T3']])"
+      ]
+    },
+    {
+      "id": "P16",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "em E4 com porta aberta (FC_FECHADA=0), PRESENCA=0, EMERG=0, RESET=1",
+      "esperado": "E3; M_FECHAR=1; depois FC_FECHADA=1 → E0",
+      "marcacao_inicial": "em E4 (t=0 décimos; preparo: EMERG=1; FC_FECHADA=0)",
+      "obtido": "E3; M_ABRIR=0, M_FECHAR=1, LAMP_EMERG=0 → depois: E0; M_ABRIR=0, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "PRESENCA=0, EMERG=0, RESET=1; FC_FECHADA=1",
+      "detalhes": []
+    },
+    {
+      "id": "P17",
+      "pagina": 3,
+      "grupo": "emergencia",
+      "descricao": "em E4 com porta aberta e PRESENCA=1, EMERG=0, RESET=1",
+      "esperado": "E1 (reabre por segurança)",
+      "marcacao_inicial": "em E4 (t=0 décimos; preparo: EMERG=1; FC_FECHADA=0)",
+      "obtido": "E1; M_ABRIR=1, M_FECHAR=0, LAMP_EMERG=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "PRESENCA=1, EMERG=0, RESET=1",
+      "detalhes": []
+    },
+    {
+      "id": "P18",
+      "pagina": 3,
+      "grupo": "invariante",
+      "descricao": "todos os cenários",
+      "esperado": "M_ABRIR ∧ M_FECHAR nunca",
+      "marcacao_inicial": "todos os cenários",
+      "entradas_e_tempo": "—",
+      "detalhes": [],
+      "obtido": "482 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA"
+    },
+    {
+      "id": "P19",
+      "pagina": 3,
+      "grupo": "estatico",
+      "descricao": "seleções em E0–E4",
+      "esperado": "exclusivas em todas as combinações",
+      "marcacao_inicial": "—",
+      "entradas_e_tempo": "—",
+      "obtido": "E0: T0/T5 sobre (PRESENCA, EMERG) = 4 combinações, 0 violações; E1: T1/T6 sobre (FC_ABERTA, EMERG) = 4 combinações, 0 violações; E2: T2/T7 sobre (5 s/X2, PRESENCA, EMERG) = 8 combinações, 0 violações; E3: T3/T4/T8 sobre (FC_FECHADA, PRESENCA, EMERG) = 8 combinações, 0 violações; E4: sem seleção (uma única transição de saída)",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "C01",
+      "pagina": 4,
+      "grupo": "normal",
+      "descricao": "inicialização (FC_RET_A=FC_RET_B=1)",
+      "esperado": "E0; M_EST=1, Y_A=Y_B=ALARME=0",
+      "marcacao_inicial": "inicialização (t=0 décimos)",
+      "obtido": "E0; M_EST=1, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "—",
+      "detalhes": []
+    },
+    {
+      "id": "C02",
+      "pagina": 4,
+      "grupo": "normal",
+      "descricao": "S_PECA=1",
+      "esperado": "E1; M_EST=0",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E1; M_EST=0, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "S_PECA=1",
+      "detalhes": []
+    },
+    {
+      "id": "C03",
+      "pagina": 4,
+      "grupo": "limite",
+      "descricao": "em E1, TIPO_A=1, 0,4 s",
+      "esperado": "E1",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: S_PECA=1)",
+      "obtido": "E1; M_EST=0, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 4,
+      "entradas_e_tempo": "TIPO_A=1; 4 décimos (0,4 s)",
+      "detalhes": []
+    },
+    {
+      "id": "C04",
+      "pagina": 4,
+      "grupo": "limite",
+      "descricao": "em E1, TIPO_A=1, 0,5 s",
+      "esperado": "E2; Y_A=1",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: S_PECA=1)",
+      "obtido": "E2; M_EST=0, Y_A=1, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 5,
+      "entradas_e_tempo": "TIPO_A=1; 5 décimos (0,5 s)",
+      "detalhes": []
+    },
+    {
+      "id": "C05",
+      "pagina": 4,
+      "grupo": "normal",
+      "descricao": "em E1, TIPO_B=1, 0,5 s",
+      "esperado": "E3; Y_B=1",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: S_PECA=1)",
+      "obtido": "E3; M_EST=0, Y_A=0, Y_B=1, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 5,
+      "entradas_e_tempo": "TIPO_B=1; 5 décimos (0,5 s)",
+      "detalhes": []
+    },
+    {
+      "id": "C06",
+      "pagina": 4,
+      "grupo": "falha",
+      "descricao": "em E1, TIPO_A=TIPO_B=1",
+      "esperado": "E7 imediato; ALARME=1, Y_A=Y_B=M_EST=0",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: S_PECA=1)",
+      "obtido": "E7; M_EST=0, Y_A=0, Y_B=0, ALARME=1 [T3 disparou no mesmo instante (0 décimos)]",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "TIPO_A=1, TIPO_B=1",
+      "detalhes": [
+        "T3 disparou no mesmo instante (0 décimos)"
+      ]
+    },
+    {
+      "id": "C07",
+      "pagina": 4,
+      "grupo": "limite",
+      "descricao": "em E1, TIPO_A=TIPO_B=0, 1,9 s",
+      "esperado": "E1",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: S_PECA=1)",
+      "obtido": "E1; M_EST=0, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 19,
+      "entradas_e_tempo": "TIPO_A=0, TIPO_B=0; 19 décimos (1,9 s)",
+      "detalhes": []
+    },
+    {
+      "id": "C08",
+      "pagina": 4,
+      "grupo": "falha",
+      "descricao": "em E1, TIPO_A=TIPO_B=0, 2,0 s",
+      "esperado": "E7",
+      "marcacao_inicial": "em E1 (t=0 décimos; preparo: S_PECA=1)",
+      "obtido": "E7; M_EST=0, Y_A=0, Y_B=0, ALARME=1",
+      "resultado": "PASSA",
+      "instante_final": 20,
+      "entradas_e_tempo": "TIPO_A=0, TIPO_B=0; 20 décimos (2,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "C09",
+      "pagina": 4,
+      "grupo": "normal",
+      "descricao": "em E2, FC_AV_A=1 (FC_RET_A=0)",
+      "esperado": "E4; Y_A=0, M_EST=0",
+      "marcacao_inicial": "em E2 (t=5 décimos; preparo: S_PECA=1; TIPO_A=1; 5 décimos (0,5 s))",
+      "obtido": "E4; M_EST=0, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 5,
+      "entradas_e_tempo": "FC_AV_A=1, FC_RET_A=0",
+      "detalhes": []
+    },
+    {
+      "id": "C10",
+      "pagina": 4,
+      "grupo": "limite",
+      "descricao": "em E4, 0,2 s",
+      "esperado": "E4",
+      "marcacao_inicial": "em E4 (t=5 décimos; preparo: S_PECA=1; TIPO_A=1; 5 décimos (0,5 s); FC_AV_A=1, FC_RET_A=0)",
+      "obtido": "E4; M_EST=0, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 7,
+      "entradas_e_tempo": "2 décimos (0,2 s)",
+      "detalhes": []
+    },
+    {
+      "id": "C11",
+      "pagina": 4,
+      "grupo": "limite",
+      "descricao": "em E4, 0,3 s",
+      "esperado": "E5; M_EST=0, Y_A=Y_B=0 — esteira parada até o retorno",
+      "marcacao_inicial": "em E4 (t=5 décimos; preparo: S_PECA=1; TIPO_A=1; 5 décimos (0,5 s); FC_AV_A=1, FC_RET_A=0)",
+      "obtido": "E5; M_EST=0, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 8,
+      "entradas_e_tempo": "3 décimos (0,3 s)",
+      "detalhes": []
+    },
+    {
+      "id": "C12",
+      "pagina": 4,
+      "grupo": "sincronizacao",
+      "descricao": "em E5, FC_RET_A=1 com S_PECA=1",
+      "esperado": "E6; M_EST=1 — retorno confirmado libera",
+      "marcacao_inicial": "em E5 (t=8 décimos; preparo: S_PECA=1; TIPO_A=1; 5 décimos (0,5 s); FC_AV_A=1, FC_RET_A=0; 3 décimos (0,3 s))",
+      "obtido": "E6; M_EST=1, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 8,
+      "entradas_e_tempo": "FC_RET_A=1, FC_AV_A=0",
+      "detalhes": []
+    },
+    {
+      "id": "C13",
+      "pagina": 4,
+      "grupo": "normal",
+      "descricao": "em E6, S_PECA=0",
+      "esperado": "E0; M_EST=1",
+      "marcacao_inicial": "em E6 (t=8 décimos; preparo: S_PECA=1; TIPO_A=1; 5 décimos (0,5 s); FC_AV_A=1, FC_RET_A=0; 3 décimos (0,3 s); FC_RET_A=1, FC_AV_A=0)",
+      "obtido": "E0; M_EST=1, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 8,
+      "entradas_e_tempo": "S_PECA=0",
+      "detalhes": []
+    },
+    {
+      "id": "C14",
+      "pagina": 4,
+      "grupo": "sincronizacao",
+      "descricao": "em E5 com FC_RET_A=0, S_PECA=0; depois FC_RET_A=1",
+      "esperado": "permanece E5, M_EST=0 — sem retorno confirmado a esteira não religa mesmo com a estação vazia; depois FC_RET_A=1 → E6 transitória → E0 na mesma evolução",
+      "marcacao_inicial": "em E5 (t=8 décimos; preparo: S_PECA=1; TIPO_A=1; 5 décimos (0,5 s); FC_AV_A=1, FC_RET_A=0; 3 décimos (0,3 s))",
+      "obtido": "E5; M_EST=0, Y_A=0, Y_B=0, ALARME=0 → depois: E0; M_EST=1, Y_A=0, Y_B=0, ALARME=0 [disparos ['T8', 'T9'] na mesma evolução; E6 transitória; E6 nunca esteve ativa em situação estável (ações de E6 não executadas)]",
+      "resultado": "PASSA",
+      "instante_final": 18,
+      "entradas_e_tempo": "S_PECA=0; 10 décimos (1,0 s); FC_RET_A=1, FC_AV_A=0",
+      "detalhes": [
+        "disparos ['T8', 'T9'] na mesma evolução; E6 transitória",
+        "E6 nunca esteve ativa em situação estável (ações de E6 não executadas)"
+      ]
+    },
+    {
+      "id": "C15",
+      "pagina": 4,
+      "grupo": "normal",
+      "descricao": "caminho B completo (E3 → E4 → E5 → E6 → E0)",
+      "esperado": "ciclo fechado",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E0; M_EST=1, Y_A=0, Y_B=0, ALARME=0 [sequência E0→E1→E3→E4→E5→E6→E0]",
+      "resultado": "PASSA",
+      "instante_final": 8,
+      "entradas_e_tempo": "S_PECA=1; TIPO_B=1; 5 décimos (0,5 s); FC_AV_B=1, FC_RET_B=0; 3 décimos (0,3 s); FC_RET_B=1, FC_AV_B=0; S_PECA=0",
+      "detalhes": [
+        "sequência E0→E1→E3→E4→E5→E6→E0"
+      ]
+    },
+    {
+      "id": "C16",
+      "pagina": 4,
+      "grupo": "falha",
+      "descricao": "em E7, RESET=1 com S_PECA=1",
+      "esperado": "permanece E7",
+      "marcacao_inicial": "em E7 (t=0 décimos; preparo: S_PECA=1; TIPO_A=1, TIPO_B=1)",
+      "obtido": "E7; M_EST=0, Y_A=0, Y_B=0, ALARME=1",
+      "resultado": "PASSA",
+      "instante_final": 10,
+      "entradas_e_tempo": "RESET=1, S_PECA=1; 10 décimos (1,0 s)",
+      "detalhes": []
+    },
+    {
+      "id": "C17",
+      "pagina": 4,
+      "grupo": "falha",
+      "descricao": "em E7, RESET=1 com S_PECA=0",
+      "esperado": "E0",
+      "marcacao_inicial": "em E7 (t=0 décimos; preparo: S_PECA=1; TIPO_A=1, TIPO_B=1)",
+      "obtido": "E0; M_EST=1, Y_A=0, Y_B=0, ALARME=0",
+      "resultado": "PASSA",
+      "instante_final": 0,
+      "entradas_e_tempo": "RESET=1, S_PECA=0",
+      "detalhes": []
+    },
+    {
+      "id": "C18",
+      "pagina": 4,
+      "grupo": "invariante",
+      "descricao": "todos os cenários",
+      "esperado": "Y_A ∧ Y_B nunca; M_EST=0 sempre que Y_A ∨ Y_B; M_EST=1 somente com FC_RET_A ∧ FC_RET_B",
+      "marcacao_inicial": "todos os cenários",
+      "entradas_e_tempo": "—",
+      "detalhes": [],
+      "obtido": "203 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA"
+    },
+    {
+      "id": "C19",
+      "pagina": 4,
+      "grupo": "estatico",
+      "descricao": "seleção em E1",
+      "esperado": "T1–T4 exclusivas nas 16 combinações de (TIPO_A,TIPO_B,0,5 s/X1,2 s/X1)",
+      "marcacao_inicial": "—",
+      "entradas_e_tempo": "—",
+      "obtido": "E1: T1/T2/T3/T4 sobre (0,5 s/X1, TIPO_A, TIPO_B, 2 s/X1) = 16 combinações, 0 violações",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "C20",
+      "pagina": 4,
+      "grupo": "sincronizacao",
+      "descricao": "ciclo A completo, traço",
+      "esperado": "T8 dispara antes de T9 em todo ciclo; nenhum disparo de T9 sem T8 no mesmo ciclo",
+      "marcacao_inicial": "E0 (t=0 décimos)",
+      "obtido": "E0; M_EST=1, Y_A=0, Y_B=0, ALARME=0 [sequência E0→E1→E2→E4→E5→E6→E0; disparos T0 → T1 → T5 → T7 → T8 → T9: T8 antes de T9 em 1 ciclo(s)]",
+      "resultado": "PASSA",
+      "instante_final": 8,
+      "entradas_e_tempo": "S_PECA=1; TIPO_A=1; 5 décimos (0,5 s); FC_AV_A=1, FC_RET_A=0; 3 décimos (0,3 s); FC_RET_A=1, FC_AV_A=0; S_PECA=0",
+      "detalhes": [
+        "sequência E0→E1→E2→E4→E5→E6→E0",
+        "disparos T0 → T1 → T5 → T7 → T8 → T9: T8 antes de T9 em 1 ciclo(s)"
+      ]
+    },
+    {
+      "id": "IN1",
+      "pagina": 1,
+      "grupo": "invariante",
+      "descricao": "todos os cenários da página",
+      "marcacao_inicial": "todos os cenários",
+      "entradas_e_tempo": "—",
+      "esperado": "nenhuma etapa ativa tem TAG = 0 enquanto outra ativa tem TAG = 1",
+      "obtido": "11799 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "IN2",
+      "pagina": 2,
+      "grupo": "invariante",
+      "descricao": "todos os cenários da página",
+      "marcacao_inicial": "todos os cenários",
+      "entradas_e_tempo": "—",
+      "esperado": "nenhuma etapa ativa tem TAG = 0 enquanto outra ativa tem TAG = 1",
+      "obtido": "2577 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "IN3",
+      "pagina": 3,
+      "grupo": "invariante",
+      "descricao": "todos os cenários da página",
+      "marcacao_inicial": "todos os cenários",
+      "entradas_e_tempo": "—",
+      "esperado": "nenhuma etapa ativa tem TAG = 0 enquanto outra ativa tem TAG = 1",
+      "obtido": "482 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "IN4",
+      "pagina": 4,
+      "grupo": "invariante",
+      "descricao": "todos os cenários da página",
+      "marcacao_inicial": "todos os cenários",
+      "entradas_e_tempo": "—",
+      "esperado": "nenhuma etapa ativa tem TAG = 0 enquanto outra ativa tem TAG = 1",
+      "obtido": "203 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "IN5",
+      "pagina": 3,
+      "grupo": "invariante",
+      "descricao": "todos os cenários da página",
+      "marcacao_inicial": "todos os cenários",
+      "entradas_e_tempo": "—",
+      "esperado": "em E4 as duas (M_ABRIR, M_FECHAR) em 0",
+      "obtido": "482 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "IN6",
+      "pagina": 4,
+      "grupo": "invariante",
+      "descricao": "todos os cenários da página",
+      "marcacao_inicial": "todos os cenários",
+      "entradas_e_tempo": "—",
+      "esperado": "M_EST = 1 ⇒ FC_RET_A ∧ FC_RET_B (a esteira só anda com os dois desviadores recolhidos)",
+      "obtido": "203 eventos (décimos e leituras de entrada) verificados; 0 violações",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "ES1",
+      "pagina": 1,
+      "grupo": "estatico",
+      "descricao": "verificações estáticas do interpretador (inicial única, ids numéricos únicos, receptividades válidas, arcos admitidos, exclusividade, alcançabilidade, geometria)",
+      "marcacao_inicial": "—",
+      "entradas_e_tempo": "—",
+      "esperado": "sem achados",
+      "obtido": "0 achados",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "ES2",
+      "pagina": 2,
+      "grupo": "estatico",
+      "descricao": "verificações estáticas do interpretador (inicial única, ids numéricos únicos, receptividades válidas, arcos admitidos, exclusividade, alcançabilidade, geometria)",
+      "marcacao_inicial": "—",
+      "entradas_e_tempo": "—",
+      "esperado": "sem achados",
+      "obtido": "0 achados",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "ES3",
+      "pagina": 3,
+      "grupo": "estatico",
+      "descricao": "verificações estáticas do interpretador (inicial única, ids numéricos únicos, receptividades válidas, arcos admitidos, exclusividade, alcançabilidade, geometria)",
+      "marcacao_inicial": "—",
+      "entradas_e_tempo": "—",
+      "esperado": "sem achados",
+      "obtido": "0 achados",
+      "resultado": "PASSA",
+      "detalhes": []
+    },
+    {
+      "id": "ES4",
+      "pagina": 4,
+      "grupo": "estatico",
+      "descricao": "verificações estáticas do interpretador (inicial única, ids numéricos únicos, receptividades válidas, arcos admitidos, exclusividade, alcançabilidade, geometria)",
+      "marcacao_inicial": "—",
+      "entradas_e_tempo": "—",
+      "esperado": "sem achados",
+      "obtido": "0 achados",
+      "resultado": "PASSA",
+      "detalhes": []
+    }
+  ]
+}
