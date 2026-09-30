@@ -208,3 +208,20 @@ a esteira não deve reiniciar com um desviador fora de posição.
   `testes/casos-de-teste.md` e hashes em `testes/resultados.json`
   (`grafcet.drawio` `39ba03dfcb001ef1…`).
 - Visualizador público do `.drawio`: <https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=grafcet.drawio#Uhttps://raw.githubusercontent.com/MarceloMarcolino/USJT-2026.2-Sistemas-Automatizados/main/atividades/TP05-grafcet/grafcet.drawio>.
+
+## Conferência da publicação
+
+Em 30/09/2026, às 03:59 UTC, foi conferida a publicação inicial no commit
+`703f90ae1bbd241ac8f65f45e81adfe2dabd5da7` do repositório público de entrega.
+Os 13 arquivos do pacote foram baixados de `raw.githubusercontent.com`, sem
+autenticação nem cookies: todos responderam HTTP 200 e os 13 SHA-256
+coincidiram com os arquivos versionados naquele commit.
+
+O visualizador acima foi aberto em um perfil temporário do Chrome, sem login.
+As cinco páginas foram percorridas pelos controles de navegação, de 1/5 a
+5/5, com títulos e conteúdo conferidos; a página da esteira mostra T8
+confirmando os dois retornos antes de LIBERANDO. A conferência terminou às
+03:59:44 UTC. Não foi exigida conta para visualizar o diagrama.
+
+Este registro verifica acesso público e integridade da publicação. Não
+substitui nem altera a execução dos 77 casos registrada em `testes/`.
