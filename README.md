@@ -110,3 +110,25 @@ entregue por um interpretador das regras de evolução da IEC 60848. O registro
 está em [`casos_teste.csv`](atividades/TP05-grafcet/casos_teste.csv) e em
 [`testes/casos-de-teste.md`](atividades/TP05-grafcet/testes/casos-de-teste.md);
 limites e melhorias em [`NOTAS.md`](atividades/TP05-grafcet/NOTAS.md).
+
+### TP06 — CLP e Linguagem Ladder
+
+Partida de motor com selo e parada prioritária no PLC Simulator Online:
+`MOTOR = EMG_OK · STOP_OK · OL_OK · (START + MOTOR)`, com emergência e
+sobrecarga bloqueando a partida e removendo a retenção, mais os dois
+adicionais — lâmpadas RUN e READY, e reversão FWD/REV intertravada com
+política explícita para comandos simultâneos.
+
+- [Acessar a entrega da TP06](atividades/TP06-ladder/) — **completa**
+- [Ladder público no PLC Simulator Online](https://app.plcsimulator.online/uYrW5yLXrfxZuFosGd8N)
+- [Programa nativo (backup JSON)](atividades/TP06-ladder/plc-simulator/diagrama-ladder.json)
+
+Exercício obrigatório e dois adicionais validados em **109/109 passos** no
+motor nativo do simulador, uma varredura por passo, com conferência
+independente por um interpretador próprio do programa exportado, três
+invariantes vigiados em todas as varreduras e quatro programas errados que
+reprovam onde devem. O registro está em
+[`casos_teste.csv`](atividades/TP06-ladder/casos_teste.csv) e em
+[`testes/casos-de-teste.md`](atividades/TP06-ladder/testes/casos-de-teste.md);
+as capturas dos estados decisivos em
+[`evidencias/`](atividades/TP06-ladder/evidencias/).

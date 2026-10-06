@@ -1,0 +1,117 @@
+id,grupo,sequencia,condicao_inicial,acao,esperado,obtido,situacao
+T01,obrigatorio,SEQ-T01-T03,"tudo saudável, MOTOR=0",START=1,MOTOR=1,MOTOR=1,PASSA
+T02,obrigatorio,SEQ-T01-T03,MOTOR=1,START=0,MOTOR=1,MOTOR=1,PASSA
+T03,obrigatorio,SEQ-T01-T03,MOTOR=1,STOP_OK=0,MOTOR=0,MOTOR=0,PASSA
+T04,obrigatorio,SEQ-T04,MOTOR=1,EMG_OK=0,MOTOR=0,MOTOR=0,PASSA
+T05,obrigatorio,SEQ-T05,"MOTOR=0, EMG_OK=0",START=1,MOTOR=0,MOTOR=0,PASSA
+M01,estados,SEQ-M,"estado inicial (START=0, permissivos=1, comandos de reversão=0, saídas=0)","START=0, STOP_OK=1, EMG_OK=1, OL_OK=1",MOTOR=0,MOTOR=0,PASSA
+M02,estados,SEQ-M,após M01 (MOTOR=0),"START=1, STOP_OK=1, EMG_OK=1, OL_OK=1",MOTOR=1,MOTOR=1,PASSA
+M03,estados,SEQ-M,após M02 (MOTOR=1),"START=0, STOP_OK=1, EMG_OK=1, OL_OK=1",MOTOR=1,MOTOR=1,PASSA
+M04,estados,SEQ-M,após M03 (MOTOR=1),"START=0, STOP_OK=0, EMG_OK=1, OL_OK=1",MOTOR=0,MOTOR=0,PASSA
+M05,estados,SEQ-M,após M04 (MOTOR=0),"START=1, STOP_OK=1, EMG_OK=0, OL_OK=1",MOTOR=0,MOTOR=0,PASSA
+M06,estados,SEQ-M,após M05 (MOTOR=0),"START=1, STOP_OK=1, EMG_OK=1, OL_OK=0",MOTOR=0,MOTOR=0,PASSA
+TR0,traco,SEQ-TR,"estado inicial (START=0, permissivos=1, comandos de reversão=0, saídas=0)",—,"MOTOR_antes=0, MOTOR=0","MOTOR_antes=0, MOTOR=0",PASSA
+TR1,traco,SEQ-TR,após TR0 (MOTOR=0),START=1,"MOTOR_antes=0, MOTOR=1","MOTOR_antes=0, MOTOR=1",PASSA
+TR2,traco,SEQ-TR,após TR1 (MOTOR=1),START=0,"MOTOR_antes=1, MOTOR=1","MOTOR_antes=1, MOTOR=1",PASSA
+TR3,traco,SEQ-TR,após TR2 (MOTOR=1),STOP_OK=0,"MOTOR_antes=1, MOTOR=0","MOTOR_antes=1, MOTOR=0",PASSA
+TR4,traco,SEQ-TR,após TR3 (MOTOR=0),STOP_OK=1,"MOTOR_antes=0, MOTOR=0","MOTOR_antes=0, MOTOR=0",PASSA
+F01,falha,SEQ-F-OL,MOTOR=1,OL_OK=0,MOTOR=0,MOTOR=0,PASSA
+F02,falha,SEQ-F-OL,"MOTOR=0, OL_OK=0",START=1,MOTOR=0,MOTOR=0,PASSA
+F03,falha,SEQ-F-OL,"MOTOR=0, START=1, OL_OK=0","START=0, OL_OK=1",MOTOR=0,MOTOR=0,PASSA
+F04,falha,SEQ-F-OL,"MOTOR=0, tudo saudável",START=1,MOTOR=1,MOTOR=1,PASSA
+F05,falha,SEQ-F-OL,MOTOR=1,START=0,MOTOR=1,MOTOR=1,PASSA
+F06,falha,SEQ-F-EMG,MOTOR=1,EMG_OK=0,MOTOR=0,MOTOR=0,PASSA
+F07,falha,SEQ-F-EMG,"MOTOR=0, EMG_OK=0",EMG_OK=1,MOTOR=0,MOTOR=0,PASSA
+F08,falha,SEQ-F-EMG,"MOTOR=0, tudo saudável",START=1,MOTOR=1,MOTOR=1,PASSA
+F09,falha,SEQ-F-STOP,"tudo saudável, MOTOR=0",START=1,MOTOR=1,MOTOR=1,PASSA
+F10,falha,SEQ-F-STOP,"MOTOR=1, START=1",STOP_OK=0,MOTOR=0,MOTOR=0,PASSA
+F11,falha,SEQ-F-STOP,"MOTOR=0, START=1, STOP_OK=0",STOP_OK=1,MOTOR=1,MOTOR=1,PASSA
+F12,falha,SEQ-F-NIVEL,"tudo saudável, MOTOR=0",START=1,MOTOR=1,MOTOR=1,PASSA
+F13,falha,SEQ-F-NIVEL,"MOTOR=1, START=1",EMG_OK=0,MOTOR=0,MOTOR=0,PASSA
+F14,falha,SEQ-F-NIVEL,"MOTOR=0, START=1, EMG_OK=0",EMG_OK=1,MOTOR=1,MOTOR=1,PASSA
+F15,falha,SEQ-F-NIVEL,"MOTOR=1, START=1",OL_OK=0,MOTOR=0,MOTOR=0,PASSA
+F16,falha,SEQ-F-NIVEL,"MOTOR=0, START=1, OL_OK=0",OL_OK=1,MOTOR=1,MOTOR=1,PASSA
+RN01,indicacao,SEQ-RN,"tudo saudável, MOTOR=0",START=1,"MOTOR=1, RUN=1, READY=1","MOTOR=1, RUN=1, READY=1",PASSA
+RN02,indicacao,SEQ-RN,MOTOR=1,START=0,"MOTOR=1, RUN=1, READY=1","MOTOR=1, RUN=1, READY=1",PASSA
+RN03,indicacao,SEQ-RN,MOTOR=1,STOP_OK=0,"MOTOR=0, RUN=0, READY=0","MOTOR=0, RUN=0, READY=0",PASSA
+RN04,indicacao,SEQ-RN,MOTOR=0,STOP_OK=1,"MOTOR=0, RUN=0, READY=1","MOTOR=0, RUN=0, READY=1",PASSA
+RD01,indicacao,SEQ-RDY,"estado inicial (START=0, permissivos=1, comandos de reversão=0, saídas=0)","EMG_OK=1, STOP_OK=1, OL_OK=1","READY=1, MOTOR=0","READY=1, MOTOR=0",PASSA
+RD02,indicacao,SEQ-RDY,"após RD01 (READY=1, MOTOR=0)","EMG_OK=0, STOP_OK=1, OL_OK=1","READY=0, MOTOR=0","READY=0, MOTOR=0",PASSA
+RD03,indicacao,SEQ-RDY,"após RD02 (READY=0, MOTOR=0)","EMG_OK=1, STOP_OK=0, OL_OK=1","READY=0, MOTOR=0","READY=0, MOTOR=0",PASSA
+RD04,indicacao,SEQ-RDY,"após RD03 (READY=0, MOTOR=0)","EMG_OK=1, STOP_OK=1, OL_OK=0","READY=0, MOTOR=0","READY=0, MOTOR=0",PASSA
+RD05,indicacao,SEQ-RDY,"após RD04 (READY=0, MOTOR=0)","EMG_OK=0, STOP_OK=0, OL_OK=1","READY=0, MOTOR=0","READY=0, MOTOR=0",PASSA
+RD06,indicacao,SEQ-RDY,"após RD05 (READY=0, MOTOR=0)","EMG_OK=0, STOP_OK=1, OL_OK=0","READY=0, MOTOR=0","READY=0, MOTOR=0",PASSA
+RD07,indicacao,SEQ-RDY,"após RD06 (READY=0, MOTOR=0)","EMG_OK=1, STOP_OK=0, OL_OK=0","READY=0, MOTOR=0","READY=0, MOTOR=0",PASSA
+RD08,indicacao,SEQ-RDY,"após RD07 (READY=0, MOTOR=0)","EMG_OK=0, STOP_OK=0, OL_OK=0","READY=0, MOTOR=0","READY=0, MOTOR=0",PASSA
+V01,reversao,SEQ-V,parado,START_FWD=1,"FWD=1, REV=0","FWD=1, REV=0",PASSA
+V02,reversao,SEQ-V,FWD=1,START_FWD=0,"FWD=1, REV=0","FWD=1, REV=0",PASSA
+V03,reversao,SEQ-V,FWD=1,START_REV=1,"FWD=1, REV=0","FWD=1, REV=0",PASSA
+V04,reversao,SEQ-V,FWD=1,"START_REV=0, STOP_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+V05,reversao,SEQ-V,parado,STOP_OK=1,"FWD=0, REV=0","FWD=0, REV=0",PASSA
+V06,reversao,SEQ-V,parado,START_REV=1,"FWD=0, REV=1","FWD=0, REV=1",PASSA
+V07,reversao,SEQ-V,REV=1,START_REV=0,"FWD=0, REV=1","FWD=0, REV=1",PASSA
+V08,reversao,SEQ-V,REV=1,EMG_OK=0,"FWD=0, REV=0","FWD=0, REV=0",PASSA
+V09,reversao,SEQ-V,"parado, EMG_OK=0",EMG_OK=1,"FWD=0, REV=0","FWD=0, REV=0",PASSA
+V13,reversao,SEQ-V-NIVEL,parado,START_FWD=1,"FWD=1, REV=0","FWD=1, REV=0",PASSA
+V14,reversao,SEQ-V-NIVEL,FWD=1,START_FWD=0,"FWD=1, REV=0","FWD=1, REV=0",PASSA
+V15,reversao,SEQ-V-NIVEL,FWD=1,START_REV=1,"FWD=1, REV=0","FWD=1, REV=0",PASSA
+V16,reversao,SEQ-V-NIVEL,"FWD=1, START_REV=1",STOP_OK=0,"FWD=0, REV=0","FWD=0, REV=0",PASSA
+V17,reversao,SEQ-V-NIVEL,"parado, START_REV=1, STOP_OK=0",STOP_OK=1,"FWD=0, REV=1","FWD=0, REV=1",PASSA
+V10,reversao,SEQ-VS,parado,"START_FWD=1, START_REV=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+V11,reversao,SEQ-VS,parado,START_REV=0,"FWD=1, REV=0","FWD=1, REV=0",PASSA
+V12,reversao,SEQ-VS,FWD=1,START_REV=1,"FWD=1, REV=0","FWD=1, REV=0",PASSA
+VX-parado-0000,reversao-exaustiva,VX-parado-0000,parado,"START_FWD=0, START_REV=0, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-0001,reversao-exaustiva,VX-parado-0001,parado,"START_FWD=0, START_REV=0, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-0010,reversao-exaustiva,VX-parado-0010,parado,"START_FWD=0, START_REV=0, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-0011,reversao-exaustiva,VX-parado-0011,parado,"START_FWD=0, START_REV=0, STOP_OK=1, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-0100,reversao-exaustiva,VX-parado-0100,parado,"START_FWD=0, START_REV=1, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-0101,reversao-exaustiva,VX-parado-0101,parado,"START_FWD=0, START_REV=1, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-0110,reversao-exaustiva,VX-parado-0110,parado,"START_FWD=0, START_REV=1, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-0111,reversao-exaustiva,VX-parado-0111,parado,"START_FWD=0, START_REV=1, STOP_OK=1, EMG_OK=1","FWD=0, REV=1","FWD=0, REV=1",PASSA
+VX-parado-1000,reversao-exaustiva,VX-parado-1000,parado,"START_FWD=1, START_REV=0, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-1001,reversao-exaustiva,VX-parado-1001,parado,"START_FWD=1, START_REV=0, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-1010,reversao-exaustiva,VX-parado-1010,parado,"START_FWD=1, START_REV=0, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-1011,reversao-exaustiva,VX-parado-1011,parado,"START_FWD=1, START_REV=0, STOP_OK=1, EMG_OK=1","FWD=1, REV=0","FWD=1, REV=0",PASSA
+VX-parado-1100,reversao-exaustiva,VX-parado-1100,parado,"START_FWD=1, START_REV=1, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-1101,reversao-exaustiva,VX-parado-1101,parado,"START_FWD=1, START_REV=1, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-1110,reversao-exaustiva,VX-parado-1110,parado,"START_FWD=1, START_REV=1, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-parado-1111,reversao-exaustiva,VX-parado-1111,parado,"START_FWD=1, START_REV=1, STOP_OK=1, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-0000,reversao-exaustiva,VX-FWD-0000,FWD,"START_FWD=0, START_REV=0, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-0001,reversao-exaustiva,VX-FWD-0001,FWD,"START_FWD=0, START_REV=0, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-0010,reversao-exaustiva,VX-FWD-0010,FWD,"START_FWD=0, START_REV=0, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-0011,reversao-exaustiva,VX-FWD-0011,FWD,"START_FWD=0, START_REV=0, STOP_OK=1, EMG_OK=1","FWD=1, REV=0","FWD=1, REV=0",PASSA
+VX-FWD-0100,reversao-exaustiva,VX-FWD-0100,FWD,"START_FWD=0, START_REV=1, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-0101,reversao-exaustiva,VX-FWD-0101,FWD,"START_FWD=0, START_REV=1, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-0110,reversao-exaustiva,VX-FWD-0110,FWD,"START_FWD=0, START_REV=1, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-0111,reversao-exaustiva,VX-FWD-0111,FWD,"START_FWD=0, START_REV=1, STOP_OK=1, EMG_OK=1","FWD=1, REV=0","FWD=1, REV=0",PASSA
+VX-FWD-1000,reversao-exaustiva,VX-FWD-1000,FWD,"START_FWD=1, START_REV=0, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-1001,reversao-exaustiva,VX-FWD-1001,FWD,"START_FWD=1, START_REV=0, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-1010,reversao-exaustiva,VX-FWD-1010,FWD,"START_FWD=1, START_REV=0, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-1011,reversao-exaustiva,VX-FWD-1011,FWD,"START_FWD=1, START_REV=0, STOP_OK=1, EMG_OK=1","FWD=1, REV=0","FWD=1, REV=0",PASSA
+VX-FWD-1100,reversao-exaustiva,VX-FWD-1100,FWD,"START_FWD=1, START_REV=1, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-1101,reversao-exaustiva,VX-FWD-1101,FWD,"START_FWD=1, START_REV=1, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-1110,reversao-exaustiva,VX-FWD-1110,FWD,"START_FWD=1, START_REV=1, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-FWD-1111,reversao-exaustiva,VX-FWD-1111,FWD,"START_FWD=1, START_REV=1, STOP_OK=1, EMG_OK=1","FWD=1, REV=0","FWD=1, REV=0",PASSA
+VX-REV-0000,reversao-exaustiva,VX-REV-0000,REV,"START_FWD=0, START_REV=0, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-0001,reversao-exaustiva,VX-REV-0001,REV,"START_FWD=0, START_REV=0, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-0010,reversao-exaustiva,VX-REV-0010,REV,"START_FWD=0, START_REV=0, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-0011,reversao-exaustiva,VX-REV-0011,REV,"START_FWD=0, START_REV=0, STOP_OK=1, EMG_OK=1","FWD=0, REV=1","FWD=0, REV=1",PASSA
+VX-REV-0100,reversao-exaustiva,VX-REV-0100,REV,"START_FWD=0, START_REV=1, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-0101,reversao-exaustiva,VX-REV-0101,REV,"START_FWD=0, START_REV=1, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-0110,reversao-exaustiva,VX-REV-0110,REV,"START_FWD=0, START_REV=1, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-0111,reversao-exaustiva,VX-REV-0111,REV,"START_FWD=0, START_REV=1, STOP_OK=1, EMG_OK=1","FWD=0, REV=1","FWD=0, REV=1",PASSA
+VX-REV-1000,reversao-exaustiva,VX-REV-1000,REV,"START_FWD=1, START_REV=0, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-1001,reversao-exaustiva,VX-REV-1001,REV,"START_FWD=1, START_REV=0, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-1010,reversao-exaustiva,VX-REV-1010,REV,"START_FWD=1, START_REV=0, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-1011,reversao-exaustiva,VX-REV-1011,REV,"START_FWD=1, START_REV=0, STOP_OK=1, EMG_OK=1","FWD=0, REV=1","FWD=0, REV=1",PASSA
+VX-REV-1100,reversao-exaustiva,VX-REV-1100,REV,"START_FWD=1, START_REV=1, STOP_OK=0, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-1101,reversao-exaustiva,VX-REV-1101,REV,"START_FWD=1, START_REV=1, STOP_OK=0, EMG_OK=1","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-1110,reversao-exaustiva,VX-REV-1110,REV,"START_FWD=1, START_REV=1, STOP_OK=1, EMG_OK=0","FWD=0, REV=0","FWD=0, REV=0",PASSA
+VX-REV-1111,reversao-exaustiva,VX-REV-1111,REV,"START_FWD=1, START_REV=1, STOP_OK=1, EMG_OK=1","FWD=0, REV=1","FWD=0, REV=1",PASSA
+INV-RUN,invariante,todas,toda varredura de todas as sequências (inclusive preparo),—,RUN = MOTOR ao fim de toda varredura,"nativo: 181 varreduras, 0 violações; interpretador: 181 varreduras, 0 violações",PASSA
+INV-RDY,invariante,todas,toda varredura de todas as sequências (inclusive preparo),—,READY = EMG_OK · STOP_OK · OL_OK ao fim de toda varredura,"nativo: 181 varreduras, 0 violações; interpretador: 181 varreduras, 0 violações",PASSA
+INV-REV,invariante,todas,toda varredura de todas as sequências (inclusive preparo),—,FWD e REV nunca em 1 ao mesmo tempo,"nativo: 181 varreduras, 0 violações; interpretador: 181 varreduras, 0 violações",PASSA
+MUT-A,mutante,todas,"programa com erro: STOP_OK apenas no caminho de START, fora do ramo de selo",as 62 sequências,"reprova em T03, TR3, M04, RN03, F10","nativo: reprovou em T03, TR3, M04, RN03, F10 (no total: 7 passo(s) e 0 invariante(s)); interpretador: reprovou em T03, TR3, M04, RN03, F10 (no total: 7 passo(s) e 0 invariante(s))",PASSA
+MUT-B,mutante,todas,"programa com erro: sem o contato de selo: partida simples, sem retenção",as 62 sequências,"reprova em T02, TR2, M03, F05, RN02","nativo: reprovou em T02, TR2, M03, F05, RN02 (no total: 9 passo(s) e 0 invariante(s)); interpretador: reprovou em T02, TR2, M03, F05, RN02 (no total: 9 passo(s) e 0 invariante(s))",PASSA
+MUT-C,mutante,todas,programa com erro: sem ¬REV/¬FWD e sem bloqueio de comandos simultâneos,as 62 sequências,"reprova em V03, V10, V12, INV-REV","nativo: reprovou em V03, V10, V12, INV-REV (no total: 10 passo(s) e 1 invariante(s)); interpretador: reprovou em V03, V10, V12, INV-REV (no total: 10 passo(s) e 1 invariante(s))",PASSA
+MUT-D,mutante,todas,programa com erro: rung de RUN antes do rung de MOTOR (ordem de varredura),as 62 sequências,reprova em INV-RUN,nativo: reprovou em INV-RUN (no total: 2 passo(s) e 1 invariante(s)); interpretador: reprovou em INV-RUN (no total: 2 passo(s) e 1 invariante(s)),PASSA

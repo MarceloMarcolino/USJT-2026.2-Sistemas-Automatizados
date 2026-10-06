@@ -1,0 +1,1219 @@
+{
+  "fase": "execucao-nativa-e-conferencia-independente",
+  "data_utc": "2026-10-06T23:25:04+00:00",
+  "data_utc_execucao_nativa": "2026-10-06T23:12:32.440Z",
+  "plataforma_nativa": {
+    "plataforma": "PLC Simulator Online (app.plcsimulator.online), motor nativo via store Redux da aplicação",
+    "bundle": "index-52YZHsrG.js",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "metodo": "IMPORT_PROJECT do JSON; por passo: SET_SIMULATION false → SET_VAR_VALUE das entradas → leitura \"antes\" → SET_SIMULATION true → um CYCLE_SCAN → SET_SIMULATION false → leitura \"depois\". Cada sequência começa com o programa reimportado, todas as variáveis zeradas e o estado_inicial aplicado; o estado é carregado de um passo para o seguinte. Sem julgamento de aprovação."
+  },
+  "sha256": {
+    "plc-simulator/diagrama-ladder.json": "51df0ea13cd820acae3b5a9c4dc94dce35825f599ac8d94115b8c014d67c973a",
+    "simulacao/casos.json": "93ec52899ba99cefae092a3dea3dc7505bdf3ec688c0f6265661a97597974d83",
+    "simulacao/testa_nativo.mjs": "f6784313b556ba2764fb31f49456cfb4c61bb0e5708165dec648323549b6ba5d",
+    "simulacao/cdp.mjs": "3b0ddf29f840359482f4dce157b26f5525728b16f776352385eb14d4ea28a161",
+    "simulacao/ladder_interpreta.py": "16f386fc43d7fb4139c042d4472a429371eb0c0d2e0867b22b93adab5e86f9c4",
+    "simulacao/verifica_tp06.py": "a3637b826465a3f43076218d3b85fe33265294d9b4d3e7bf2e025d089d915af0",
+    "simulacao/mutantes/mut-a-parada-no-ramo.json": "ee21a673912bfbbf703e090de102a31b62453cf1ae0ec107fddd26c5ace70a5b",
+    "simulacao/mutantes/mut-b-sem-selo.json": "e07cb26ba6340af734d94f502473379e0c0c37d20fb37011fcd6e1eb05450ede",
+    "simulacao/mutantes/mut-c-sem-intertravamento.json": "66ccb6b065de633ee88b5b13175f4c33adc5a06a8ef3019ca948553a219092ab",
+    "simulacao/mutantes/mut-d-run-antes-de-motor.json": "a1aa43750be3f582c07927c9a7cb29450337eb53098e757c32837b7762318aed"
+  },
+  "sha256_registrados_no_nativo": {
+    "diagrama": "51df0ea13cd820acae3b5a9c4dc94dce35825f599ac8d94115b8c014d67c973a",
+    "casos": "93ec52899ba99cefae092a3dea3dc7505bdf3ec688c0f6265661a97597974d83",
+    "runner": {
+      "testa_nativo.mjs": "f6784313b556ba2764fb31f49456cfb4c61bb0e5708165dec648323549b6ba5d",
+      "cdp.mjs": "3b0ddf29f840359482f4dce157b26f5525728b16f776352385eb14d4ea28a161"
+    },
+    "mutantes": {
+      "MUT-A": "ee21a673912bfbbf703e090de102a31b62453cf1ae0ec107fddd26c5ace70a5b",
+      "MUT-B": "e07cb26ba6340af734d94f502473379e0c0c37d20fb37011fcd6e1eb05450ede",
+      "MUT-C": "66ccb6b065de633ee88b5b13175f4c33adc5a06a8ef3019ca948553a219092ab",
+      "MUT-D": "a1aa43750be3f582c07927c9a7cb29450337eb53098e757c32837b7762318aed"
+    }
+  },
+  "totais": {
+    "sequencias": 62,
+    "observacoes_por_programa": 181,
+    "passos_verificados": 109,
+    "passa": 109,
+    "falha": 0,
+    "fonte_do_obtido": "nativo",
+    "por_grupo": {
+      "obrigatorio": {
+        "passos": 5,
+        "passa": 5,
+        "falha": 0
+      },
+      "estados": {
+        "passos": 6,
+        "passa": 6,
+        "falha": 0
+      },
+      "traco": {
+        "passos": 5,
+        "passa": 5,
+        "falha": 0
+      },
+      "falha": {
+        "passos": 16,
+        "passa": 16,
+        "falha": 0
+      },
+      "indicacao": {
+        "passos": 12,
+        "passa": 12,
+        "falha": 0
+      },
+      "reversao": {
+        "passos": 17,
+        "passa": 17,
+        "falha": 0
+      },
+      "reversao-exaustiva": {
+        "passos": 48,
+        "passa": 48,
+        "falha": 0
+      }
+    },
+    "nativo_igual_interpretador": {
+      "original": {
+        "observacoes": 181,
+        "identicas": 181
+      },
+      "MUT-A": {
+        "observacoes": 181,
+        "identicas": 181
+      },
+      "MUT-B": {
+        "observacoes": 181,
+        "identicas": 181
+      },
+      "MUT-C": {
+        "observacoes": 181,
+        "identicas": 181
+      },
+      "MUT-D": {
+        "observacoes": 181,
+        "identicas": 181
+      }
+    },
+    "invariantes": {
+      "INV-RUN": {
+        "varreduras_nativo": 181,
+        "varreduras_interpretador": 181,
+        "situacao": "PASSA"
+      },
+      "INV-RDY": {
+        "varreduras_nativo": 181,
+        "varreduras_interpretador": 181,
+        "situacao": "PASSA"
+      },
+      "INV-REV": {
+        "varreduras_nativo": 181,
+        "varreduras_interpretador": 181,
+        "situacao": "PASSA"
+      }
+    },
+    "mutantes": {
+      "MUT-A": {
+        "deve_reprovar": [
+          "T03",
+          "TR3",
+          "M04",
+          "RN03",
+          "F10"
+        ],
+        "nativo": [
+          "T03",
+          "M04",
+          "TR3",
+          "TR4",
+          "F10",
+          "RN03",
+          "RN04"
+        ],
+        "interpretador": [
+          "T03",
+          "M04",
+          "TR3",
+          "TR4",
+          "F10",
+          "RN03",
+          "RN04"
+        ],
+        "situacao": "PASSA"
+      },
+      "MUT-B": {
+        "deve_reprovar": [
+          "T02",
+          "TR2",
+          "M03",
+          "F05",
+          "RN02"
+        ],
+        "nativo": [
+          "T02",
+          "SEQ-T04/prep-solta",
+          "M03",
+          "TR2",
+          "TR3",
+          "SEQ-F-OL/prep-solta",
+          "F05",
+          "SEQ-F-EMG/prep-solta",
+          "RN02"
+        ],
+        "interpretador": [
+          "T02",
+          "SEQ-T04/prep-solta",
+          "M03",
+          "TR2",
+          "TR3",
+          "SEQ-F-OL/prep-solta",
+          "F05",
+          "SEQ-F-EMG/prep-solta",
+          "RN02"
+        ],
+        "situacao": "PASSA"
+      },
+      "MUT-C": {
+        "deve_reprovar": [
+          "V03",
+          "V10",
+          "V12",
+          "INV-REV"
+        ],
+        "nativo": [
+          "V03",
+          "V15",
+          "V10",
+          "V11",
+          "V12",
+          "VX-parado-1111",
+          "VX-FWD-0111",
+          "VX-FWD-1111",
+          "VX-REV-1011",
+          "VX-REV-1111",
+          "INV-REV"
+        ],
+        "interpretador": [
+          "V03",
+          "V15",
+          "V10",
+          "V11",
+          "V12",
+          "VX-parado-1111",
+          "VX-FWD-0111",
+          "VX-FWD-1111",
+          "VX-REV-1011",
+          "VX-REV-1111",
+          "INV-REV"
+        ],
+        "situacao": "PASSA"
+      },
+      "MUT-D": {
+        "deve_reprovar": [
+          "INV-RUN"
+        ],
+        "nativo": [
+          "RN01",
+          "RN03",
+          "INV-RUN"
+        ],
+        "interpretador": [
+          "RN01",
+          "RN03",
+          "INV-RUN"
+        ],
+        "situacao": "PASSA"
+      }
+    }
+  },
+  "aprovado": true,
+  "problemas": [],
+  "casos": [
+    {
+      "id": "T01",
+      "grupo": "obrigatorio",
+      "sequencia": "SEQ-T01-T03",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "T02",
+      "grupo": "obrigatorio",
+      "sequencia": "SEQ-T01-T03",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "T03",
+      "grupo": "obrigatorio",
+      "sequencia": "SEQ-T01-T03",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "T04",
+      "grupo": "obrigatorio",
+      "sequencia": "SEQ-T04",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "T05",
+      "grupo": "obrigatorio",
+      "sequencia": "SEQ-T05",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "M01",
+      "grupo": "estados",
+      "sequencia": "SEQ-M",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "M02",
+      "grupo": "estados",
+      "sequencia": "SEQ-M",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "M03",
+      "grupo": "estados",
+      "sequencia": "SEQ-M",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "M04",
+      "grupo": "estados",
+      "sequencia": "SEQ-M",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "M05",
+      "grupo": "estados",
+      "sequencia": "SEQ-M",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "M06",
+      "grupo": "estados",
+      "sequencia": "SEQ-M",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "TR0",
+      "grupo": "traco",
+      "sequencia": "SEQ-TR",
+      "esperado": "MOTOR_antes=0, MOTOR=0",
+      "obtido": "MOTOR_antes=0, MOTOR=0",
+      "obtido_interpretador": "MOTOR_antes=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "TR1",
+      "grupo": "traco",
+      "sequencia": "SEQ-TR",
+      "esperado": "MOTOR_antes=0, MOTOR=1",
+      "obtido": "MOTOR_antes=0, MOTOR=1",
+      "obtido_interpretador": "MOTOR_antes=0, MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "TR2",
+      "grupo": "traco",
+      "sequencia": "SEQ-TR",
+      "esperado": "MOTOR_antes=1, MOTOR=1",
+      "obtido": "MOTOR_antes=1, MOTOR=1",
+      "obtido_interpretador": "MOTOR_antes=1, MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "TR3",
+      "grupo": "traco",
+      "sequencia": "SEQ-TR",
+      "esperado": "MOTOR_antes=1, MOTOR=0",
+      "obtido": "MOTOR_antes=1, MOTOR=0",
+      "obtido_interpretador": "MOTOR_antes=1, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "TR4",
+      "grupo": "traco",
+      "sequencia": "SEQ-TR",
+      "esperado": "MOTOR_antes=0, MOTOR=0",
+      "obtido": "MOTOR_antes=0, MOTOR=0",
+      "obtido_interpretador": "MOTOR_antes=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F01",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-OL",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F02",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-OL",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F03",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-OL",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F04",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-OL",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F05",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-OL",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F06",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-EMG",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F07",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-EMG",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F08",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-EMG",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F09",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-STOP",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F10",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-STOP",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F11",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-STOP",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F12",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-NIVEL",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F13",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-NIVEL",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F14",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-NIVEL",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F15",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-NIVEL",
+      "esperado": "MOTOR=0",
+      "obtido": "MOTOR=0",
+      "obtido_interpretador": "MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "F16",
+      "grupo": "falha",
+      "sequencia": "SEQ-F-NIVEL",
+      "esperado": "MOTOR=1",
+      "obtido": "MOTOR=1",
+      "obtido_interpretador": "MOTOR=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RN01",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RN",
+      "esperado": "MOTOR=1, RUN=1, READY=1",
+      "obtido": "MOTOR=1, RUN=1, READY=1",
+      "obtido_interpretador": "MOTOR=1, RUN=1, READY=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RN02",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RN",
+      "esperado": "MOTOR=1, RUN=1, READY=1",
+      "obtido": "MOTOR=1, RUN=1, READY=1",
+      "obtido_interpretador": "MOTOR=1, RUN=1, READY=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RN03",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RN",
+      "esperado": "MOTOR=0, RUN=0, READY=0",
+      "obtido": "MOTOR=0, RUN=0, READY=0",
+      "obtido_interpretador": "MOTOR=0, RUN=0, READY=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RN04",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RN",
+      "esperado": "MOTOR=0, RUN=0, READY=1",
+      "obtido": "MOTOR=0, RUN=0, READY=1",
+      "obtido_interpretador": "MOTOR=0, RUN=0, READY=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RD01",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RDY",
+      "esperado": "READY=1, MOTOR=0",
+      "obtido": "READY=1, MOTOR=0",
+      "obtido_interpretador": "READY=1, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RD02",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RDY",
+      "esperado": "READY=0, MOTOR=0",
+      "obtido": "READY=0, MOTOR=0",
+      "obtido_interpretador": "READY=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RD03",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RDY",
+      "esperado": "READY=0, MOTOR=0",
+      "obtido": "READY=0, MOTOR=0",
+      "obtido_interpretador": "READY=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RD04",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RDY",
+      "esperado": "READY=0, MOTOR=0",
+      "obtido": "READY=0, MOTOR=0",
+      "obtido_interpretador": "READY=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RD05",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RDY",
+      "esperado": "READY=0, MOTOR=0",
+      "obtido": "READY=0, MOTOR=0",
+      "obtido_interpretador": "READY=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RD06",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RDY",
+      "esperado": "READY=0, MOTOR=0",
+      "obtido": "READY=0, MOTOR=0",
+      "obtido_interpretador": "READY=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RD07",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RDY",
+      "esperado": "READY=0, MOTOR=0",
+      "obtido": "READY=0, MOTOR=0",
+      "obtido_interpretador": "READY=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "RD08",
+      "grupo": "indicacao",
+      "sequencia": "SEQ-RDY",
+      "esperado": "READY=0, MOTOR=0",
+      "obtido": "READY=0, MOTOR=0",
+      "obtido_interpretador": "READY=0, MOTOR=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V01",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V02",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V03",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V04",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V05",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V06",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=0, REV=1",
+      "obtido": "FWD=0, REV=1",
+      "obtido_interpretador": "FWD=0, REV=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V07",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=0, REV=1",
+      "obtido": "FWD=0, REV=1",
+      "obtido_interpretador": "FWD=0, REV=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V08",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V09",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V13",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V-NIVEL",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V14",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V-NIVEL",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V15",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V-NIVEL",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V16",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V-NIVEL",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V17",
+      "grupo": "reversao",
+      "sequencia": "SEQ-V-NIVEL",
+      "esperado": "FWD=0, REV=1",
+      "obtido": "FWD=0, REV=1",
+      "obtido_interpretador": "FWD=0, REV=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V10",
+      "grupo": "reversao",
+      "sequencia": "SEQ-VS",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V11",
+      "grupo": "reversao",
+      "sequencia": "SEQ-VS",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "V12",
+      "grupo": "reversao",
+      "sequencia": "SEQ-VS",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-0000",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-0000",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-0001",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-0001",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-0010",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-0010",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-0011",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-0011",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-0100",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-0100",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-0101",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-0101",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-0110",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-0110",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-0111",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-0111",
+      "esperado": "FWD=0, REV=1",
+      "obtido": "FWD=0, REV=1",
+      "obtido_interpretador": "FWD=0, REV=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-1000",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-1000",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-1001",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-1001",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-1010",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-1010",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-1011",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-1011",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-1100",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-1100",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-1101",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-1101",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-1110",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-1110",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-parado-1111",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-parado-1111",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-0000",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-0000",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-0001",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-0001",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-0010",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-0010",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-0011",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-0011",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-0100",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-0100",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-0101",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-0101",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-0110",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-0110",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-0111",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-0111",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-1000",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-1000",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-1001",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-1001",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-1010",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-1010",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-1011",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-1011",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-1100",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-1100",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-1101",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-1101",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-1110",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-1110",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-FWD-1111",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-FWD-1111",
+      "esperado": "FWD=1, REV=0",
+      "obtido": "FWD=1, REV=0",
+      "obtido_interpretador": "FWD=1, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-0000",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-0000",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-0001",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-0001",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-0010",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-0010",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-0011",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-0011",
+      "esperado": "FWD=0, REV=1",
+      "obtido": "FWD=0, REV=1",
+      "obtido_interpretador": "FWD=0, REV=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-0100",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-0100",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-0101",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-0101",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-0110",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-0110",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-0111",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-0111",
+      "esperado": "FWD=0, REV=1",
+      "obtido": "FWD=0, REV=1",
+      "obtido_interpretador": "FWD=0, REV=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-1000",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-1000",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-1001",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-1001",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-1010",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-1010",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-1011",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-1011",
+      "esperado": "FWD=0, REV=1",
+      "obtido": "FWD=0, REV=1",
+      "obtido_interpretador": "FWD=0, REV=1",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-1100",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-1100",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-1101",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-1101",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-1110",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-1110",
+      "esperado": "FWD=0, REV=0",
+      "obtido": "FWD=0, REV=0",
+      "obtido_interpretador": "FWD=0, REV=0",
+      "situacao": "PASSA"
+    },
+    {
+      "id": "VX-REV-1111",
+      "grupo": "reversao-exaustiva",
+      "sequencia": "VX-REV-1111",
+      "esperado": "FWD=0, REV=1",
+      "obtido": "FWD=0, REV=1",
+      "obtido_interpretador": "FWD=0, REV=1",
+      "situacao": "PASSA"
+    }
+  ]
+}
