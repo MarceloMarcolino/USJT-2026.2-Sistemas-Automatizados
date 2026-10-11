@@ -1,0 +1,1253 @@
+{
+  "branches": {
+    "br_b7": {
+      "rungs": [
+        "b7_0",
+        "b7_1"
+      ],
+      "input": false,
+      "out": false
+    },
+    "br_b8": {
+      "rungs": [
+        "b8_0",
+        "b8_1"
+      ],
+      "input": false,
+      "out": false
+    },
+    "br_b9": {
+      "rungs": [
+        "b9_0",
+        "b9_1"
+      ],
+      "input": false,
+      "out": false
+    },
+    "br_b11": {
+      "rungs": [
+        "b11_e0p",
+        "b11_e2p"
+      ],
+      "input": false,
+      "out": false
+    },
+    "br_b13": {
+      "rungs": [
+        "b13_0",
+        "b13_1",
+        "b13_2",
+        "b13_3"
+      ],
+      "input": false,
+      "out": false
+    }
+  },
+  "elements": {
+    "b1_e2": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E2_LIBERAR"
+          }
+        ]
+      }
+    },
+    "b1_s": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-S_PECA"
+          }
+        ]
+      }
+    },
+    "b1_tr": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-TR20"
+          }
+        ]
+      }
+    },
+    "b2_rst": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-RESET_LOTE"
+          }
+        ]
+      }
+    },
+    "b2_r": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-C_LOTE-R"
+          }
+        ]
+      }
+    },
+    "b3_tr": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-TR20"
+          }
+        ]
+      }
+    },
+    "b3_ctu": {
+      "configured": true,
+      "prevCU": false,
+      "prevCD": false,
+      "memInput": false,
+      "out": false,
+      "type": "CTU",
+      "parameters": {
+        "inOut": [
+          {
+            "type": [
+              "Counter"
+            ],
+            "uuid": "v-C_LOTE"
+          }
+        ]
+      }
+    },
+    "b4_cmp": {
+      "configured": true,
+      "out": false,
+      "type": "GEQ",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Number",
+              "Time"
+            ],
+            "uuid": "v-C_LOTE-CV"
+          },
+          {
+            "type": [
+              "Number",
+              "Time"
+            ],
+            "uuid": "v-C_LOTE-PV"
+          }
+        ]
+      }
+    },
+    "b4_ok": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-LOTE_OK"
+          }
+        ]
+      }
+    },
+    "b5_s": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-S_PECA"
+          }
+        ]
+      }
+    },
+    "b5_emg": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-EMG_OK"
+          }
+        ]
+      }
+    },
+    "b5_lote": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-LOTE_OK"
+          }
+        ]
+      }
+    },
+    "b5_tr": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-TR01"
+          }
+        ]
+      }
+    },
+    "b5_e0": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E0_TRANSP"
+          }
+        ]
+      }
+    },
+    "b6_e1": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E1_ENCHER"
+          }
+        ]
+      }
+    },
+    "b6_q": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-T_ENCH-Q"
+          }
+        ]
+      }
+    },
+    "b6_tr": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-TR12"
+          }
+        ]
+      }
+    },
+    "b7_tr": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-TR01"
+          }
+        ]
+      }
+    },
+    "b7_0_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTL",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E1_ENCHER"
+          }
+        ]
+      }
+    },
+    "b7_1_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTU",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E0_TRANSP"
+          }
+        ]
+      }
+    },
+    "b8_tr": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-TR12"
+          }
+        ]
+      }
+    },
+    "b8_0_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTL",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E2_LIBERAR"
+          }
+        ]
+      }
+    },
+    "b8_1_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTU",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E1_ENCHER"
+          }
+        ]
+      }
+    },
+    "b9_tr": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-TR20"
+          }
+        ]
+      }
+    },
+    "b9_0_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTL",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E0_TRANSP"
+          }
+        ]
+      }
+    },
+    "b9_1_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTU",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E2_LIBERAR"
+          }
+        ]
+      }
+    },
+    "b10_e1": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E1_ENCHER"
+          }
+        ]
+      }
+    },
+    "b10_emg": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-EMG_OK"
+          }
+        ]
+      }
+    },
+    "b10_t": {
+      "configured": true,
+      "type": "TON",
+      "out": false,
+      "parameters": {
+        "inOut": [
+          {
+            "type": [
+              "Timer"
+            ],
+            "uuid": "v-T_ENCH"
+          }
+        ]
+      }
+    },
+    "b11_emg": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-EMG_OK"
+          }
+        ]
+      }
+    },
+    "b11_e0": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E0_TRANSP"
+          }
+        ]
+      }
+    },
+    "b11_lote": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-LOTE_OK"
+          }
+        ]
+      }
+    },
+    "b11_e2": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E2_LIBERAR"
+          }
+        ]
+      }
+    },
+    "b11_m": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-M_EST"
+          }
+        ]
+      }
+    },
+    "b12_e1": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E1_ENCHER"
+          }
+        ]
+      }
+    },
+    "b12_y": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-Y_VALV"
+          }
+        ]
+      }
+    },
+    "b12_emg": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-EMG_OK"
+          }
+        ]
+      }
+    },
+    "b13_init": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-INIT"
+          }
+        ]
+      }
+    },
+    "b13_0_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTL",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E0_TRANSP"
+          }
+        ]
+      }
+    },
+    "b13_1_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTU",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E1_ENCHER"
+          }
+        ]
+      }
+    },
+    "b13_2_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTU",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-E2_LIBERAR"
+          }
+        ]
+      }
+    },
+    "b13_3_c": {
+      "configured": true,
+      "out": false,
+      "type": "OTL",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-INIT"
+          }
+        ]
+      }
+    }
+  },
+  "runglist": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9",
+    "b10",
+    "b11",
+    "b12",
+    "b13"
+  ],
+  "rungs": {
+    "b1": {
+      "comment": "B1 — Transição E2→E0: E2 · ¬S_PECA (recipiente saiu). TR20 é o pulso de conclusão P_CONTAR.",
+      "elements": [
+        "b1_e2",
+        "b1_s",
+        "b1_tr"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b2": {
+      "comment": "B2 — Zeragem: RESET_LOTE escreve C_LOTE.R antes do contador — o reset domina.",
+      "elements": [
+        "b2_rst",
+        "b2_r"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b3": {
+      "comment": "B3 — Contagem: cada conclusão (TR20) incrementa C_LOTE (CTU, PV = 6).",
+      "elements": [
+        "b3_tr",
+        "b3_ctu"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b4": {
+      "comment": "B4 — LOTE_OK = (C_LOTE.CV ≥ C_LOTE.PV), atualizado antes da receptividade de E0→E1.",
+      "elements": [
+        "b4_cmp",
+        "b4_ok"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b5": {
+      "comment": "B5 — Transição E0→E1: E0 · S_PECA · EMG_OK · ¬LOTE_OK.",
+      "elements": [
+        "b5_e0",
+        "b5_s",
+        "b5_emg",
+        "b5_lote",
+        "b5_tr"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b6": {
+      "comment": "B6 — Transição E1→E2: E1 · T_ENCH.Q (4 s de válvula concluídos).",
+      "elements": [
+        "b6_e1",
+        "b6_q",
+        "b6_tr"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b7_0": {
+      "comment": "",
+      "elements": [
+        "b7_0_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b7_1": {
+      "comment": "",
+      "elements": [
+        "b7_1_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b7": {
+      "comment": "B7 — Disparo de TR01: SET E1, RESET E0.",
+      "elements": [
+        "b7_tr",
+        "br_b7"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b8_0": {
+      "comment": "",
+      "elements": [
+        "b8_0_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b8_1": {
+      "comment": "",
+      "elements": [
+        "b8_1_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b8": {
+      "comment": "B8 — Disparo de TR12: SET E2, RESET E1.",
+      "elements": [
+        "b8_tr",
+        "br_b8"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b9_0": {
+      "comment": "",
+      "elements": [
+        "b9_0_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b9_1": {
+      "comment": "",
+      "elements": [
+        "b9_1_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b9": {
+      "comment": "B9 — Disparo de TR20: SET E0, RESET E2.",
+      "elements": [
+        "b9_tr",
+        "br_b9"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b10": {
+      "comment": "B10 — Tempo de enchimento: E1 · EMG_OK habilita T_ENCH (TON, PT = 4 s); emergência zera a contagem.",
+      "elements": [
+        "b10_e1",
+        "b10_emg",
+        "b10_t"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b11_e0p": {
+      "comment": "",
+      "elements": [
+        "b11_e0",
+        "b11_lote"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b11_e2p": {
+      "comment": "",
+      "elements": [
+        "b11_e2"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b11": {
+      "comment": "B11 — Esteira: M_EST = EMG_OK · (E0·¬LOTE_OK + E2). Lote completo para a esteira em E0.",
+      "elements": [
+        "b11_emg",
+        "br_b11",
+        "b11_m"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b12": {
+      "comment": "B12 — Válvula: Y_VALV = EMG_OK · E1.",
+      "elements": [
+        "b12_emg",
+        "b12_e1",
+        "b12_y"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b13_0": {
+      "comment": "",
+      "elements": [
+        "b13_0_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b13_1": {
+      "comment": "",
+      "elements": [
+        "b13_1_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b13_2": {
+      "comment": "",
+      "elements": [
+        "b13_2_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b13_3": {
+      "comment": "",
+      "elements": [
+        "b13_3_c"
+      ],
+      "input": false,
+      "out": false
+    },
+    "b13": {
+      "comment": "B13 — Inicialização, no fim da primeira varredura: ativa só a etapa inicial E0 e grava INIT. Por estar no fim, nenhuma transição nem ação age na varredura de inicialização.",
+      "elements": [
+        "b13_init",
+        "br_b13"
+      ],
+      "input": false,
+      "out": false
+    }
+  },
+  "variables": {
+    "v-S_PECA": {
+      "name": "S_PECA",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b1_s",
+        "b5_s"
+      ],
+      "subVars": {}
+    },
+    "v-EMG_OK": {
+      "name": "EMG_OK",
+      "parrent": "",
+      "type": "Bool",
+      "value": true,
+      "usedBy": [
+        "b5_emg",
+        "b10_emg",
+        "b11_emg",
+        "b12_emg"
+      ],
+      "subVars": {}
+    },
+    "v-RESET_LOTE": {
+      "name": "RESET_LOTE",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b2_rst"
+      ],
+      "subVars": {}
+    },
+    "v-M_EST": {
+      "name": "M_EST",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b11_m"
+      ],
+      "subVars": {}
+    },
+    "v-Y_VALV": {
+      "name": "Y_VALV",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b12_y"
+      ],
+      "subVars": {}
+    },
+    "v-LOTE_OK": {
+      "name": "LOTE_OK",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b4_ok",
+        "b5_lote",
+        "b11_lote"
+      ],
+      "subVars": {}
+    },
+    "v-E0_TRANSP": {
+      "name": "E0_TRANSP",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b5_e0",
+        "b7_1_c",
+        "b9_0_c",
+        "b11_e0",
+        "b13_0_c"
+      ],
+      "subVars": {}
+    },
+    "v-E1_ENCHER": {
+      "name": "E1_ENCHER",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b6_e1",
+        "b7_0_c",
+        "b8_1_c",
+        "b10_e1",
+        "b12_e1",
+        "b13_1_c"
+      ],
+      "subVars": {}
+    },
+    "v-E2_LIBERAR": {
+      "name": "E2_LIBERAR",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b1_e2",
+        "b8_0_c",
+        "b9_1_c",
+        "b11_e2",
+        "b13_2_c"
+      ],
+      "subVars": {}
+    },
+    "v-INIT": {
+      "name": "INIT",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b13_init",
+        "b13_3_c"
+      ],
+      "subVars": {}
+    },
+    "v-TR01": {
+      "name": "TR01",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b5_tr",
+        "b7_tr"
+      ],
+      "subVars": {}
+    },
+    "v-TR12": {
+      "name": "TR12",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b6_tr",
+        "b8_tr"
+      ],
+      "subVars": {}
+    },
+    "v-TR20": {
+      "name": "TR20",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b1_tr",
+        "b3_tr",
+        "b9_tr"
+      ],
+      "subVars": {}
+    },
+    "v-T_ENCH": {
+      "name": "T_ENCH",
+      "parrent": "",
+      "type": "Timer",
+      "value": null,
+      "usedBy": [
+        "b10_t"
+      ],
+      "subVars": {
+        "PT": "v-T_ENCH-PT",
+        "ET": "v-T_ENCH-ET",
+        "IN": "v-T_ENCH-IN",
+        "R": "v-T_ENCH-R",
+        "Q": "v-T_ENCH-Q"
+      }
+    },
+    "v-T_ENCH-PT": {
+      "name": "T_ENCH.PT",
+      "parrent": "v-T_ENCH",
+      "type": "Time",
+      "value": 4000,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_ENCH-ET": {
+      "name": "T_ENCH.ET",
+      "parrent": "v-T_ENCH",
+      "type": "Time",
+      "value": 0,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_ENCH-IN": {
+      "name": "T_ENCH.IN",
+      "parrent": "v-T_ENCH",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_ENCH-R": {
+      "name": "T_ENCH.R",
+      "parrent": "v-T_ENCH",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_ENCH-Q": {
+      "name": "T_ENCH.Q",
+      "parrent": "v-T_ENCH",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b6_q"
+      ],
+      "subVars": {}
+    },
+    "v-C_LOTE": {
+      "name": "C_LOTE",
+      "parrent": "",
+      "type": "Counter",
+      "value": null,
+      "usedBy": [
+        "b3_ctu"
+      ],
+      "subVars": {
+        "PV": "v-C_LOTE-PV",
+        "CV": "v-C_LOTE-CV",
+        "CU": "v-C_LOTE-CU",
+        "CD": "v-C_LOTE-CD",
+        "R": "v-C_LOTE-R",
+        "LD": "v-C_LOTE-LD",
+        "QU": "v-C_LOTE-QU",
+        "QD": "v-C_LOTE-QD"
+      }
+    },
+    "v-C_LOTE-PV": {
+      "name": "C_LOTE.PV",
+      "parrent": "v-C_LOTE",
+      "type": "Number",
+      "value": 6,
+      "usedBy": [
+        "b4_cmp"
+      ],
+      "subVars": {}
+    },
+    "v-C_LOTE-CV": {
+      "name": "C_LOTE.CV",
+      "parrent": "v-C_LOTE",
+      "type": "Number",
+      "value": 0,
+      "usedBy": [
+        "b4_cmp"
+      ],
+      "subVars": {}
+    },
+    "v-C_LOTE-CU": {
+      "name": "C_LOTE.CU",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-C_LOTE-CD": {
+      "name": "C_LOTE.CD",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-C_LOTE-R": {
+      "name": "C_LOTE.R",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "b2_r"
+      ],
+      "subVars": {}
+    },
+    "v-C_LOTE-LD": {
+      "name": "C_LOTE.LD",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-C_LOTE-QU": {
+      "name": "C_LOTE.QU",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-C_LOTE-QD": {
+      "name": "C_LOTE.QD",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    }
+  }
+}

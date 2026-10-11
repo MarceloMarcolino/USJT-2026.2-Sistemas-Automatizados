@@ -132,3 +132,28 @@ reprovam onde devem. O registro está em
 [`testes/casos-de-teste.md`](atividades/TP06-ladder/testes/casos-de-teste.md);
 as capturas dos estados decisivos em
 [`evidencias/`](atividades/TP06-ladder/evidencias/).
+
+### TP07 — Programação Sequencial de CLP
+
+Temporizadores, contadores e sequência no PLC Simulator Online, em dois
+programas: (A) partida com atraso de 3 s, sinal intermitente de 1 s com a fase
+guardada em memória, lote de cinco peças contado pela borda do detector e
+zeragem que vence a contagem simultânea; (B) GRAFCET de enchimento convertido
+para Ladder — transporte, enchimento por 4 s e liberação —, com etapas em
+SET/RESET, emergência e bloqueio ao completar um lote de seis recipientes.
+
+- [Acessar a entrega da TP07](atividades/TP07-sequencial/) — **completa**
+- Ladder público no PLC Simulator Online: [programa A](https://app.plcsimulator.online/bZeoImGrpquP33NSmiaX)
+  e [programa B](https://app.plcsimulator.online/qeSrsSLhjVtkmcfWc0gZ)
+- Programas nativos (backups JSON): [A](atividades/TP07-sequencial/plc-simulator/p07-temporizacao-contagem.json)
+  e [B](atividades/TP07-sequencial/plc-simulator/p07-enchimento-grafcet.json)
+
+Os dois programas foram validados em **304/304 casos** no motor nativo do
+simulador, com o esperado escrito antes de cada execução, conferência
+independente com 19 160 registros de varredura idênticos, 13 invariantes sem
+violações nas condições descritas no relatório e 12 mutantes (programas com
+defeito proposital) detectados. O registro está em
+[`casos_teste.csv`](atividades/TP07-sequencial/casos_teste.csv) e em
+[`testes/casos-de-teste.md`](atividades/TP07-sequencial/testes/casos-de-teste.md);
+as capturas dos estados decisivos em
+[`evidencias/`](atividades/TP07-sequencial/evidencias/).

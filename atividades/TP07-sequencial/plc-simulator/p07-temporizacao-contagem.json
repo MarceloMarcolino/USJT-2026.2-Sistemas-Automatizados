@@ -1,0 +1,1085 @@
+{
+  "branches": {
+    "br_a5": {
+      "rungs": [
+        "a5_liga",
+        "a5_mantem"
+      ],
+      "input": false,
+      "out": false
+    }
+  },
+  "elements": {
+    "a1_emg": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-EMG_OK"
+          }
+        ]
+      }
+    },
+    "a1_stop": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-STOP_OK"
+          }
+        ]
+      }
+    },
+    "a1_start": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-START"
+          }
+        ]
+      }
+    },
+    "a1_t1": {
+      "configured": true,
+      "type": "TON",
+      "out": false,
+      "parameters": {
+        "inOut": [
+          {
+            "type": [
+              "Timer"
+            ],
+            "uuid": "v-T1"
+          }
+        ]
+      }
+    },
+    "a2_q": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-T1-Q"
+          }
+        ]
+      }
+    },
+    "a2_motor": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-MOTOR_DELAY"
+          }
+        ]
+      }
+    },
+    "a3_hab": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-HAB_PISCA"
+          }
+        ]
+      }
+    },
+    "a3_fase": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-PISCA"
+          }
+        ]
+      }
+    },
+    "a3_t": {
+      "configured": true,
+      "type": "TON",
+      "out": false,
+      "parameters": {
+        "inOut": [
+          {
+            "type": [
+              "Timer"
+            ],
+            "uuid": "v-T_DESL"
+          }
+        ]
+      }
+    },
+    "a4_hab": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-HAB_PISCA"
+          }
+        ]
+      }
+    },
+    "a4_fase": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-PISCA"
+          }
+        ]
+      }
+    },
+    "a4_t": {
+      "configured": true,
+      "type": "TON",
+      "out": false,
+      "parameters": {
+        "inOut": [
+          {
+            "type": [
+              "Timer"
+            ],
+            "uuid": "v-T_LIG"
+          }
+        ]
+      }
+    },
+    "a5_hab": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-HAB_PISCA"
+          }
+        ]
+      }
+    },
+    "a5_apagada": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-PISCA"
+          }
+        ]
+      }
+    },
+    "a5_fim_desl": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-T_DESL-Q"
+          }
+        ]
+      }
+    },
+    "a5_acesa": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-PISCA"
+          }
+        ]
+      }
+    },
+    "a5_fim_lig": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-T_LIG-Q"
+          }
+        ]
+      }
+    },
+    "a5_pisca": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-PISCA"
+          }
+        ]
+      }
+    },
+    "a6_pisca": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-PISCA"
+          }
+        ]
+      }
+    },
+    "a6_lamp": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-LAMPADA"
+          }
+        ]
+      }
+    },
+    "a7_s": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-S_PECA"
+          }
+        ]
+      }
+    },
+    "a7_ant": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-S_PECA_ANT"
+          }
+        ]
+      }
+    },
+    "a7_p": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-P_PECA"
+          }
+        ]
+      }
+    },
+    "a8_s": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-S_PECA"
+          }
+        ]
+      }
+    },
+    "a8_set": {
+      "configured": true,
+      "out": false,
+      "type": "OTL",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-S_PECA_ANT"
+          }
+        ]
+      }
+    },
+    "a9_s": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIO",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-S_PECA"
+          }
+        ]
+      }
+    },
+    "a9_rst": {
+      "configured": true,
+      "out": false,
+      "type": "OTU",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-S_PECA_ANT"
+          }
+        ]
+      }
+    },
+    "a10_rst": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-RESET_LOTE"
+          }
+        ]
+      }
+    },
+    "a10_r": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-C_LOTE-R"
+          }
+        ]
+      }
+    },
+    "a11_p": {
+      "configured": true,
+      "memInput": false,
+      "out": false,
+      "type": "XIC",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-P_PECA"
+          }
+        ]
+      }
+    },
+    "a11_ctu": {
+      "configured": true,
+      "prevCU": false,
+      "prevCD": false,
+      "memInput": false,
+      "out": false,
+      "type": "CTU",
+      "parameters": {
+        "inOut": [
+          {
+            "type": [
+              "Counter"
+            ],
+            "uuid": "v-C_LOTE"
+          }
+        ]
+      }
+    },
+    "a12_cmp": {
+      "configured": true,
+      "out": false,
+      "type": "GEQ",
+      "parameters": {
+        "input": [
+          {
+            "type": [
+              "Number",
+              "Time"
+            ],
+            "uuid": "v-C_LOTE-CV"
+          },
+          {
+            "type": [
+              "Number",
+              "Time"
+            ],
+            "uuid": "v-C_LOTE-PV"
+          }
+        ]
+      }
+    },
+    "a12_ok": {
+      "configured": true,
+      "out": false,
+      "type": "OTE",
+      "parameters": {
+        "output": [
+          {
+            "type": [
+              "Bool"
+            ],
+            "uuid": "v-LOTE_OK"
+          }
+        ]
+      }
+    }
+  },
+  "runglist": [
+    "a1",
+    "a2",
+    "a3",
+    "a4",
+    "a5",
+    "a6",
+    "a7",
+    "a8",
+    "a9",
+    "a10",
+    "a11",
+    "a12"
+  ],
+  "rungs": {
+    "a1": {
+      "comment": "A1 — Atraso de partida: EMG_OK · STOP_OK · START habilita T1 (TON, PT = 3 s). Sem um permissivo ou sem START, T1 zera ET e Q.",
+      "elements": [
+        "a1_emg",
+        "a1_stop",
+        "a1_start",
+        "a1_t1"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a2": {
+      "comment": "A2 — MOTOR_DELAY = T1.Q: o motor liga quando ET alcança PT.",
+      "elements": [
+        "a2_q",
+        "a2_motor"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a3": {
+      "comment": "A3 — Fase apagada: HAB_PISCA · ¬PISCA cronometra T_DESL (PT = 1 s).",
+      "elements": [
+        "a3_hab",
+        "a3_fase",
+        "a3_t"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a4": {
+      "comment": "A4 — Fase acesa: HAB_PISCA · PISCA cronometra T_LIG (PT = 1 s).",
+      "elements": [
+        "a4_hab",
+        "a4_fase",
+        "a4_t"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a5_liga": {
+      "comment": "",
+      "elements": [
+        "a5_apagada",
+        "a5_fim_desl"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a5_mantem": {
+      "comment": "",
+      "elements": [
+        "a5_acesa",
+        "a5_fim_lig"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a5": {
+      "comment": "A5 — Próxima fase: PISCA = HAB_PISCA · (¬PISCA·T_DESL.Q + PISCA·¬T_LIG.Q). Só acende ao fim da fase apagada e só apaga ao fim da acesa; a troca desliga o temporizador que terminou.",
+      "elements": [
+        "a5_hab",
+        "br_a5",
+        "a5_pisca"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a6": {
+      "comment": "A6 — LAMPADA segue a fase PISCA.",
+      "elements": [
+        "a6_pisca",
+        "a6_lamp"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a7": {
+      "comment": "A7 — Borda de subida: P_PECA = S_PECA · ¬S_PECA_ANT (calculada antes de atualizar a memória).",
+      "elements": [
+        "a7_s",
+        "a7_ant",
+        "a7_p"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a8": {
+      "comment": "A8 — Memória do valor anterior: S_PECA = 1 grava S_PECA_ANT (SET).",
+      "elements": [
+        "a8_s",
+        "a8_set"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a9": {
+      "comment": "A9 — Memória do valor anterior: S_PECA = 0 apaga S_PECA_ANT (RESET).",
+      "elements": [
+        "a9_s",
+        "a9_rst"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a10": {
+      "comment": "A10 — Zeragem: RESET_LOTE escreve C_LOTE.R antes do contador — o reset domina uma contagem simultânea.",
+      "elements": [
+        "a10_rst",
+        "a10_r"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a11": {
+      "comment": "A11 — Contagem: cada pulso P_PECA incrementa C_LOTE (CTU, PV = 5).",
+      "elements": [
+        "a11_p",
+        "a11_ctu"
+      ],
+      "input": false,
+      "out": false
+    },
+    "a12": {
+      "comment": "A12 — LOTE_OK = (C_LOTE.CV ≥ C_LOTE.PV): continua sinalizado se passar do lote.",
+      "elements": [
+        "a12_cmp",
+        "a12_ok"
+      ],
+      "input": false,
+      "out": false
+    }
+  },
+  "variables": {
+    "v-START": {
+      "name": "START",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a1_start"
+      ],
+      "subVars": {}
+    },
+    "v-STOP_OK": {
+      "name": "STOP_OK",
+      "parrent": "",
+      "type": "Bool",
+      "value": true,
+      "usedBy": [
+        "a1_stop"
+      ],
+      "subVars": {}
+    },
+    "v-EMG_OK": {
+      "name": "EMG_OK",
+      "parrent": "",
+      "type": "Bool",
+      "value": true,
+      "usedBy": [
+        "a1_emg"
+      ],
+      "subVars": {}
+    },
+    "v-HAB_PISCA": {
+      "name": "HAB_PISCA",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a3_hab",
+        "a4_hab",
+        "a5_hab"
+      ],
+      "subVars": {}
+    },
+    "v-S_PECA": {
+      "name": "S_PECA",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a7_s",
+        "a8_s",
+        "a9_s"
+      ],
+      "subVars": {}
+    },
+    "v-RESET_LOTE": {
+      "name": "RESET_LOTE",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a10_rst"
+      ],
+      "subVars": {}
+    },
+    "v-MOTOR_DELAY": {
+      "name": "MOTOR_DELAY",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a2_motor"
+      ],
+      "subVars": {}
+    },
+    "v-LAMPADA": {
+      "name": "LAMPADA",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a6_lamp"
+      ],
+      "subVars": {}
+    },
+    "v-LOTE_OK": {
+      "name": "LOTE_OK",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a12_ok"
+      ],
+      "subVars": {}
+    },
+    "v-PISCA": {
+      "name": "PISCA",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a3_fase",
+        "a4_fase",
+        "a5_apagada",
+        "a5_acesa",
+        "a5_pisca",
+        "a6_pisca"
+      ],
+      "subVars": {}
+    },
+    "v-S_PECA_ANT": {
+      "name": "S_PECA_ANT",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a7_ant",
+        "a8_set",
+        "a9_rst"
+      ],
+      "subVars": {}
+    },
+    "v-P_PECA": {
+      "name": "P_PECA",
+      "parrent": "",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a7_p",
+        "a11_p"
+      ],
+      "subVars": {}
+    },
+    "v-T1": {
+      "name": "T1",
+      "parrent": "",
+      "type": "Timer",
+      "value": null,
+      "usedBy": [
+        "a1_t1"
+      ],
+      "subVars": {
+        "PT": "v-T1-PT",
+        "ET": "v-T1-ET",
+        "IN": "v-T1-IN",
+        "R": "v-T1-R",
+        "Q": "v-T1-Q"
+      }
+    },
+    "v-T1-PT": {
+      "name": "T1.PT",
+      "parrent": "v-T1",
+      "type": "Time",
+      "value": 3000,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T1-ET": {
+      "name": "T1.ET",
+      "parrent": "v-T1",
+      "type": "Time",
+      "value": 0,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T1-IN": {
+      "name": "T1.IN",
+      "parrent": "v-T1",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T1-R": {
+      "name": "T1.R",
+      "parrent": "v-T1",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T1-Q": {
+      "name": "T1.Q",
+      "parrent": "v-T1",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a2_q"
+      ],
+      "subVars": {}
+    },
+    "v-T_DESL": {
+      "name": "T_DESL",
+      "parrent": "",
+      "type": "Timer",
+      "value": null,
+      "usedBy": [
+        "a3_t"
+      ],
+      "subVars": {
+        "PT": "v-T_DESL-PT",
+        "ET": "v-T_DESL-ET",
+        "IN": "v-T_DESL-IN",
+        "R": "v-T_DESL-R",
+        "Q": "v-T_DESL-Q"
+      }
+    },
+    "v-T_DESL-PT": {
+      "name": "T_DESL.PT",
+      "parrent": "v-T_DESL",
+      "type": "Time",
+      "value": 1000,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_DESL-ET": {
+      "name": "T_DESL.ET",
+      "parrent": "v-T_DESL",
+      "type": "Time",
+      "value": 0,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_DESL-IN": {
+      "name": "T_DESL.IN",
+      "parrent": "v-T_DESL",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_DESL-R": {
+      "name": "T_DESL.R",
+      "parrent": "v-T_DESL",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_DESL-Q": {
+      "name": "T_DESL.Q",
+      "parrent": "v-T_DESL",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a5_fim_desl"
+      ],
+      "subVars": {}
+    },
+    "v-T_LIG": {
+      "name": "T_LIG",
+      "parrent": "",
+      "type": "Timer",
+      "value": null,
+      "usedBy": [
+        "a4_t"
+      ],
+      "subVars": {
+        "PT": "v-T_LIG-PT",
+        "ET": "v-T_LIG-ET",
+        "IN": "v-T_LIG-IN",
+        "R": "v-T_LIG-R",
+        "Q": "v-T_LIG-Q"
+      }
+    },
+    "v-T_LIG-PT": {
+      "name": "T_LIG.PT",
+      "parrent": "v-T_LIG",
+      "type": "Time",
+      "value": 1000,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_LIG-ET": {
+      "name": "T_LIG.ET",
+      "parrent": "v-T_LIG",
+      "type": "Time",
+      "value": 0,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_LIG-IN": {
+      "name": "T_LIG.IN",
+      "parrent": "v-T_LIG",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_LIG-R": {
+      "name": "T_LIG.R",
+      "parrent": "v-T_LIG",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-T_LIG-Q": {
+      "name": "T_LIG.Q",
+      "parrent": "v-T_LIG",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a5_fim_lig"
+      ],
+      "subVars": {}
+    },
+    "v-C_LOTE": {
+      "name": "C_LOTE",
+      "parrent": "",
+      "type": "Counter",
+      "value": null,
+      "usedBy": [
+        "a11_ctu"
+      ],
+      "subVars": {
+        "PV": "v-C_LOTE-PV",
+        "CV": "v-C_LOTE-CV",
+        "CU": "v-C_LOTE-CU",
+        "CD": "v-C_LOTE-CD",
+        "R": "v-C_LOTE-R",
+        "LD": "v-C_LOTE-LD",
+        "QU": "v-C_LOTE-QU",
+        "QD": "v-C_LOTE-QD"
+      }
+    },
+    "v-C_LOTE-PV": {
+      "name": "C_LOTE.PV",
+      "parrent": "v-C_LOTE",
+      "type": "Number",
+      "value": 5,
+      "usedBy": [
+        "a12_cmp"
+      ],
+      "subVars": {}
+    },
+    "v-C_LOTE-CV": {
+      "name": "C_LOTE.CV",
+      "parrent": "v-C_LOTE",
+      "type": "Number",
+      "value": 0,
+      "usedBy": [
+        "a12_cmp"
+      ],
+      "subVars": {}
+    },
+    "v-C_LOTE-CU": {
+      "name": "C_LOTE.CU",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-C_LOTE-CD": {
+      "name": "C_LOTE.CD",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-C_LOTE-R": {
+      "name": "C_LOTE.R",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [
+        "a10_r"
+      ],
+      "subVars": {}
+    },
+    "v-C_LOTE-LD": {
+      "name": "C_LOTE.LD",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-C_LOTE-QU": {
+      "name": "C_LOTE.QU",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    },
+    "v-C_LOTE-QD": {
+      "name": "C_LOTE.QD",
+      "parrent": "v-C_LOTE",
+      "type": "Bool",
+      "value": false,
+      "usedBy": [],
+      "subVars": {}
+    }
+  }
+}
