@@ -1,0 +1,5 @@
+Protótipo navegável (modo Present, começa em "N · Processo"):
+https://www.figma.com/proto/l1ooCMrTBankdzc1h0BJRL/TP08-Supervis%C3%B3rio-R101?node-id=3-149&starting-point-node-id=3%3A149&scaling=scale-down
+
+Arquivo de design (páginas "Protótipo" e "Componentes"):
+https://www.figma.com/design/l1ooCMrTBankdzc1h0BJRL/TP08-Supervis%C3%B3rio-R101

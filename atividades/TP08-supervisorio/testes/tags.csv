@@ -1,0 +1,12 @@
+tag,tipo,unidade,faixa,acesso,origem,descricao,uso,minimo_do_enunciado
+LT_101.PV,REAL,%,"0,0 a 100,0",R,CLP (LT-101),Nível medido no reservatório R-101,"valor, barra do tanque, tendência; base de H e HH",sim
+LT_101.QUALITY,ENUM,-,"GOOD, BAD",R,CLP (diagnóstico do LT-101),Qualidade da medida de nível,mostrada junto ao valor; alarme A05; permissivo P5,sim
+P_101.CMD,BOOL,-,"0 = parar, 1 = partir",RW,HMI (escrita) / CLP,Solicitação remota para a bomba de entrada P-101,botões PARTIR e PARAR; só vale em MANUAL,sim
+P_101.STATUS,ENUM,-,"RUN, STOP",R,CLP (contato auxiliar),Retorno real da P-101,estado da bomba; a HMI mostra UNKNOWN sem comunicação,sim
+P_101.MODE,ENUM,-,"MANUAL, AUTO, LOCAL",R,CLP (seletor de campo),Autoridade de comando da P-101,libera ou bloqueia os comandos remotos,sim
+COMM_PLC,ENUM,-,"GOOD, BAD",R,driver de comunicação da HMI,Estado da comunicação HMI–CLP,BAD substitui valores por --- e bloqueia comandos; alarme A04,sim
+P_101.FAIL,BOOL,-,"0, 1",R,CLP,Falha da P-101 (proteção ou discrepância comando × retorno),alarme A03; permissivo P4,não
+EMG_OK,BOOL,-,1 = cadeia íntegra,R,CLP (cadeia de emergência),Emergência não acionada,permissivo P3,não
+ALM_L_H,BOOL,-,"0, 1",R,CLP,"Nível alto: PV ≥ 75 %, normaliza abaixo de 73 %",alarme A01; estado ATENÇÃO,não
+ALM_L_HH,BOOL,-,"0, 1",R,CLP,"Nível muito alto: PV ≥ 90 %, normaliza abaixo de 88 %; intertrava a P-101",alarme A02; estado ALARME; permissivo P6,não
+COMM_PLC.LAST_OK,TIME,hh:mm:ss,-,R,driver de comunicação da HMI,Instante da última leitura válida do CLP,idade do dado na manutenção e nos alarmes incertos,não

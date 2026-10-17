@@ -157,3 +157,26 @@ defeito proposital) detectados. O registro está em
 [`testes/casos-de-teste.md`](atividades/TP07-sequencial/testes/casos-de-teste.md);
 as capturas dos estados decisivos em
 [`evidencias/`](atividades/TP07-sequencial/evidencias/).
+
+### TP08 — Sistemas Supervisórios
+
+Protótipo navegável de HMI no Figma para o reservatório R-101 com a bomba de
+entrada P-101: telas de Processo, Alarmes, Tendência e Manutenção; nível com
+qualidade e limites H e HH; comando separado do retorno, com confirmação
+específica para parar a bomba; alarmes com prioridade, reconhecimento e ação
+recomendada; valores marcados como inválidos e comandos bloqueados sem
+comunicação; matriz de permissivos com a primeira causa da recusa.
+
+- [Acessar a entrega da TP08](atividades/TP08-supervisorio/) — **completa**
+- Protótipo no Figma (modo Present, sem login): ver
+  [`prototipo/link-figma.txt`](atividades/TP08-supervisorio/prototipo/link-figma.txt)
+- Dicionário de tags: [`testes/tags.csv`](atividades/TP08-supervisorio/testes/tags.csv)
+
+O arquivo do Figma foi conferido quadro a quadro com o desenho previsto (65
+quadros, 6 componentes com 23 variantes e 681 ligações) e os casos de
+navegação foram executados no próprio Present, sem login: **19/19**, com o
+esperado escrito antes. A lógica das telas e a política do CLP passaram em
+32/32 casos e os 14 mutantes (versões com defeito proposital) foram
+detectados. O registro está em
+[`casos_teste.csv`](atividades/TP08-supervisorio/casos_teste.csv); as capturas
+dos estados decisivos em [`evidencias/`](atividades/TP08-supervisorio/evidencias/).

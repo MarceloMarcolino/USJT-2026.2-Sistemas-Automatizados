@@ -1,0 +1,6 @@
+id,condicao,prioridade,fonte,mensagem,acao_recomendada
+A01,ALM_L_H = 1 (PV ≥ 75 %; normaliza abaixo de 73 %),Média,R-101 / LT-101,Nível alto no R-101 (H ≥ 75 %),Acompanhar a tendência e a vazão de entrada
+A02,ALM_L_HH = 1 (PV ≥ 90 %; normaliza abaixo de 88 %),Alta,R-101 / LT-101,Nível muito alto no R-101 (HH ≥ 90 %),Confirmar a P-101 parada e verificar a válvula de entrada
+A03,P_101.FAIL = 1,Alta,P-101,Falha na bomba P-101,Manter parada e acionar a manutenção
+A04,COMM_PLC = BAD,Alta,Rede HMI–CLP,Falha de comunicação com o CLP,Comandos bloqueados: verificar a rede e o processo em campo
+A05,LT_101.QUALITY = BAD (com COMM_PLC = GOOD),Alta,LT-101,Medição de nível inválida (LT-101),Validar o transmissor; P-101 parada pelo CLP

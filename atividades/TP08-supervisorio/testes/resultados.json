@@ -1,0 +1,389 @@
+{
+ "resumo": {
+  "casos_modelo": "24/24",
+  "casos_clp": "8/8",
+  "casos_navegacao_desenho": "19/19",
+  "mutantes": "14/14",
+  "invariantes_desenho": true,
+  "cenarios_coerentes_com_clp": true,
+  "quadros": 65,
+  "ligacoes": 681,
+  "figma_estrutura": true,
+  "present": "19/19"
+ },
+ "mutantes": {
+  "MUT-01 estado da bomba tirado do comando (comando fantasma)": [
+   "C01",
+   "C03"
+  ],
+  "MUT-02 valor mantido sob BAD (falsa confiança)": [
+   "T04",
+   "M06",
+   "F01"
+  ],
+  "MUT-03 comandos liberados sem comunicação": [
+   "T04",
+   "C01",
+   "C03"
+  ],
+  "MUT-04 modo LOCAL não bloqueia o comando remoto": [
+   "E05",
+   "C01",
+   "C03"
+  ],
+  "MUT-05 alarme sem banda morta (chattering)": [
+   "L01",
+   "L02",
+   "L03"
+  ],
+  "MUT-06 limite com > em vez de ≥": [
+   "L01",
+   "L02",
+   "L03",
+   "L07",
+   "L08"
+  ],
+  "MUT-07 reconhecer remove o alarme da lista": [
+   "T03",
+   "T04",
+   "E03m"
+  ],
+  "MUT-08 lista só por tempo, sem prioridade": [
+   "T03",
+   "T04",
+   "E03m"
+  ],
+  "MUT-09 parada sem confirmação": [
+   "T01"
+  ],
+  "MUT-10 HH sem destaque próprio": [
+   "T03",
+   "E03m",
+   "M07",
+   "E07"
+  ],
+  "MUT-11 CLP não zera P_101.CMD ao intertravar": [
+   "L03",
+   "L04",
+   "L05",
+   "L06"
+  ],
+  "MUT-12 parada por intertravamento não fica retida (AUTO religa sozinha)": [
+   "L07",
+   "L08"
+  ],
+  "MUT-13 intertravamento ignorado em LOCAL": [
+   "L08"
+  ],
+  "MUT-14 sem falha segura com medição inválida": [
+   "L05"
+  ]
+ },
+ "casos": {
+  "T01": {
+   "erros": []
+  },
+  "T02": {
+   "erros": []
+  },
+  "T03": {
+   "erros": []
+  },
+  "T04": {
+   "erros": []
+  },
+  "E01": {
+   "erros": []
+  },
+  "E03m": {
+   "erros": []
+  },
+  "E05": {
+   "erros": []
+  },
+  "E06": {
+   "erros": []
+  },
+  "E06b": {
+   "erros": []
+  },
+  "C01": {
+   "erros": []
+  },
+  "C02": {
+   "erros": []
+  },
+  "C03": {
+   "erros": []
+  },
+  "M01": {
+   "erros": []
+  },
+  "M02": {
+   "erros": []
+  },
+  "M03": {
+   "erros": []
+  },
+  "M04": {
+   "erros": []
+  },
+  "M05": {
+   "erros": []
+  },
+  "M06": {
+   "erros": []
+  },
+  "M07": {
+   "erros": []
+  },
+  "M08": {
+   "erros": []
+  },
+  "F01": {
+   "erros": []
+  },
+  "F02": {
+   "erros": []
+  },
+  "L01": {
+   "erros": []
+  },
+  "L02": {
+   "erros": []
+  },
+  "L03": {
+   "erros": []
+  },
+  "L04": {
+   "erros": []
+  },
+  "L05": {
+   "erros": []
+  },
+  "L06": {
+   "erros": []
+  },
+  "L07": {
+   "erros": []
+  },
+  "L08": {
+   "erros": []
+  },
+  "E07": {
+   "erros": []
+  },
+  "E08": {
+   "erros": []
+  },
+  "T05": {
+   "erros": [],
+   "quadro_desenho": "N · Processo · confirmar parada",
+   "quadro_figma": "N · Processo · confirmar parada",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "N · Processo · confirmar parada"
+   }
+  },
+  "T01p": {
+   "erros": [],
+   "quadro_desenho": "N · Processo",
+   "quadro_figma": "N · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "N · Processo"
+   }
+  },
+  "T02p": {
+   "erros": [],
+   "quadro_desenho": "H · Processo",
+   "quadro_figma": "H · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "H · Processo"
+   }
+  },
+  "T03p": {
+   "erros": [],
+   "quadro_desenho": "HH · Processo",
+   "quadro_figma": "HH · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "HH · Processo"
+   }
+  },
+  "T04p": {
+   "erros": [],
+   "quadro_desenho": "CB · Processo",
+   "quadro_figma": "CB · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "CB · Processo"
+   }
+  },
+  "P01": {
+   "erros": [],
+   "quadro_desenho": "N · Processo",
+   "quadro_figma": "N · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "N · Processo"
+   }
+  },
+  "P02a": {
+   "erros": [],
+   "quadro_desenho": "N · Alarmes",
+   "quadro_figma": "N · Alarmes",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "N · Alarmes"
+   }
+  },
+  "P02b": {
+   "erros": [],
+   "quadro_desenho": "N · Processo",
+   "quadro_figma": "N · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "N · Processo"
+   }
+  },
+  "P03": {
+   "erros": [],
+   "quadro_desenho": "N · Processo",
+   "quadro_figma": "N · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "N · Processo"
+   }
+  },
+  "P04a": {
+   "erros": [],
+   "quadro_desenho": "PE · Processo",
+   "quadro_figma": "PE · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "PE · Processo"
+   }
+  },
+  "P04b": {
+   "erros": [],
+   "quadro_desenho": "PP · Processo",
+   "quadro_figma": "PP · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "PP · Processo"
+   }
+  },
+  "P04c": {
+   "erros": [],
+   "quadro_desenho": "PE · Manutenção",
+   "quadro_figma": "PE · Manutenção",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "PE · Manutenção"
+   }
+  },
+  "P05": {
+   "erros": [],
+   "quadro_desenho": "HH · Alarmes",
+   "quadro_figma": "HH · Alarmes",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "HH · Alarmes"
+   }
+  },
+  "P06": {
+   "erros": [],
+   "quadro_desenho": "CB · Processo",
+   "quadro_figma": "CB · Processo",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "CB · Processo"
+   }
+  },
+  "E03": {
+   "erros": [],
+   "quadro_desenho": "HHR · Alarmes",
+   "quadro_figma": "HHR · Alarmes",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "HHR · Alarmes"
+   }
+  },
+  "E06n": {
+   "erros": [],
+   "quadro_desenho": "LOCR · Alarmes",
+   "quadro_figma": "LOCR · Alarmes",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "LOCR · Alarmes"
+   }
+  },
+  "X02": {
+   "erros": [],
+   "quadro_desenho": "CB · Alarmes",
+   "quadro_figma": "CB · Alarmes",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "CB · Alarmes"
+   }
+  },
+  "F02n": {
+   "erros": [],
+   "quadro_desenho": "PF · Alarmes",
+   "quadro_figma": "PF · Alarmes",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "PF · Alarmes"
+   }
+  },
+  "F02r": {
+   "erros": [],
+   "quadro_desenho": "PFR · Alarmes",
+   "quadro_figma": "PFR · Alarmes",
+   "erros_figma": [],
+   "present": {
+    "erros": [],
+    "quadro": "PFR · Alarmes"
+   }
+  }
+ },
+ "sha256": {
+  "testes/alarmes.csv": "e3730fdef0185fe1f9825690462c117547f2ea1f85349451eddef7535dd66567",
+  "testes/navegacao.csv": "cd8136506a47654ae376721ce2f88303bb4cea0deb1e35961af96e4466ac7962",
+  "testes/tags.csv": "bfcc162f93942dc1e8aa1628a79c059d34ee9f09cc0d3756f3957719619ceab1",
+  "casos_teste.csv": "4f12efcda5b22094b3d05233d31da88014a7ea1bd048b9a114a53f787040dc19",
+  "evidencias/alarmes-comunicacao.png": "3912d1c4244086327b80342ed0e08953cd7f4826dc562a7fdbcf29aeb381ad67",
+  "evidencias/alarmes-falha-bomba.png": "08c08b0a22f37a36a4ae27bfd6bb4c9015d913c014f61fe3734c11cbb4217289",
+  "evidencias/alarmes-hh.png": "2dd5d7ec49af568a4d887575a81393fdb2b967a06c314ee1ad11ae47cb4ce9cc",
+  "evidencias/confirmacao-parada.png": "dc70b439ec486cef9fddac184f5500c7bd88e2c8aa4080d9f137054e9252053d",
+  "evidencias/falha-comunicacao.png": "f1f4e99686797e9b1eadfd6baa40decac3e4032ec2523eaed784fe2192f5f57d",
+  "evidencias/manutencao-comunicacao.png": "ed41c648b139321ccd10535555a7e27c24bd55ff8b9dcef3a47c1b4fae4ae328",
+  "evidencias/manutencao-permissivos.png": "41654a313e6058bb6c1a8ff002685a1ffb7da832576df0794ff50853e9531072",
+  "evidencias/modo-local.png": "b070fa0d375e063cc12c0297e872b69b8b33aeaa79be3cb8818f3a6426abd7d7",
+  "evidencias/parada-solicitada.png": "ba11298c2f2f9c351b6c954cdd9b9290b13097293f3b8cc85550c1f5d24b04c8",
+  "evidencias/processo-hh.png": "e9663f55499b4804807116832ddd1e7ee31ca03abfa112cd08e73f0c3777a998",
+  "evidencias/processo-normal.png": "21648732482f61368289fed5045c62486771eff588a231e446958ca4f38dee50",
+  "evidencias/tendencia-hh.png": "cb5eddbf535f731fe8dc815febb2725528894cbe2cff4b44886ae60177997149",
+  "prototipo/link-figma.txt": "165cef49c2115001875b03e2121e3febb837b7b188377a1509ec0023ad02bd1f"
+ }
+}
